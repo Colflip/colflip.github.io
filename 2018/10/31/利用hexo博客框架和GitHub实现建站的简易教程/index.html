@@ -23,6 +23,10 @@
 
 
 
+  
+  
+  <link rel="stylesheet" href="/lib/needsharebutton/needsharebutton.css">
+
 
 
 
@@ -35,6 +39,10 @@
 
 
 
+
+  
+  
+  <link rel="stylesheet" media="all" href="/lib/Han/dist/han.min.css?v=3.3">
 
 
 
@@ -119,11 +127,11 @@
 <meta name="keywords" content="教程">
 <meta property="og:type" content="article">
 <meta property="og:title" content="浅谈利用hexo框架和GitHub实现个人博客搭建">
-<meta property="og:url" content="https://yohua.ml/2018/11/02/利用hexo博客框架和GitHub实现建站的简易教程/index.html">
+<meta property="og:url" content="https://yohua.ml/2018/10/31/利用hexo博客框架和GitHub实现建站的简易教程/index.html">
 <meta property="og:site_name" content="Yohua Zhous&#39;">
 <meta property="og:description" content="Hexo 是一个简单地、轻量地、基于Node的一个静态博客框架，可以方便的生成静态网页托管在github和Heroku上。基本原理是用Git将hexo博客在本地编译后的文件，上传到GitHub，通过地址访问。通过此种方法看到的，严格上并不是一个网站系统，而只是托管在GitHub上的一堆静态网页。但我们可以在本地更新后，同步到GitHub来实现和网站系统一样的功能。 环境准备本地环境准备下载并安装G">
 <meta property="og:locale" content="zh-CN">
-<meta property="og:updated_time" content="2018-11-02T15:24:40.546Z">
+<meta property="og:updated_time" content="2018-11-02T17:14:25.903Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="浅谈利用hexo框架和GitHub实现个人博客搭建">
 <meta name="twitter:description" content="Hexo 是一个简单地、轻量地、基于Node的一个静态博客框架，可以方便的生成静态网页托管在github和Heroku上。基本原理是用Git将hexo博客在本地编译后的文件，上传到GitHub，通过地址访问。通过此种方法看到的，严格上并不是一个网站系统，而只是托管在GitHub上的一堆静态网页。但我们可以在本地更新后，同步到GitHub来实现和网站系统一样的功能。 环境准备本地环境准备下载并安装G">
@@ -135,7 +143,7 @@
 
 
 
-  <link rel="canonical" href="https://yohua.ml/2018/11/02/利用hexo博客框架和GitHub实现建站的简易教程/">
+  <link rel="canonical" href="https://yohua.ml/2018/10/31/利用hexo博客框架和GitHub实现建站的简易教程/">
 
 
 
@@ -355,7 +363,7 @@
   
   
   <div class="post-block">
-    <link itemprop="mainEntityOfPage" href="https://yohua.ml/2018/11/02/利用hexo博客框架和GitHub实现建站的简易教程/">
+    <link itemprop="mainEntityOfPage" href="https://yohua.ml/2018/10/31/利用hexo博客框架和GitHub实现建站的简易教程/">
 
     <span hidden itemprop="author" itemscope="" itemtype="http://schema.org/Person">
       <meta itemprop="name" content="Yohua">
@@ -372,10 +380,10 @@
 
         
         
-          <h1 class="post-title" itemprop="name headline">浅谈利用hexo框架和GitHub实现个人博客搭建
+          <h2 class="post-title" itemprop="name headline">浅谈利用hexo框架和GitHub实现个人博客搭建
               
             
-          </h1>
+          </h2>
         
 
         <div class="post-meta">
@@ -397,13 +405,9 @@
                 
               
 
-              <time title="创建时间：2018-11-02 14:24:16 / 修改时间：23:24:40" itemprop="dateCreated datePublished" datetime="2018-11-02T14:24:16+08:00">2018-11-02</time>
+              <time title="创建时间：2018-10-31 14:24:16" itemprop="dateCreated datePublished" datetime="2018-10-31T14:24:16+08:00">2018-10-31</time>
             
 
-            
-              
-
-              
             
           </span>
 
@@ -416,15 +420,26 @@
                 <span class="post-meta-item-icon">
                   <i class="fa fa-comment-o"></i>
                 </span>
-                <a href="/2018/11/02/利用hexo博客框架和GitHub实现建站的简易教程/#comments" itemprop="discussionUrl">
+                <a href="/2018/10/31/利用hexo博客框架和GitHub实现建站的简易教程/#comments" itemprop="discussionUrl">
                 
-                  <span class="post-comments-count disqus-comment-count" data-disqus-identifier="2018/11/02/利用hexo博客框架和GitHub实现建站的简易教程/" itemprop="commentCount"></span>
+                  <span class="post-comments-count disqus-comment-count" data-disqus-identifier="2018/10/31/利用hexo博客框架和GitHub实现建站的简易教程/" itemprop="commentCount"></span>
                 </a>
               </span>
             
           
 
           
+          
+             <span id="/2018/10/31/利用hexo博客框架和GitHub实现建站的简易教程/" class="leancloud_visitors" data-flag-title="浅谈利用hexo框架和GitHub实现个人博客搭建">
+               <span class="post-meta-divider">|</span>
+               <span class="post-meta-item-icon">
+                 <i class="fa fa-eye"></i>
+               </span>
+               
+                 <span class="post-meta-item-text">阅读次数：</span>
+               
+                 <span class="leancloud-visitors-count"></span>
+             </span>
           
 
           
@@ -440,35 +455,35 @@
     
     
     
-    <div class="post-body" itemprop="articleBody">
+    <div class="post-body han-init-context" itemprop="articleBody">
 
       
       
 
       
         <p>Hexo 是一个简单地、轻量地、基于Node的一个静态博客框架，可以方便的生成静态网页托管在github和Heroku上。基本原理是用Git将hexo博客在本地编译后的文件，上传到GitHub，通过地址访问。通过此种方法看到的，严格上并不是一个网站系统，而只是托管在GitHub上的一堆静态网页。但我们可以在本地更新后，同步到GitHub来实现和网站系统一样的功能。</p>
-<h2 id="环境准备"><a href="#环境准备" class="headerlink" title="环境准备"></a>环境准备</h2><h4 id="本地环境准备"><a href="#本地环境准备" class="headerlink" title="本地环境准备"></a>本地环境准备</h4><pre><code>下载并安装Git
+<h2 id="环境准备"><a href="#环境准备" class="headerlink" title="环境准备"></a>环境准备</h2><h3 id="本地环境准备"><a href="#本地环境准备" class="headerlink" title="本地环境准备"></a>本地环境准备</h3><pre><code>下载并安装Git
 下载并安装Node.js
-</code></pre><h4 id="账号注册"><a href="#账号注册" class="headerlink" title="账号注册"></a>账号注册</h4><pre><code>注册GitHub账号
+</code></pre><h3 id="账号注册"><a href="#账号注册" class="headerlink" title="账号注册"></a>账号注册</h3><pre><code>注册GitHub账号
 </code></pre><h2 id="建站过程"><a href="#建站过程" class="headerlink" title="建站过程"></a>建站过程</h2><pre><code>以下过程在Git中进行。
-</code></pre><h4 id="安装hexo"><a href="#安装hexo" class="headerlink" title="安装hexo"></a>安装hexo</h4><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ install hexo</span><br></pre></td></tr></table></figure>
-<h4 id="本地调试"><a href="#本地调试" class="headerlink" title="本地调试"></a>本地调试</h4><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">$  hexo clean;//清理</span><br><span class="line">$  hexo generate;//编译</span><br><span class="line">$  hexo sever;//开启本地服务</span><br></pre></td></tr></table></figure>
+</code></pre><h3 id="安装hexo"><a href="#安装hexo" class="headerlink" title="安装hexo"></a>安装hexo</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ install hexo</span><br></pre></td></tr></table></figure>
+<h3 id="本地调试"><a href="#本地调试" class="headerlink" title="本地调试"></a>本地调试</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">$  hexo clean;//清理</span><br><span class="line">$  hexo generate;//编译</span><br><span class="line">$  hexo sever;//开启本地服务</span><br></pre></td></tr></table></figure>
 <pre><code>打开浏览器，通过http://localhost:4000访问。
-</code></pre><h4 id="在GitHub上创建存储库"><a href="#在GitHub上创建存储库" class="headerlink" title="在GitHub上创建存储库"></a>在GitHub上创建存储库</h4><pre><code>命名方式为：用户名.github.io。
-</code></pre><h4 id="修改-站点配置-文件-config-yml"><a href="#修改-站点配置-文件-config-yml" class="headerlink" title="修改 站点配置 文件_config.yml"></a>修改 站点配置 文件_config.yml</h4><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">deploy:</span><br><span class="line">  <span class="built_in">type</span>: git</span><br><span class="line">  repo: https://github.com/用户名/用户名.github.io</span><br><span class="line">  branch: master</span><br></pre></td></tr></table></figure>
-<h4 id="部署到GitHub"><a href="#部署到GitHub" class="headerlink" title="部署到GitHub"></a>部署到GitHub</h4><pre><code>第一次可能需要登录GitHub账户。
+</code></pre><h3 id="在GitHub上创建存储库"><a href="#在GitHub上创建存储库" class="headerlink" title="在GitHub上创建存储库"></a>在GitHub上创建存储库</h3><pre><code>命名方式为：用户名.github.io。
+</code></pre><h3 id="修改-站点配置-文件-config-yml"><a href="#修改-站点配置-文件-config-yml" class="headerlink" title="修改 站点配置 文件_config.yml"></a>修改 站点配置 文件_config.yml</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">deploy:</span><br><span class="line">  <span class="built_in">type</span>: git</span><br><span class="line">  repo: https://github.com/用户名/用户名.github.io</span><br><span class="line">  branch: master</span><br></pre></td></tr></table></figure>
+<h3 id="部署到GitHub"><a href="#部署到GitHub" class="headerlink" title="部署到GitHub"></a>部署到GitHub</h3><pre><code>第一次可能需要登录GitHub账户。
 </code></pre><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$  hexo deploy;//部署</span><br></pre></td></tr></table></figure>
-<h4 id="访问"><a href="#访问" class="headerlink" title="访问"></a>访问</h4><pre><code>通过 https://用户名.github.io 访问。
-</code></pre><h2 id="拓展"><a href="#拓展" class="headerlink" title="拓展"></a>拓展</h2><h4 id="更改主题"><a href="#更改主题" class="headerlink" title="更改主题"></a>更改主题</h4><pre><code>可以再hexo官网查找主题，本站使用了next主题。地址 https://github.com/theme-next/hexo-theme-next
-</code></pre><h4 id="启用本地搜索"><a href="#启用本地搜索" class="headerlink" title="启用本地搜索"></a>启用本地搜索</h4><pre><code>安装
+<h3 id="访问"><a href="#访问" class="headerlink" title="访问"></a>访问</h3><pre><code>通过 https://用户名.github.io 访问。
+</code></pre><h2 id="拓展"><a href="#拓展" class="headerlink" title="拓展"></a>拓展</h2><h3 id="更改主题"><a href="#更改主题" class="headerlink" title="更改主题"></a>更改主题</h3><pre><code>可以再hexo官网查找主题，本站使用了next主题。地址 https://github.com/theme-next/hexo-theme-next
+</code></pre><h3 id="启用本地搜索"><a href="#启用本地搜索" class="headerlink" title="启用本地搜索"></a>启用本地搜索</h3><pre><code>安装
 </code></pre><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$  npm install hexo-generator-searchdb --save</span><br></pre></td></tr></table></figure>
 <pre><code>修改 站点配置 文件_config.yml
 </code></pre><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">search:</span><br><span class="line">  path: search.xml</span><br><span class="line">  field: post</span><br><span class="line">  format: html</span><br><span class="line">  <span class="built_in">limit</span>: 10000</span><br></pre></td></tr></table></figure>
 <pre><code>修改 主题配置文件
 </code></pre><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">local_search:</span><br><span class="line">  <span class="built_in">enable</span>: <span class="literal">true</span></span><br></pre></td></tr></table></figure>
-<h4 id="第三方评论"><a href="#第三方评论" class="headerlink" title="第三方评论"></a>第三方评论</h4><pre><code>可以使用LiveRe(来必力)等。
-</code></pre><h4 id="网站统计"><a href="#网站统计" class="headerlink" title="网站统计"></a>网站统计</h4><pre><code>可以使用百度统计等。
-</code></pre><h4 id="更改访问域名"><a href="#更改访问域名" class="headerlink" title="更改访问域名"></a>更改访问域名</h4><pre><code>可以在setting中设置自己的域名。
+<h3 id="第三方评论"><a href="#第三方评论" class="headerlink" title="第三方评论"></a>第三方评论</h3><pre><code>可以使用LiveRe(来必力)等。
+</code></pre><h3 id="网站统计"><a href="#网站统计" class="headerlink" title="网站统计"></a>网站统计</h3><pre><code>可以使用百度统计等。
+</code></pre><h3 id="更改访问域名"><a href="#更改访问域名" class="headerlink" title="更改访问域名"></a>更改访问域名</h3><pre><code>可以在setting中设置自己的域名。
 freenom.com 可以注册.ml, .ck等结尾的免费顶级域名。
 </code></pre>
       
@@ -485,6 +500,20 @@ freenom.com 可以注册.ml, .ck等结尾的免费顶级域名。
     
 
     
+      <div>
+        <ul class="post-copyright">
+  <li class="post-copyright-author">
+    <strong>本文作者： </strong>Yohua</li>
+  <li class="post-copyright-link">
+    <strong>本文链接：</strong>
+    <a href="https://yohua.ml/2018/10/31/利用hexo博客框架和GitHub实现建站的简易教程/" title="浅谈利用hexo框架和GitHub实现个人博客搭建">https://yohua.ml/2018/10/31/利用hexo博客框架和GitHub实现建站的简易教程/</a>
+  </li>
+  <li class="post-copyright-license">
+    <strong>版权声明： </strong>本博客所有文章除特别声明外，均采用 <a href="https://creativecommons.org/licenses/by-nc-sa/4.0/" rel="external nofollow" target="_blank">CC BY-NC-SA 4.0</a> 许可协议。转载请注明出处！</li>
+</ul>
+
+      </div>
+    
 
     <footer class="post-footer">
       
@@ -496,6 +525,26 @@ freenom.com 可以注册.ml, .ck等结尾的免费顶级域名。
       
 
       
+      
+        <div class="post-widgets">
+        
+
+        
+
+        
+          
+          <div class="social_share">
+            
+            
+               <div id="needsharebutton-postbottom">
+                 <span class="btn">
+                    <i class="fa fa-share-alt" aria-hidden="true"></i>
+                 </span>
+               </div>
+            
+          </div>
+        
+        </div>
       
       
 
@@ -635,32 +684,32 @@ freenom.com 可以注册.ml, .ck等结尾的免费顶级域名。
             <div class="links-of-author motion-element">
               
                 <span class="links-of-author-item">
-                  <a href="https://github.com/yhzhou1996" target="_blank" title="GitHub"><i class="fa fa-fw fa-github"></i>GitHub</a>
+                  <a href="https://github.com/yhzhou1996" target="_blank" title="GitHub" rel="external nofollow"><i class="fa fa-fw fa-github"></i>GitHub</a>
                   
                 </span>
               
                 <span class="links-of-author-item">
-                  <a href="mailto:be_light@foxmail.com" target="_blank" title="E-Mail"><i class="fa fa-fw fa-envelope"></i>E-Mail</a>
+                  <a href="mailto:be_light@foxmail.com" target="_blank" title="E-Mail" rel="external nofollow"><i class="fa fa-fw fa-envelope"></i>E-Mail</a>
                   
                 </span>
               
                 <span class="links-of-author-item">
-                  <a href="http://weibo.com/5643374907" target="_blank" title="微博"><i class="fa fa-fw fa-weibo"></i>微博</a>
+                  <a href="http://weibo.com/5643374907" target="_blank" title="微博" rel="external nofollow"><i class="fa fa-fw fa-weibo"></i>微博</a>
                   
                 </span>
               
                 <span class="links-of-author-item">
-                  <a href="http://douban.com/people/your-user-name" target="_blank" title="豆瓣"><i class="fa fa-fw fa-globe"></i>豆瓣</a>
+                  <a href="http://douban.com/people/your-user-name" target="_blank" title="豆瓣" rel="external nofollow"><i class="fa fa-fw fa-globe"></i>豆瓣</a>
                   
                 </span>
               
                 <span class="links-of-author-item">
-                  <a href="http://www.zhihu.com/people/ruo-you-guang-66" target="_blank" title="知乎"><i class="fa fa-fw fa-globe"></i>知乎</a>
+                  <a href="http://www.zhihu.com/people/ruo-you-guang-66" target="_blank" title="知乎" rel="external nofollow"><i class="fa fa-fw fa-globe"></i>知乎</a>
                   
                 </span>
               
                 <span class="links-of-author-item">
-                  <a href="https://blog.csdn.net/yhzhou96" target="_blank" title="CSDN"><i class="fa fa-fw fa-globe"></i>CSDN</a>
+                  <a href="https://blog.csdn.net/yhzhou96" target="_blank" title="CSDN" rel="external nofollow"><i class="fa fa-fw fa-globe"></i>CSDN</a>
                   
                 </span>
               
@@ -670,7 +719,7 @@ freenom.com 可以注册.ml, .ck等结尾的免费顶级域名。
           
           
             <div class="cc-license motion-element" itemprop="license">
-              <a href="https://creativecommons.org/licenses/by-nc-sa/4.0/" class="cc-opacity" target="_blank">
+              <a href="https://creativecommons.org/licenses/by-nc-sa/4.0/" class="cc-opacity" target="_blank" rel="external nofollow">
                 <img src="/images/cc-by-nc-sa.svg" alt="Creative Commons">
               </a>
             </div>
@@ -678,15 +727,15 @@ freenom.com 可以注册.ml, .ck等结尾的免费顶级域名。
 
           
           
-            <div class="links-of-blogroll motion-element links-of-blogroll-block">
+            <div class="links-of-blogroll motion-element links-of-blogroll-inline">
               <div class="links-of-blogroll-title">
                 <i class="fa  fa-fw fa-link"></i>
-                Links
+                友情链接
               </div>
               <ul class="links-of-blogroll-list">
                 
                   <li class="links-of-blogroll-item">
-                    <a href="http://example.com/" title="Title" target="_blank">Title</a>
+                    <a href="http://yohua.ml/" title="有光" target="_blank">有光</a>
                   </li>
                 
               </ul>
@@ -711,7 +760,7 @@ freenom.com 可以注册.ml, .ck等结尾的免费顶级域名。
             
 
             
-              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#环境准备"><span class="nav-number">1.</span> <span class="nav-text">环境准备</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#本地环境准备"><span class="nav-number">1.0.1.</span> <span class="nav-text">本地环境准备</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#账号注册"><span class="nav-number">1.0.2.</span> <span class="nav-text">账号注册</span></a></li></ol></li></ol><li class="nav-item nav-level-2"><a class="nav-link" href="#建站过程"><span class="nav-number">2.</span> <span class="nav-text">建站过程</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#安装hexo"><span class="nav-number">2.0.1.</span> <span class="nav-text">安装hexo</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#本地调试"><span class="nav-number">2.0.2.</span> <span class="nav-text">本地调试</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#在GitHub上创建存储库"><span class="nav-number">2.0.3.</span> <span class="nav-text">在GitHub上创建存储库</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#修改-站点配置-文件-config-yml"><span class="nav-number">2.0.4.</span> <span class="nav-text">修改 站点配置 文件_config.yml</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#部署到GitHub"><span class="nav-number">2.0.5.</span> <span class="nav-text">部署到GitHub</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#访问"><span class="nav-number">2.0.6.</span> <span class="nav-text">访问</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#拓展"><span class="nav-number">3.</span> <span class="nav-text">拓展</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#更改主题"><span class="nav-number">3.0.1.</span> <span class="nav-text">更改主题</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#启用本地搜索"><span class="nav-number">3.0.2.</span> <span class="nav-text">启用本地搜索</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#第三方评论"><span class="nav-number">3.0.3.</span> <span class="nav-text">第三方评论</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#网站统计"><span class="nav-number">3.0.4.</span> <span class="nav-text">网站统计</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#更改访问域名"><span class="nav-number">3.0.5.</span> <span class="nav-text">更改访问域名</span></a></li></ol></li></div>
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#环境准备"><span class="nav-number">1.</span> <span class="nav-text">环境准备</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#本地环境准备"><span class="nav-number">1.1.</span> <span class="nav-text">本地环境准备</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#账号注册"><span class="nav-number">1.2.</span> <span class="nav-text">账号注册</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#建站过程"><span class="nav-number">2.</span> <span class="nav-text">建站过程</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#安装hexo"><span class="nav-number">2.1.</span> <span class="nav-text">安装hexo</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#本地调试"><span class="nav-number">2.2.</span> <span class="nav-text">本地调试</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#在GitHub上创建存储库"><span class="nav-number">2.3.</span> <span class="nav-text">在GitHub上创建存储库</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#修改-站点配置-文件-config-yml"><span class="nav-number">2.4.</span> <span class="nav-text">修改 站点配置 文件_config.yml</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#部署到GitHub"><span class="nav-number">2.5.</span> <span class="nav-text">部署到GitHub</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#访问"><span class="nav-number">2.6.</span> <span class="nav-text">访问</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#拓展"><span class="nav-number">3.</span> <span class="nav-text">拓展</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#更改主题"><span class="nav-number">3.1.</span> <span class="nav-text">更改主题</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#启用本地搜索"><span class="nav-number">3.2.</span> <span class="nav-text">启用本地搜索</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#第三方评论"><span class="nav-number">3.3.</span> <span class="nav-text">第三方评论</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#网站统计"><span class="nav-number">3.4.</span> <span class="nav-text">网站统计</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#更改访问域名"><span class="nav-number">3.5.</span> <span class="nav-text">更改访问域名</span></a></li></ol></li></ol></div>
             
 
           </div>
@@ -735,7 +784,7 @@ freenom.com 可以注册.ml, .ck等结尾的免费顶级域名。
   <span class="with-love" id="animate">
     <i class="fa fa-user"></i>
   </span>
-  <span class="author" itemprop="copyrightHolder">true</span>
+  <span class="author" itemprop="copyrightHolder">Yohua</span>
 
   
 
@@ -743,9 +792,11 @@ freenom.com 可以注册.ml, .ck等结尾的免费顶级域名。
 </div>
 
 
+  
 
 
-  <div class="powered-by">由 <a class="theme-link" target="_blank" href="https://hexo.io">Hexo</a> 强力驱动 v3.8.0</div>
+
+  <div class="powered-by">由 <a class="theme-link" target="_blank" rel="external nofollow" href="https://hexo.io">Hexo</a> 强力驱动</div>
 
 
 
@@ -753,7 +804,7 @@ freenom.com 可以注册.ml, .ck等结尾的免费顶级域名。
 
 
 
-  <div class="theme-info">主题 – <a class="theme-link" target="_blank" href="https://theme-next.org">NexT.Mist</a> v6.4.2</div>
+  <div class="theme-info">主题 – <a class="theme-link" target="_blank" rel="external nofollow" href="https://theme-next.org">NexT.Mist</a></div>
 
 
 
@@ -877,8 +928,8 @@ freenom.com 可以注册.ml, .ck等结尾的免费顶级域名。
   
     <script type="text/javascript">
       var disqus_config = function () {
-        this.page.url = 'https://yohua.ml/2018/11/02/利用hexo博客框架和GitHub实现建站的简易教程/';
-        this.page.identifier = '2018/11/02/利用hexo博客框架和GitHub实现建站的简易教程/';
+        this.page.url = 'https://yohua.ml/2018/10/31/利用hexo博客框架和GitHub实现建站的简易教程/';
+        this.page.identifier = '2018/10/31/利用hexo博客框架和GitHub实现建站的简易教程/';
         this.page.title = '浅谈利用hexo框架和GitHub实现个人博客搭建';
         };
       function loadComments () {
@@ -1248,6 +1299,68 @@ freenom.com 可以注册.ml, .ck等结尾的免费顶级域名。
   
 
   
+  <script>
+    
+    function addCount(Counter) {
+      var $visitors = $(".leancloud_visitors");
+      var url = $visitors.attr('id').trim();
+      var title = $visitors.attr('data-flag-title').trim();
+
+      Counter('get', '/classes/Counter', { where: JSON.stringify({ url }) })
+        .done(function ({ results }) {
+          if (results.length > 0) {
+            var counter = results[0];
+            
+              var $element = $(document.getElementById(url));
+              $element.find('.leancloud-visitors-count').text(counter.time + 1);
+            
+            Counter('put', `/classes/Counter/${counter.objectId}`, JSON.stringify({ time: { "__op":"Increment", "amount":1 } }))
+            
+            .fail(function ({ responseJSON }) {
+                console.log('Failed to save Visitor num, with error message: ' + responseJSON.error);
+            })
+          } else {
+            
+              Counter('post', '/classes/Counter', JSON.stringify({ title: title, url: url, time: 1}))
+                .done(function () {
+                  var $element = $(document.getElementById(url));
+                  $element.find('.leancloud-visitors-count').text(1);
+                })
+                .fail(function () {
+                  console.log('Failed to create');
+                });
+            
+          }
+        })
+      .fail(function ({ responseJSON }) {
+        console.log('LeanCloud Counter Error:' + responseJSON.code + " " + responseJSON.error);
+      });
+    }
+    
+
+    $(function() {
+      $.get('https://app-router.leancloud.cn/2/route?appId=' + "xMTUWmPzd5FqrgzfRXmzC04C-gzGzoHsz")
+        .done(function ({ api_server }) {
+          var Counter = function (method, url, data) {
+            return $.ajax({
+              method: method,
+              url: `https://${api_server}/1.1${url}`,
+              headers: {
+                'X-LC-Id': "xMTUWmPzd5FqrgzfRXmzC04C-gzGzoHsz",
+                'X-LC-Key': "Yg9H4MbrXOmWuQsfGYnYVgLp",
+                'Content-Type': 'application/json',
+              },
+              data: data,
+            });
+          };
+          
+          addCount(Counter);
+          
+        })
+    });
+  </script>
+
+
 
   
 
@@ -1256,11 +1369,42 @@ freenom.com 可以注册.ml, .ck等结尾的免费顶级域名。
   
 
   
+
   
+  
+  
+  <script src="/lib/needsharebutton/needsharebutton.js"></script>
+
+  <script>
+    
+      pbOptions = {};
+      
+          pbOptions.iconStyle = "default";
+      
+          pbOptions.boxForm = "horizontal";
+      
+          pbOptions.position = "bottomCenter";
+      
+          pbOptions.networks = "Weibo,Wechat,Douban,QQZone,Twitter,Facebook,GooglePlus,Tumblr,Evernote";
+      
+      new needShareButton('#needsharebutton-postbottom', pbOptions);
+    
+    
+  </script>
 
   
 
   
+  
+  
+  <script src="/lib/pangu/dist/pangu.min.js?v=3.3"></script>
+  <script type="text/javascript">pangu.spacingPage();</script>
+
+
+  
+  <script type="text/javascript" src="/js/src/js.cookie.js?v=6.4.2"></script>
+  <script type="text/javascript" src="/js/src/scroll-cookie.js?v=6.4.2"></script>
+
 
   
 
