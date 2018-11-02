@@ -131,7 +131,7 @@
 <meta property="og:site_name" content="Yohua Zhous&#39;">
 <meta property="og:description" content="Hexo 是一个简单地、轻量地、基于Node的一个静态博客框架，可以方便的生成静态网页托管在github和Heroku上。基本原理是用Git将hexo博客在本地编译后的文件，上传到GitHub，通过地址访问。通过此种方法看到的，严格上并不是一个网站系统，而只是托管在GitHub上的一堆静态网页。但我们可以在本地更新后，同步到GitHub来实现和网站系统一样的功能。 环境准备本地环境准备下载并安装G">
 <meta property="og:locale" content="zh-CN">
-<meta property="og:updated_time" content="2018-11-02T17:14:25.903Z">
+<meta property="og:updated_time" content="2018-11-02T18:29:49.664Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="浅谈利用hexo框架和GitHub实现个人博客搭建">
 <meta name="twitter:description" content="Hexo 是一个简单地、轻量地、基于Node的一个静态博客框架，可以方便的生成静态网页托管在github和Heroku上。基本原理是用Git将hexo博客在本地编译后的文件，上传到GitHub，通过地址访问。通过此种方法看到的，严格上并不是一个网站系统，而只是托管在GitHub上的一堆静态网页。但我们可以在本地更新后，同步到GitHub来实现和网站系统一样的功能。 环境准备本地环境准备下载并安装G">
@@ -953,6 +953,31 @@ freenom.com 可以注册.ml, .ck等结尾的免费顶级域名。
 
 
 
+  <script src="//cdn1.lncld.net/static/js/3.0.4/av-min.js"></script>
+  
+  
+  <script src="//unpkg.com/valine/dist/Valine.min.js"></script>
+  
+  <script type="text/javascript">
+    var GUEST = ['nick','mail','link'];
+    var guest = 'nick,mail,link';
+    guest = guest.split(',').filter(function (item) {
+      return GUEST.indexOf(item)>-1;
+    });
+    new Valine({
+        el: '#comments' ,
+        verify: false,
+        notify: false,
+        appId: 'M8r6UanWv0kYqizLC8cfNWHh-gzGzoHsz',
+        appKey: '9LrPy497SqVcOvE8tg7bhLzz',
+        placeholder: 'Just go go',
+        avatar:'mm',
+        meta:guest,
+        pageSize:'10' || 10,
+        visitor: false
+    });
+  </script>
+
 
 
   
@@ -1311,10 +1336,12 @@ freenom.com 可以注册.ml, .ck等结尾的免费顶级域名。
           if (results.length > 0) {
             var counter = results[0];
             
-              var $element = $(document.getElementById(url));
-              $element.find('.leancloud-visitors-count').text(counter.time + 1);
-            
             Counter('put', `/classes/Counter/${counter.objectId}`, JSON.stringify({ time: { "__op":"Increment", "amount":1 } }))
+            
+            .done(function () {
+                  var $element = $(document.getElementById(url));
+                  $element.find('.leancloud-visitors-count').text(counter.time + 1);
+            })
             
             .fail(function ({ responseJSON }) {
                 console.log('Failed to save Visitor num, with error message: ' + responseJSON.error);
@@ -1339,15 +1366,15 @@ freenom.com 可以注册.ml, .ck等结尾的免费顶级域名。
     
 
     $(function() {
-      $.get('https://app-router.leancloud.cn/2/route?appId=' + "xMTUWmPzd5FqrgzfRXmzC04C-gzGzoHsz")
+      $.get('https://app-router.leancloud.cn/2/route?appId=' + "M8r6UanWv0kYqizLC8cfNWHh-gzGzoHsz")
         .done(function ({ api_server }) {
           var Counter = function (method, url, data) {
             return $.ajax({
               method: method,
               url: `https://${api_server}/1.1${url}`,
               headers: {
-                'X-LC-Id': "xMTUWmPzd5FqrgzfRXmzC04C-gzGzoHsz",
-                'X-LC-Key': "Yg9H4MbrXOmWuQsfGYnYVgLp",
+                'X-LC-Id': "M8r6UanWv0kYqizLC8cfNWHh-gzGzoHsz",
+                'X-LC-Key': "9LrPy497SqVcOvE8tg7bhLzz",
                 'Content-Type': 'application/json',
               },
               data: data,
@@ -1379,7 +1406,7 @@ freenom.com 可以注册.ml, .ck等结尾的免费顶级域名。
     
       pbOptions = {};
       
-          pbOptions.iconStyle = "default";
+          pbOptions.iconStyle = "box";
       
           pbOptions.boxForm = "horizontal";
       
