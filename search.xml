@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<search>
+  <entry>
+    <title><![CDATA[浅谈利用hexo框架和GitHub实现个人博客搭建]]></title>
+    <url>%2F2018%2F11%2F02%2F%E5%88%A9%E7%94%A8hexo%E5%8D%9A%E5%AE%A2%E6%A1%86%E6%9E%B6%E5%92%8CGitHub%E5%AE%9E%E7%8E%B0%E5%BB%BA%E7%AB%99%E7%9A%84%E7%AE%80%E6%98%93%E6%95%99%E7%A8%8B%2F</url>
+    <content type="text"><![CDATA[Hexo 是一个简单地、轻量地、基于Node的一个静态博客框架，可以方便的生成静态网页托管在github和Heroku上。基本原理是用Git将hexo博客在本地编译后的文件，上传到GitHub，通过地址访问。通过此种方法看到的，严格上并不是一个网站系统，而只是托管在GitHub上的一堆静态网页。但我们可以在本地更新后，同步到GitHub来实现和网站系统一样的功能。 环境准备本地环境准备下载并安装Git 下载并安装Node.js 账号注册注册GitHub账号 建站过程以下过程在Git中进行。 安装hexo1$ install hexo 本地调试123$ hexo clean;//清理$ hexo generate;//编译$ hexo sever;//开启本地服务 打开浏览器，通过http://localhost:4000访问。 在GitHub上创建存储库命名方式为：用户名.github.io。 修改 站点配置 文件_config.yml1234deploy: type: git repo: https://github.com/用户名/用户名.github.io branch: master 部署到GitHub第一次可能需要登录GitHub账户。 1$ hexo deploy;//部署 访问通过 https://用户名.github.io 访问。 拓展更改主题可以再hexo官网查找主题，本站使用了next主题。地址 https://github.com/theme-next/hexo-theme-next 启用本地搜索安装 1$ npm install hexo-generator-searchdb --save 修改 站点配置 文件_config.yml 12345search: path: search.xml field: post format: html limit: 10000 修改 主题配置文件 12local_search: enable: true 第三方评论可以使用LiveRe(来必力)等。 网站统计可以使用百度统计等。 更改访问域名可以在setting中设置自己的域名。 freenom.com 可以注册.ml, .ck等结尾的免费顶级域名。]]></content>
+      <tags>
+        <tag>教程</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title><![CDATA[《魔道祖师》——每个人都是一个江湖]]></title>
+    <url>%2F2018%2F10%2F28%2F%E9%AD%94%E9%81%93%E7%A5%96%E5%B8%88%E6%AF%8F%E4%B8%AA%E4%BA%BA%E9%83%BD%E6%98%AF%E4%B8%80%E4%B8%AA%E6%B1%9F%E6%B9%96%2F</url>
+    <content type="text"><![CDATA[前段时间，不经意间看到了《魔道祖师》的动画，感觉很棒。无论是动画形象，题材。比那些大IP好很多，为了补贴经费啥都干，吃相太难看。苍山乱烟外，玉树微雨里。举目人不见，凄凄风又起。（来源网络） 引前世的魏无羡万人唾骂，声名狼藉。 被情同手足的师弟带人端了老巢， 纵横一世，死无全尸。 曾掀起腥风血雨的一代魔道祖师，重生成了一个…… 脑残。 还特么是个人人喊打的断袖脑残！ 我见诸君多有病，料诸君见我应如是。 但修鬼道不修仙，任你千军万马，十方恶霸，九州奇侠，高岭之花， 但凡化为一抔黄土，统统收归旗下，为我所用，供我驱策！ 主题曲歌词风雨前尘 傲视苍穹 轻抚陈情亦从容 云深不知处 天子笑坛中 世事无常 独醉梦一场 探正邪两道 观世间喧嚣 孤一身战江湖 亦不曾 将内心辜负 潇洒人间道 善恶都离空 却抹不掉心中伤痕 这一世 浮生若梦 纵然与世无争 道不同义在心中 怎奈侠肝义胆 却成一场空 善恶是非分明 爱恨界限不清 相识就像是一场梦 轮回重生 恩怨迷蒙 似曾相识 露青锋 云景深处 琴瑟伴笛声 世事无常 独醉梦一场 观正邪两道 探世间喧嚣 并肩战江湖 从未曾 将内心辜负 潇洒人间道 善恶都离空 却抹不掉心中伤痕 这一世 与人无争 纵然与世无争 道不同义在心中 怎奈侠肝义胆 却成一场空 善恶是非分明 爱恨界限不清 相知就像是一场梦 纵然与世无争 道不同义在心中 怎奈侠肝义胆 却成一场空 善恶是非分明 爱恨界限不清 相知就像是一场梦 照片]]></content>
+      <tags>
+        <tag>人文</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title><![CDATA[欢迎访问我的博客]]></title>
+    <url>%2F2018%2F10%2F27%2Fit-s-yohuas-blog%2F</url>
+    <content type="text"><![CDATA[这是我的第一次编辑前排出售沙发、板凳、小马扎、雪碧、可乐、叉烧包、营养快线红、烧鸡翅盖浇饭、牛奶果粒橙、馒头、花卷、牛肉干、望远镜、小喇叭、雨衣、小红旗、砖头、瓦块、米粉、米线、馄饨、水饺、汉堡、旺仔牛奶、方便面、德芙、奥利奥、虾条、薯片、干脆面、话梅、情人梅、海苔、巧克力、麦片粥、苹果、榴莲、橘子、香蕉、杏仁、露露、花生、核桃、葡萄、提子、面筋、羊肉串、煎饼、蛋挞、口香糖、怪味豆、曲奇饼干、果冻、蛋糕、妙脆、酸辣粉、葵花籽、大红枣、西酸奶、炸鸡腿、薯条、冰激凌、咖啡、橙汁、奶酪、三明治、果脯、香蕉、干无花果、西瓜、菠萝、冰棍、雪糕、蚂蚁上树、四个圈、烤地瓜、山楂片、板栗、樱桃、蜂蜜、沙琪玛、荷包蛋、芝士、柠檬奶油、草莓、火龙果、爆米花、搅糖稀、棉花糖、果丹皮、泡泡堂糖、人奶糖、鹿茸人参。]]></content>
+      <tags>
+        <tag>其他</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title><![CDATA[Hello World]]></title>
+    <url>%2F2018%2F10%2F25%2Fhello-world%2F</url>
+    <content type="text"><![CDATA[Welcome to Hexo! This is your very first post. Check documentation for more info. If you get any problems when using Hexo, you can find the answer in troubleshooting or you can ask me on GitHub. Quick StartCreate a new post1$ hexo new "My New Post" More info: Writing Run server1$ hexo server More info: Server Generate static files1$ hexo generate More info: Generating Deploy to remote sites1$ hexo deploy More info: Deployment]]></content>
+      <tags>
+        <tag>其他</tag>
+      </tags>
+  </entry>
+</search>
