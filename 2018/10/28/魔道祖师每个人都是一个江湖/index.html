@@ -361,6 +361,8 @@
   
 
   
+    <div class="reading-progress-bar"></div>
+  
 
   <article class="post post-type-normal" itemscope="" itemtype="http://schema.org/Article">
   
@@ -418,17 +420,6 @@
           
 
           
-            
-              <span class="post-comments-count">
-                <span class="post-meta-divider">|</span>
-                <span class="post-meta-item-icon">
-                  <i class="fa fa-comment-o"></i>
-                </span>
-                <a href="/2018/10/28/魔道祖师每个人都是一个江湖/#comments" itemprop="discussionUrl">
-                
-                  <span class="post-comments-count disqus-comment-count" data-disqus-identifier="2018/10/28/魔道祖师每个人都是一个江湖/" itemprop="commentCount"></span>
-                </a>
-              </span>
             
           
 
@@ -610,16 +601,6 @@
 
           </div>
           
-
-  
-    <div class="comments" id="comments">
-      <div id="disqus_thread">
-        <noscript>
-          Please enable JavaScript to view the
-          <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a>
-        </noscript>
-      </div>
-    </div>
 
   
 
@@ -900,6 +881,8 @@
 
 
 
+  
+
 
 
   
@@ -920,6 +903,11 @@
   
   
     <script type="text/javascript" src="/lib/canvas-nest/canvas-nest.min.js"></script>
+  
+
+  
+  
+    <script type="text/javascript" src="/lib/reading_progress/reading_progress.js"></script>
   
 
 
@@ -950,27 +938,8 @@
 
   
 
-  
-    <script id="dsq-count-scr" src="https://yohua.ml.disqus.com/count.js" async></script>
-  
 
-  
-    <script type="text/javascript">
-      var disqus_config = function () {
-        this.page.url = 'https://yohua.ml/2018/10/28/魔道祖师每个人都是一个江湖/';
-        this.page.identifier = '2018/10/28/魔道祖师每个人都是一个江湖/';
-        this.page.title = '《魔道祖师》——每个人都是一个江湖';
-        };
-      function loadComments () {
-        var d = document, s = d.createElement('script');
-        s.src = 'https://yohua.ml.disqus.com/embed.js';
-        s.setAttribute('data-timestamp', '' + +new Date());
-        (d.head || d.body).appendChild(s);
-      }
-      
-        loadComments();
-      
-    </script>
+
   
 
 
@@ -979,33 +948,6 @@
 
 
 
-
-
-
-  <script src="//cdn1.lncld.net/static/js/3.0.4/av-min.js"></script>
-  
-  
-  <script src="//unpkg.com/valine/dist/Valine.min.js"></script>
-  
-  <script type="text/javascript">
-    var GUEST = ['nick','mail','link'];
-    var guest = 'nick,mail,link';
-    guest = guest.split(',').filter(function (item) {
-      return GUEST.indexOf(item)>-1;
-    });
-    new Valine({
-        el: '#comments' ,
-        verify: false,
-        notify: false,
-        appId: 'M8r6UanWv0kYqizLC8cfNWHh-gzGzoHsz',
-        appKey: '9LrPy497SqVcOvE8tg7bhLzz',
-        placeholder: 'Just go go',
-        avatar:'mm',
-        meta:guest,
-        pageSize:'10' || 10,
-        visitor: false
-    });
-  </script>
 
 
 
@@ -1463,6 +1405,8 @@
 
 
   
+  <script type="text/javascript" src="/js/src/exturl.js?v=6.4.2"></script>
+
 
   
 
