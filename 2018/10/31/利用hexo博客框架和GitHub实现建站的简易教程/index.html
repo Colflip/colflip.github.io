@@ -97,7 +97,7 @@
     root: '/',
     scheme: 'Mist',
     version: '6.4.2',
-    sidebar: {"position":"left","display":"hide","offset":12,"b2t":false,"scrollpercent":true,"onmobile":false},
+    sidebar: {"position":"left","display":"post","offset":12,"b2t":false,"scrollpercent":true,"onmobile":false},
     fancybox: false,
     fastclick: false,
     lazyload: false,
@@ -127,7 +127,7 @@
 <meta property="og:site_name" content="Yohua Zhous&#39;">
 <meta property="og:description" content="Hexo 是一个简单地、轻量地、基于Node的一个静态博客框架，可以方便的生成静态网页托管在github和Heroku上。基本原理是用Git将hexo博客在本地编译后的文件，上传到GitHub，通过地址访问。通过此种方法看到的，严格上并不是一个网站系统，而只是托管在GitHub上的一堆静态网页。但我们可以在本地更新后，同步到GitHub来实现和网站系统一样的功能。 环境准备本地环境准备下载并安装G">
 <meta property="og:locale" content="zh-CN">
-<meta property="og:updated_time" content="2018-11-03T05:18:19.475Z">
+<meta property="og:updated_time" content="2018-11-12T06:04:06.329Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="浅谈利用hexo框架和GitHub实现个人博客搭建">
 <meta name="twitter:description" content="Hexo 是一个简单地、轻量地、基于Node的一个静态博客框架，可以方便的生成静态网页托管在github和Heroku上。基本原理是用Git将hexo博客在本地编译后的文件，上传到GitHub，通过地址访问。通过此种方法看到的，严格上并不是一个网站系统，而只是托管在GitHub上的一堆静态网页。但我们可以在本地更新后，同步到GitHub来实现和网站系统一样的功能。 环境准备本地环境准备下载并安装G">
@@ -213,7 +213,7 @@
 
     <header id="header" class="header" itemscope="" itemtype="http://schema.org/WPHeader">
       <div class="header-inner"><div class="site-brand-wrapper">
-  <div class="site-meta ">
+  <div class="site-meta custom-logo">
     
 
     <div class="custom-logo-site-title">
@@ -471,7 +471,7 @@
 <h3 id="部署到GitHub"><a href="#部署到GitHub" class="headerlink" title="部署到GitHub"></a>部署到GitHub</h3><pre><code>第一次可能需要登录GitHub账户。
 </code></pre><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$  hexo deploy;//部署</span><br></pre></td></tr></table></figure>
 <h3 id="访问"><a href="#访问" class="headerlink" title="访问"></a>访问</h3><pre><code>通过 https://用户名.github.io 访问。
-</code></pre><h2 id="拓展"><a href="#拓展" class="headerlink" title="拓展"></a>拓展</h2><h3 id="更改主题"><a href="#更改主题" class="headerlink" title="更改主题"></a>更改主题</h3><pre><code>可以再hexo官网查找主题，本站使用了next主题。地址 https://github.com/theme-next/hexo-theme-next
+</code></pre><h2 id="功能拓展"><a href="#功能拓展" class="headerlink" title="功能拓展"></a>功能拓展</h2><h3 id="更改主题"><a href="#更改主题" class="headerlink" title="更改主题"></a>更改主题</h3><pre><code>可以再hexo官网查找主题，本站使用了next主题。地址 https://github.com/theme-next/hexo-theme-next
 </code></pre><h3 id="启用本地搜索"><a href="#启用本地搜索" class="headerlink" title="启用本地搜索"></a>启用本地搜索</h3><pre><code>安装
 </code></pre><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$  npm install hexo-generator-searchdb --save</span><br></pre></td></tr></table></figure>
 <pre><code>修改 站点配置 文件_config.yml
@@ -482,6 +482,7 @@
 </code></pre><h3 id="网站统计"><a href="#网站统计" class="headerlink" title="网站统计"></a>网站统计</h3><pre><code>可以使用百度统计等。
 </code></pre><h3 id="更改访问域名"><a href="#更改访问域名" class="headerlink" title="更改访问域名"></a>更改访问域名</h3><pre><code>可以在github项目库setting中设置自己的域名。
 freenom.com 可以注册.ml, .tk等结尾的免费顶级域名。
+</code></pre><h2 id="博文撰写"><a href="#博文撰写" class="headerlink" title="博文撰写"></a>博文撰写</h2><pre><code>可以用符合Markdown语法的程序写自己的博客。
 </code></pre>
       
     </div>
@@ -703,7 +704,7 @@ freenom.com 可以注册.ml, .tk等结尾的免费顶级域名。
             <div class="links-of-blogroll motion-element links-of-blogroll-block">
               <div class="links-of-blogroll-title">
                 <i class="fa  fa-fw fa-link"></i>
-                友情链接
+                Links
               </div>
               <ul class="links-of-blogroll-list">
                 
@@ -733,7 +734,7 @@ freenom.com 可以注册.ml, .tk等结尾的免费顶级域名。
             
 
             
-              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#环境准备"><span class="nav-number">1.</span> <span class="nav-text">环境准备</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#本地环境准备"><span class="nav-number">1.1.</span> <span class="nav-text">本地环境准备</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#账号注册"><span class="nav-number">1.2.</span> <span class="nav-text">账号注册</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#建站过程"><span class="nav-number">2.</span> <span class="nav-text">建站过程</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#安装hexo"><span class="nav-number">2.1.</span> <span class="nav-text">安装hexo</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#本地调试"><span class="nav-number">2.2.</span> <span class="nav-text">本地调试</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#在GitHub上创建存储库"><span class="nav-number">2.3.</span> <span class="nav-text">在GitHub上创建存储库</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#修改-站点配置-文件-config-yml"><span class="nav-number">2.4.</span> <span class="nav-text">修改 站点配置 文件_config.yml</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#部署到GitHub"><span class="nav-number">2.5.</span> <span class="nav-text">部署到GitHub</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#访问"><span class="nav-number">2.6.</span> <span class="nav-text">访问</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#拓展"><span class="nav-number">3.</span> <span class="nav-text">拓展</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#更改主题"><span class="nav-number">3.1.</span> <span class="nav-text">更改主题</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#启用本地搜索"><span class="nav-number">3.2.</span> <span class="nav-text">启用本地搜索</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#第三方评论"><span class="nav-number">3.3.</span> <span class="nav-text">第三方评论</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#网站统计"><span class="nav-number">3.4.</span> <span class="nav-text">网站统计</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#更改访问域名"><span class="nav-number">3.5.</span> <span class="nav-text">更改访问域名</span></a></li></ol></li></ol></div>
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#环境准备"><span class="nav-number">1.</span> <span class="nav-text">环境准备</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#本地环境准备"><span class="nav-number">1.1.</span> <span class="nav-text">本地环境准备</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#账号注册"><span class="nav-number">1.2.</span> <span class="nav-text">账号注册</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#建站过程"><span class="nav-number">2.</span> <span class="nav-text">建站过程</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#安装hexo"><span class="nav-number">2.1.</span> <span class="nav-text">安装hexo</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#本地调试"><span class="nav-number">2.2.</span> <span class="nav-text">本地调试</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#在GitHub上创建存储库"><span class="nav-number">2.3.</span> <span class="nav-text">在GitHub上创建存储库</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#修改-站点配置-文件-config-yml"><span class="nav-number">2.4.</span> <span class="nav-text">修改 站点配置 文件_config.yml</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#部署到GitHub"><span class="nav-number">2.5.</span> <span class="nav-text">部署到GitHub</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#访问"><span class="nav-number">2.6.</span> <span class="nav-text">访问</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#功能拓展"><span class="nav-number">3.</span> <span class="nav-text">功能拓展</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#更改主题"><span class="nav-number">3.1.</span> <span class="nav-text">更改主题</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#启用本地搜索"><span class="nav-number">3.2.</span> <span class="nav-text">启用本地搜索</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#第三方评论"><span class="nav-number">3.3.</span> <span class="nav-text">第三方评论</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#网站统计"><span class="nav-number">3.4.</span> <span class="nav-text">网站统计</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#更改访问域名"><span class="nav-number">3.5.</span> <span class="nav-text">更改访问域名</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#博文撰写"><span class="nav-number">4.</span> <span class="nav-text">博文撰写</span></a></li></ol></div>
             
 
           </div>
