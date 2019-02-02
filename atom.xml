@@ -1,0 +1,142 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+  <title>Yohua Zhous&#39;</title>
+  
+  
+  <link href="/atom.xml" rel="self"/>
+  
+  <link href="https://yohua.ml/"/>
+  <updated>2019-02-02T10:03:28.846Z</updated>
+  <id>https://yohua.ml/</id>
+  
+  <author>
+    <name>Yohua</name>
+    
+  </author>
+  
+  <generator uri="http://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>魅蓝S6 获取完整root</title>
+    <link href="https://yohua.ml/2019/02/01/mblu-S6-%E8%8E%B7%E5%8F%96%E5%AE%8C%E6%95%B4root/"/>
+    <id>https://yohua.ml/2019/02/01/mblu-S6-获取完整root/</id>
+    <published>2019-01-31T16:24:02.000Z</published>
+    <updated>2019-02-02T10:03:28.846Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        
+        
+          &lt;p&gt;参考链接：&lt;a href=&quot;https://romprovider.com/2018/07/meizu-s6-root-twrp/amp/&quot; target=&quot;_blank&quot;
+        
+      
+    
+    </summary>
+    
+    
+      <category term="教程" scheme="https://yohua.ml/tags/%E6%95%99%E7%A8%8B/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>《自题金山画像》小记</title>
+    <link href="https://yohua.ml/2018/11/08/%E8%87%AA%E9%A2%98%E9%87%91%E5%B1%B1%E7%94%BB%E5%83%8F/"/>
+    <id>https://yohua.ml/2018/11/08/自题金山画像/</id>
+    <published>2018-11-07T16:19:32.000Z</published>
+    <updated>2018-11-13T16:24:42.016Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        
+        
+          &lt;p&gt;&lt;center&gt;自题金山画像&lt;br&gt;     
+        
+      
+    
+    </summary>
+    
+    
+      <category term="人文" scheme="https://yohua.ml/tags/%E4%BA%BA%E6%96%87/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>浅谈利用hexo框架和GitHub实现个人博客搭建</title>
+    <link href="https://yohua.ml/2018/10/31/%E5%88%A9%E7%94%A8hexo%E5%8D%9A%E5%AE%A2%E6%A1%86%E6%9E%B6%E5%92%8CGitHub%E5%AE%9E%E7%8E%B0%E5%BB%BA%E7%AB%99%E7%9A%84%E7%AE%80%E6%98%93%E6%95%99%E7%A8%8B/"/>
+    <id>https://yohua.ml/2018/10/31/利用hexo博客框架和GitHub实现建站的简易教程/</id>
+    <published>2018-10-31T06:24:16.000Z</published>
+    <updated>2018-11-12T16:46:31.164Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        
+        
+          &lt;p&gt;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;Hexo
+        
+      
+    
+    </summary>
+    
+    
+      <category term="教程" scheme="https://yohua.ml/tags/%E6%95%99%E7%A8%8B/"/>
+    
+      <category term="技术" scheme="https://yohua.ml/tags/%E6%8A%80%E6%9C%AF/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>《魔道祖师》——每个人都是一个江湖</title>
+    <link href="https://yohua.ml/2018/10/28/%E9%AD%94%E9%81%93%E7%A5%96%E5%B8%88%E6%AF%8F%E4%B8%AA%E4%BA%BA%E9%83%BD%E6%98%AF%E4%B8%80%E4%B8%AA%E6%B1%9F%E6%B9%96/"/>
+    <id>https://yohua.ml/2018/10/28/魔道祖师每个人都是一个江湖/</id>
+    <published>2018-10-27T16:24:02.000Z</published>
+    <updated>2018-11-15T05:40:32.996Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        
+        
+          &lt;p&gt;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;前段时间，不经意间看到了《魔道祖师》的动画，感觉很棒。无论是动画形象，题材。比那些大IP好很多，为了补贴经费啥都干，吃相太难看。苍山乱烟外，玉树微雨里。举目人不见，凄凄风又起。（来源网络）&lt;/p&gt;
+&lt;h2
+        
+      
+    
+    </summary>
+    
+    
+      <category term="人文" scheme="https://yohua.ml/tags/%E4%BA%BA%E6%96%87/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>欢迎访问我的博客</title>
+    <link href="https://yohua.ml/2018/10/27/it-s-yohuas-blog/"/>
+    <id>https://yohua.ml/2018/10/27/it-s-yohuas-blog/</id>
+    <published>2018-10-27T08:58:40.000Z</published>
+    <updated>2018-11-15T05:40:56.801Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        
+        
+          &lt;h2 id=&quot;这是我的第一次编辑&quot;&gt;&lt;a href=&quot;#这是我的第一次编辑&quot; class=&quot;headerlink&quot;
+        
+      
+    
+    </summary>
+    
+    
+      <category term="其他" scheme="https://yohua.ml/tags/%E5%85%B6%E4%BB%96/"/>
+    
+  </entry>
+  
+</feed>
