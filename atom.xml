@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="https://yohua.ml/"/>
-  <updated>2019-02-24T15:46:35.679Z</updated>
+  <updated>2019-02-27T05:47:08.683Z</updated>
   <id>https://yohua.ml/</id>
   
   <author>
@@ -15,6 +15,30 @@
   </author>
   
   <generator uri="http://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>并行概念</title>
+    <link href="https://yohua.ml/2019/02/26/%E5%B9%B6%E8%A1%8C%E6%A6%82%E5%BF%B5/"/>
+    <id>https://yohua.ml/2019/02/26/并行概念/</id>
+    <published>2019-02-26T06:24:16.000Z</published>
+    <updated>2019-02-27T05:47:08.683Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        
+        
+          &lt;h1 id=&quot;基本概念&quot;&gt;&lt;a href=&quot;#基本概念&quot; class=&quot;headerlink&quot; title=&quot;基本概念&quot;&gt;&lt;/a&gt;基本概念&lt;/h1&gt;&lt;p&gt;指计算机系统在同一时刻或者同一时间间隔内进行多种运算或者操作。在时间上相互重叠。包括同时性与并发性两种含义。&lt;br&gt;   
+        
+      
+    
+    </summary>
+    
+    
+      <category term="知识" scheme="https://yohua.ml/tags/%E7%9F%A5%E8%AF%86/"/>
+    
+  </entry>
   
   <entry>
     <title>纪录片《大明宫》</title>
