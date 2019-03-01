@@ -476,7 +476,7 @@
 <h3 id="在GitHub上创建存储库"><a href="#在GitHub上创建存储库" class="headerlink" title="在GitHub上创建存储库"></a>在GitHub上创建存储库</h3><p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;命名方式为：用户名.github.io。</p>
 <h3 id="修改-站点配置-文件-config-yml"><a href="#修改-站点配置-文件-config-yml" class="headerlink" title="修改 站点配置 文件_config.yml"></a>修改 站点配置 文件_config.yml</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">deploy:</span><br><span class="line">  <span class="built_in">type</span>: git</span><br><span class="line">  repo: https://github.com/用户名/用户名.github.io</span><br><span class="line">  branch: master</span><br></pre></td></tr></table></figure>
 <h3 id="部署到GitHub"><a href="#部署到GitHub" class="headerlink" title="部署到GitHub"></a>部署到GitHub</h3><p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;第一次可能需要登录GitHub账户。<br><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$  hexo deploy;//部署</span><br></pre></td></tr></table></figure></p>
-<h3 id="访问"><a href="#访问" class="headerlink" title="访问"></a>访问</h3><p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;通过 https://用户名.github.io 访问。</p>
+<h3 id="访问"><a href="#访问" class="headerlink" title="访问"></a>访问</h3><p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;通过 <a href="https://用户名.github.io" target="_blank" rel="noopener">https://用户名.github.io</a> 访问。</p>
 <h2 id="功能拓展"><a href="#功能拓展" class="headerlink" title="功能拓展"></a>功能拓展</h2><h3 id="更改主题"><a href="#更改主题" class="headerlink" title="更改主题"></a>更改主题</h3><p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;可以再hexo官网查找主题，本站使用了<a href="https://github.com/theme-next/hexo-theme-next" target="_blank" rel="noopener">next</a> 主题。</p>
 <h3 id="启用本地搜索"><a href="#启用本地搜索" class="headerlink" title="启用本地搜索"></a>启用本地搜索</h3><p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;安装<br><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$  npm install hexo-generator-searchdb --save</span><br></pre></td></tr></table></figure></p>
 <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;修改 站点配置 文件_config.yml<br><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">search:</span><br><span class="line">  path: search.xml</span><br><span class="line">  field: post</span><br><span class="line">  format: html</span><br><span class="line">  <span class="built_in">limit</span>: 10000</span><br></pre></td></tr></table></figure></p>
@@ -1385,6 +1385,13 @@
   
 
   
+  
+
+  
+  
+
+  
+
 
   
   
