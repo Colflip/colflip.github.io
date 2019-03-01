@@ -29,7 +29,7 @@
   <entry>
     <title><![CDATA[markdown常用数学公式及符号]]></title>
     <url>%2F2019%2F02%2F23%2FMarkdown%E5%B8%B8%E7%94%A8%E6%95%B0%E5%AD%A6%E5%85%AC%E5%BC%8F%E5%8F%8A%E7%AC%A6%E5%8F%B7%2F</url>
-    <content type="text"><![CDATA[上下标a_下标，b^上标：a_b, a^c 求和符号及其上下限位置a）默认公式$\sum_{k=1}^n{x_k}$的上下限标注在右侧： \sum_{k=1}^n{x_k}b）默认公式\sum\limits_{k=1}^n{x_k}上下限标注在上下： \sum\limits_{k=1}^n{x_k}分数$ \frac {分子} {分母} $ 参考链接：https://blog.csdn.net/xingxinmanong/article/details/78528791https://www.cnblogs.com/q735613050/p/7253073.htmlhttps://blog.csdn.net/thither_shore/article/details/52260742]]></content>
+    <content type="text"><![CDATA[上下标a_下标，b^上标：a_b, a^c 分数 \frac {分子} {分母} ：\frac {分子} {分母} 求和符号及其上下限位置默认情况下：a）默认行内公式\sum{k=1}^n{x_k}的上下限标注在右侧：$\sum{k=1}^n{xk}$b）默认行间公式\sum{k=1}^n{x_k}上下限标注在上下： \sum_{k=1}^n{x_k}可强制修改：a）强制行内公式\sum\limits{k=1}^n{x_k}的上下限标注在上下：$\sum\limits{k=1}^n{xk}$b）强制行间公式\sum\nolimits{k=1}^n{x_k}上下限标注在右侧： \sum\nolimits_{k=1}^n{x_k}参考链接：https://blog.csdn.net/xingxinmanong/article/details/78528791https://www.cnblogs.com/q735613050/p/7253073.htmlhttps://blog.csdn.net/thither_shore/article/details/52260742]]></content>
       <tags>
         <tag>知识</tag>
       </tags>
