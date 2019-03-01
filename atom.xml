@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="https://yohua.ml/"/>
-  <updated>2019-03-01T09:33:51.902Z</updated>
+  <updated>2019-03-01T09:36:45.183Z</updated>
   <id>https://yohua.ml/</id>
   
   <author>
@@ -21,7 +21,7 @@
     <link href="https://yohua.ml/2019/02/26/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%B3%BB%E7%BB%9F%E8%AE%BE%E8%AE%A1%E7%9A%84%E5%AE%9A%E9%87%8F%E5%8E%9F%E7%90%86/"/>
     <id>https://yohua.ml/2019/02/26/计算机系统设计的定量原理/</id>
     <published>2019-02-26T10:22:11.000Z</published>
-    <updated>2019-03-01T09:33:51.902Z</updated>
+    <updated>2019-03-01T09:36:45.183Z</updated>
     
     <summary type="html">
     
@@ -93,11 +93,11 @@
   </entry>
   
   <entry>
-    <title>markdown常用数学公式符号</title>
-    <link href="https://yohua.ml/2019/02/23/Markdown%E5%B8%B8%E7%94%A8%E6%95%B0%E5%AD%A6%E5%85%AC%E5%BC%8F%E7%AC%A6%E5%8F%B7/"/>
-    <id>https://yohua.ml/2019/02/23/Markdown常用数学公式符号/</id>
+    <title>markdown常用数学公式及符号</title>
+    <link href="https://yohua.ml/2019/02/23/Markdown%E5%B8%B8%E7%94%A8%E6%95%B0%E5%AD%A6%E5%85%AC%E5%BC%8F%E5%8F%8A%E7%AC%A6%E5%8F%B7/"/>
+    <id>https://yohua.ml/2019/02/23/Markdown常用数学公式及符号/</id>
     <published>2019-02-23T03:42:31.000Z</published>
-    <updated>2019-03-01T05:55:38.272Z</updated>
+    <updated>2019-03-01T09:45:15.438Z</updated>
     
     <summary type="html">
     
@@ -105,7 +105,7 @@
       
         
         
-          &lt;h1 id=&quot;求和符号及其上下限位置&quot;&gt;&lt;a href=&quot;#求和符号及其上下限位置&quot; class=&quot;headerlink&quot;
+          &lt;h1 id=&quot;上下标&quot;&gt;&lt;a href=&quot;#上下标&quot; class=&quot;headerlink&quot; title=&quot;上下标&quot;&gt;&lt;/a&gt;上下标&lt;/h1&gt;&lt;p&gt;a_下标，b^上标：&lt;script type=&quot;math/tex&quot;&gt;a_b&lt;/script&gt;, &lt;script
         
       
     
