@@ -97,7 +97,7 @@
     <link href="https://yohua.ml/2019/02/23/Markdown%E5%B8%B8%E7%94%A8%E6%95%B0%E5%AD%A6%E5%85%AC%E5%BC%8F%E5%8F%8A%E7%AC%A6%E5%8F%B7/"/>
     <id>https://yohua.ml/2019/02/23/Markdown常用数学公式及符号/</id>
     <published>2019-02-23T03:42:31.000Z</published>
-    <updated>2019-03-01T09:54:10.308Z</updated>
+    <updated>2019-03-01T09:58:04.944Z</updated>
     
     <summary type="html">
     
@@ -105,7 +105,8 @@
       
         
         
-          &lt;h1 id=&quot;上下标&quot;&gt;&lt;a href=&quot;#上下标&quot; class=&quot;headerlink&quot; title=&quot;上下标&quot;&gt;&lt;/a&gt;上下标&lt;/h1&gt;&lt;p&gt;a_下标，b^上标：&lt;script type=&quot;math/tex&quot;&gt;a_b&lt;/script&gt;, &lt;script
+          &lt;h1 id=&quot;括号&quot;&gt;&lt;a href=&quot;#括号&quot; class=&quot;headerlink&quot; title=&quot;括号&quot;&gt;&lt;/a&gt;括号&lt;/h1&gt;&lt;p&gt;() [] 直接写就行，而 {} 则需要转义“{ ” “}”&lt;/p&gt;
+&lt;h1 id=&quot;上下标&quot;&gt;&lt;a href=&quot;#上下标&quot;
         
       
     
