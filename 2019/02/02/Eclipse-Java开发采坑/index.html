@@ -119,16 +119,18 @@
 
 
 
-  <meta name="description" content="顺境多做事，逆境多读书。">
-<meta property="og:type" content="website">
-<meta property="og:title" content="Yohua&#39; Blog">
-<meta property="og:url" content="https://yohua.ml/archives/2019/03/index.html">
+  <meta name="description" content="eclipse无法解析导入 javax.servlet 的解决方法出现上述问题的原因是你的Eclipse项目没有导入JSP运行所需要的Tomcat类库，主要是servlet-api.jar文件(或者servlet.jar），tomcat容器里面有这文件，在以下位置：%Tomcat_Home%/common/lib/servlet-aip.jar,要将其导入到项目的构建路径中(如果你用的是Eclip">
+<meta name="keywords" content="知识">
+<meta property="og:type" content="article">
+<meta property="og:title" content="Eclipse Java开发采坑">
+<meta property="og:url" content="https://yohua.ml/2019/02/02/Eclipse-Java开发采坑/index.html">
 <meta property="og:site_name" content="Yohua&#39; Blog">
-<meta property="og:description" content="顺境多做事，逆境多读书。">
+<meta property="og:description" content="eclipse无法解析导入 javax.servlet 的解决方法出现上述问题的原因是你的Eclipse项目没有导入JSP运行所需要的Tomcat类库，主要是servlet-api.jar文件(或者servlet.jar），tomcat容器里面有这文件，在以下位置：%Tomcat_Home%/common/lib/servlet-aip.jar,要将其导入到项目的构建路径中(如果你用的是Eclip">
 <meta property="og:locale" content="zh-CN">
+<meta property="og:updated_time" content="2019-03-02T03:56:52.070Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="Yohua&#39; Blog">
-<meta name="twitter:description" content="顺境多做事，逆境多读书。">
+<meta name="twitter:title" content="Eclipse Java开发采坑">
+<meta name="twitter:description" content="eclipse无法解析导入 javax.servlet 的解决方法出现上述问题的原因是你的Eclipse项目没有导入JSP运行所需要的Tomcat类库，主要是servlet-api.jar文件(或者servlet.jar），tomcat容器里面有这文件，在以下位置：%Tomcat_Home%/common/lib/servlet-aip.jar,要将其导入到项目的构建路径中(如果你用的是Eclip">
 
 
 
@@ -137,7 +139,7 @@
 
 
 
-  <link rel="canonical" href="https://yohua.ml/archives/2019/03/">
+  <link rel="canonical" href="https://yohua.ml/2019/02/02/Eclipse-Java开发采坑/">
 
 
 
@@ -147,7 +149,7 @@
   };
 </script>
 
-  <title>归档 | Yohua' Blog</title>
+  <title>Eclipse Java开发采坑 | Yohua' Blog</title>
   
 
 
@@ -206,7 +208,7 @@
     
   
 
-  <div class="container sidebar-position-left page-archive">
+  <div class="container sidebar-position-left page-post-detail">
     <div class="headband"></div>
 
     <header id="header" class="header" itemscope="" itemtype="http://schema.org/WPHeader">
@@ -251,7 +253,7 @@
         
         
           
-          <li class="menu-item menu-item-archives menu-item-active">
+          <li class="menu-item menu-item-archives">
     <a href="/archives/" rel="section">
       <i class="menu-item-icon fa fa-fw fa-archive"></i> <br>归档<span class="badge">9</span></a>
   </li>
@@ -329,101 +331,231 @@
           
             
 
-    
-    
-      
-      
-    
-      
-      
-    
-      
-      
-    
-      
-      
-    
-    
-
-  
-
-
           
           <div id="content" class="content">
             
 
+  <div id="posts" class="posts-expand">
+    
+
+  
+
   
   
   
-  <div class="post-block archive">
-    <div id="posts" class="posts-collapse">
-      <span class="archive-move-on"></span>
 
-      
-      <span class="archive-page-counter">
-        
-        
-        
-          
-        
-        嗯..! 目前共计 9 篇日志。 继续努力。
-      </span>
-      
-
-      
-
-        
-        
-        
-
-        
-          
-          <div class="collection-title">
-            <h2 class="archive-year" id="archive-year-2019">2019</h2>
-          </div>
-        
-        
-
-        
+  
+    <div class="reading-progress-bar"></div>
+  
 
   <article class="post post-type-normal" itemscope="" itemtype="http://schema.org/Article">
-    <header class="post-header">
+  
+  
+  
+  <div class="post-block">
+    <link itemprop="mainEntityOfPage" href="https://yohua.ml/2019/02/02/Eclipse-Java开发采坑/">
 
-      <h3 class="post-title">
+    <span hidden itemprop="author" itemscope="" itemtype="http://schema.org/Person">
+      <meta itemprop="name" content="Yohua">
+      <meta itemprop="description" content="顺境多做事，逆境多读书。">
+      <meta itemprop="image" content="/images/avatar.png">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope="" itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="Yohua' Blog">
+    </span>
+
+    
+      <header class="post-header">
+
         
-            <a class="post-title-link" href="/2019/03/02/Eclipse-Java开发采坑/" itemprop="url">
-              
-                <span itemprop="name">Eclipse Java开发采坑</span>
-              
-            </a>
         
-      </h3>
+          <h2 class="post-title" itemprop="name headline">Eclipse Java开发采坑
+              
+            
+          </h2>
+        
 
-      <div class="post-meta">
-        <time class="post-time" itemprop="dateCreated" datetime="2019-03-02T10:54:13+08:00" content="2019-03-02">
-          03-02
-        </time>
-      </div>
+        <div class="post-meta">
+          <span class="post-time">
 
-    </header>
-  </article>
+            
+            
+            
 
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">发表于</span>
+              
 
+              
+                
+              
+
+              <time title="创建时间：2019-02-02 10:54:13" itemprop="dateCreated datePublished" datetime="2019-02-02T10:54:13+08:00">2019-02-02</time>
+            
+
+            
+              
+
+              
+                
+                <span class="post-meta-divider">|</span>
+                
+
+                <span class="post-meta-item-icon">
+                  <i class="fa fa-calendar-check-o"></i>
+                </span>
+                
+                  <span class="post-meta-item-text">更新于</span>
+                
+                <time title="修改时间：2019-03-02 11:56:52" itemprop="dateModified" datetime="2019-03-02T11:56:52+08:00">2019-03-02</time>
+              
+            
+          </span>
+
+          
+
+          
+            
+              <span class="post-comments-count">
+                <span class="post-meta-divider">|</span>
+                <span class="post-meta-item-icon">
+                  <i class="fa fa-comment-o"></i>
+                </span>
+                <a href="/2019/02/02/Eclipse-Java开发采坑/#comments" itemprop="discussionUrl">
+                  <span class="post-meta-item-text">评论数：</span> <span class="post-comments-count valine-comment-count" data-xid="/2019/02/02/Eclipse-Java开发采坑/" itemprop="commentCount"></span>
+                </a>
+              </span>
+            
+          
+
+          
+          
+             <span id="/2019/02/02/Eclipse-Java开发采坑/" class="leancloud_visitors" data-flag-title="Eclipse Java开发采坑">
+               <span class="post-meta-divider">|</span>
+               <span class="post-meta-item-icon">
+                 <i class="fa fa-eye"></i>
+               </span>
+               
+                 <span class="post-meta-item-text">阅读次数：</span>
+               
+                 <span class="leancloud-visitors-count"></span>
+             </span>
+          
+
+          
+
+          
+
+          
+
+        </div>
+      </header>
+    
+
+    
+    
+    
+    <div class="post-body han-init-context" itemprop="articleBody">
 
       
+      
 
+      
+        <h1 id="eclipse无法解析导入-javax-servlet-的解决方法"><a href="#eclipse无法解析导入-javax-servlet-的解决方法" class="headerlink" title="eclipse无法解析导入 javax.servlet 的解决方法"></a>eclipse无法解析导入 javax.servlet 的解决方法</h1><p>出现上述问题的原因是你的Eclipse项目没有导入JSP运行所需要的Tomcat类库，主要是servlet-api.jar文件(或者servlet.jar），tomcat容器里面有这文件，在以下位置：%Tomcat_Home%/common/lib/servlet-aip.jar,要将其导入到项目的构建路径中(如果你用的是Eclipse).</p>
+<p>导入方法：右击你的Eclipse项目，选择 “构建路径”—“配置构建路径”。点击“库”选项卡，单击右边的“添加库”按钮，在出现的“添加库”对话框中选中“服务器运行时”，单击“下一步”，在出现的对话框中选中你使用的Tomcat服务器,例如，我的是：Apache Tomcat v5.5,单击“完成”既可。这时你的Tomcat类库就添加到当前项目中了。<br>依次展开Java Resources: src-&gt;Libraries，就能看到Apache Tomcat v5.5[Apache Tomcat v5.5]类库已经添加到当前项目中了。</p>
+<h1 id="request中的setCharacterEncoding方法不识别"><a href="#request中的setCharacterEncoding方法不识别" class="headerlink" title="request中的setCharacterEncoding方法不识别"></a>request中的setCharacterEncoding方法不识别</h1><p>request中的setCharacterEncoding方法作用是用指定的编码集去覆盖request对象中的默认的”ISO-8859-1”编码集，这样request.getParameter(“”)方法就会用新的编码集去解码，<br>必须在第一次使用request时就要调用这个方法来设置编码集，否则该方法就会无效。<br>单独加载weblogic.jar，应为它会用到request<br>网上说servlet-api.jar版本必须在2.4之后<br>上面的方法都试过后，我的setCharacterEncoding（“utf-8”）方法依然不识别；简直气人啊；最后用 where java 命令查看安装的jdk发现jdk地址显示“c:\programData\Oracle\java\javapath……java.exe”和环境变量配置的地址不一样，果断删除，并将path环境变量里的jdk相关配置放到最前面</p>
+
+      
     </div>
+
+    
+
+    
+    
+    
+
+    
+
+    
+
+    
+      <div>
+        <ul class="post-copyright">
+  <li class="post-copyright-author">
+    <strong>本文作者： </strong>Yohua</li>
+  <li class="post-copyright-link">
+    <strong>本文链接：</strong>
+    <a href="https://yohua.ml/2019/02/02/Eclipse-Java开发采坑/" title="Eclipse Java开发采坑">https://yohua.ml/2019/02/02/Eclipse-Java开发采坑/</a>
+  </li>
+  <li class="post-copyright-license">
+    <strong>版权声明： </strong>本博客所有文章除特别声明外，均采用 <a href="https://creativecommons.org/licenses/by-nc-sa/4.0/" rel="external nofollow" target="_blank">CC BY-NC-SA 4.0</a> 许可协议。转载请注明出处！</li>
+</ul>
+
+      </div>
+    
+
+    <footer class="post-footer">
+      
+        <div class="post-tags">
+          
+            <a href="/tags/知识/" rel="tag"># 知识</a>
+          
+        </div>
+      
+
+      
+      
+      
+
+      
+        <div class="post-nav">
+          <div class="post-nav-next post-nav-item">
+            
+              <a href="/2019/02/01/魅蓝s6获取完整root/" rel="next" title="魅蓝s6获取完整root">
+                <i class="fa fa-chevron-left"></i> 魅蓝s6获取完整root
+              </a>
+            
+          </div>
+
+          <span class="post-nav-divider"></span>
+
+          <div class="post-nav-prev post-nav-item">
+            
+              <a href="/2019/02/23/Markdown常用数学公式及符号/" rel="prev" title="markdown常用数学公式及符号">
+                markdown常用数学公式及符号 <i class="fa fa-chevron-right"></i>
+              </a>
+            
+          </div>
+        </div>
+      
+
+      
+      
+    </footer>
   </div>
   
   
   
+  </article>
 
-  
 
+  </div>
 
 
           </div>
           
+
+  
+    <div class="comments" id="comments">
+    </div>
+  
+
+
 
         </div>
         
@@ -446,8 +578,17 @@
       
 
       
+        <ul class="sidebar-nav motion-element">
+          <li class="sidebar-nav-toc sidebar-nav-active" data-target="post-toc-wrap">
+            文章目录
+          </li>
+          <li class="sidebar-nav-overview" data-target="site-overview-wrap">
+            站点概览
+          </li>
+        </ul>
+      
 
-      <section class="site-overview-wrap sidebar-panel sidebar-panel-active">
+      <section class="site-overview-wrap sidebar-panel">
         <div class="site-overview">
           <div class="site-author motion-element" itemprop="author" itemscope="" itemtype="http://schema.org/Person">
             
@@ -566,6 +707,22 @@
         </div>
       </section>
 
+      
+      <!--noindex-->
+        <section class="post-toc-wrap motion-element sidebar-panel sidebar-panel-active">
+          <div class="post-toc">
+
+            
+              
+            
+
+            
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#eclipse无法解析导入-javax-servlet-的解决方法"><span class="nav-number">1.</span> <span class="nav-text">eclipse无法解析导入 javax.servlet 的解决方法</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#request中的setCharacterEncoding方法不识别"><span class="nav-number">2.</span> <span class="nav-text">request中的setCharacterEncoding方法不识别</span></a></li></ol></div>
+            
+
+          </div>
+        </section>
+      <!--/noindex-->
       
 
       
@@ -729,6 +886,10 @@
 
 
   
+  <script type="text/javascript" src="/js/src/scrollspy.js?v=6.4.2"></script>
+<script type="text/javascript" src="/js/src/post-details.js?v=6.4.2"></script>
+
+
 
   
 
@@ -1123,43 +1284,42 @@
   
   <script>
     
-    function showTime(Counter) {
-      var entries = [];
+    function addCount(Counter) {
       var $visitors = $(".leancloud_visitors");
+      var url = $visitors.attr('id').trim();
+      var title = $visitors.attr('data-flag-title').trim();
 
-      $visitors.each(function () {
-        entries.push( $(this).attr("id").trim() );
-      });
-
-      Counter('get', '/classes/Counter', { where: JSON.stringify({ url: { "$in": entries } }) })
+      Counter('get', '/classes/Counter', { where: JSON.stringify({ url }) })
         .done(function ({ results }) {
-          var COUNT_CONTAINER_REF = '.leancloud-visitors-count';
-
-          if (results.length === 0) {
-            $visitors.find(COUNT_CONTAINER_REF).text(0);
-            return;
-          }
-
-          for (var i = 0; i < results.length; i++) {
-            var item = results[i];
-            var url = item.url;
-            var time = item.time;
-            var element = document.getElementById(url);
-
-            $(element).find(COUNT_CONTAINER_REF).text(time);
-          }
-          for(var i = 0; i < entries.length; i++) {
-            var url = entries[i];
-            var element = document.getElementById(url);
-            var countSpan = $(element).find(COUNT_CONTAINER_REF);
-            if( countSpan.text() == '') {
-              countSpan.text(0);
-            }
+          if (results.length > 0) {
+            var counter = results[0];
+            
+            Counter('put', `/classes/Counter/${counter.objectId}`, JSON.stringify({ time: { "__op":"Increment", "amount":1 } }))
+            
+            .done(function () {
+                  var $element = $(document.getElementById(url));
+                  $element.find('.leancloud-visitors-count').text(counter.time + 1);
+            })
+            
+            .fail(function ({ responseJSON }) {
+                console.log('Failed to save Visitor num, with error message: ' + responseJSON.error);
+            })
+          } else {
+            
+              Counter('post', '/classes/Counter', JSON.stringify({ title: title, url: url, time: 1}))
+                .done(function () {
+                  var $element = $(document.getElementById(url));
+                  $element.find('.leancloud-visitors-count').text(1);
+                })
+                .fail(function () {
+                  console.log('Failed to create');
+                });
+            
           }
         })
-        .fail(function ({ responseJSON }) {
-          console.log("LeanCloud Counter Error: " + responseJSON.code + " " + responseJSON.error);
-        });
+      .fail(function ({ responseJSON }) {
+        console.log('LeanCloud Counter Error:' + responseJSON.code + " " + responseJSON.error);
+      });
     }
     
 
@@ -1179,9 +1339,7 @@
             });
           };
           
-          if ($('.post-title-link').length >= 1) {
-            showTime(Counter);
-          }
+          addCount(Counter);
           
         })
     });
