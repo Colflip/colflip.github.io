@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="https://yohua.ml/"/>
-  <updated>2019-03-06T13:47:39.713Z</updated>
+  <updated>2019-03-06T14:17:37.193Z</updated>
   <id>https://yohua.ml/</id>
   
   <author>
@@ -15,6 +15,32 @@
   </author>
   
   <generator uri="http://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>hexo next 网站个性化</title>
+    <link href="https://yohua.ml/2019/03/06/hexo-next-%E7%BD%91%E7%AB%99%E4%B8%AA%E6%80%A7%E5%8C%96/"/>
+    <id>https://yohua.ml/2019/03/06/hexo-next-网站个性化/</id>
+    <published>2019-03-06T14:14:49.000Z</published>
+    <updated>2019-03-06T14:17:37.193Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        
+        
+          &lt;h1 id=&quot;添加字数统计、阅读时长&quot;&gt;&lt;a href=&quot;#添加字数统计、阅读时长&quot; class=&quot;headerlink&quot; title=&quot;添加字数统计、阅读时长&quot;&gt;&lt;/a&gt;添加字数统计、阅读时长&lt;/h1&gt;&lt;p&gt;&amp;emsp;&amp;emsp;next 6
+        
+      
+    
+    </summary>
+    
+    
+      <category term="教程" scheme="https://yohua.ml/tags/%E6%95%99%E7%A8%8B/"/>
+    
+      <category term="技术" scheme="https://yohua.ml/tags/%E6%8A%80%E6%9C%AF/"/>
+    
+  </entry>
   
   <entry>
     <title>魅族手机剩余30%电量自动关机解决方法</title>
