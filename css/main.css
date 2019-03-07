@@ -1981,6 +1981,9 @@ pre .javascript .function {
   opacity: 1;
 }
 .site-author-image {
+  border-radius: 100%;
+}
+.site-author-image {
   -webkit-transition: -webkit-transform 1s ease-out;
   -moz-transition: -moz-transform 1s ease-out;
   -ms-transition: -ms-transform 1s ease-out;
@@ -2081,7 +2084,7 @@ pre .javascript .function {
   width: 4px;
   height: 4px;
   border-radius: 50%;
-  background: #ff6cff;
+  background: #ec7c0f;
 }
 .links-of-blogroll {
   font-size: 13px;
