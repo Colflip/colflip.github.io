@@ -2,6 +2,13 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
+    <loc>https://yohua.ml/about/index.html</loc>
+    
+    <lastmod>2019-03-07T17:22:33.866Z</lastmod>
+    
+  </url>
+  
+  <url>
     <loc>https://yohua.ml/2019/03/05/%E6%8C%87%E4%BB%A4%E7%BA%A7%E5%B9%B6%E8%A1%8C%E7%9A%84%E6%A6%82%E5%BF%B5/</loc>
     
     <lastmod>2019-03-07T16:18:52.071Z</lastmod>
@@ -40,13 +47,6 @@
     <loc>https://yohua.ml/2019/03/06/hexo-next-%E7%BD%91%E7%AB%99%E4%B8%AA%E6%80%A7%E5%8C%96/</loc>
     
     <lastmod>2019-03-07T13:49:43.740Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>https://yohua.ml/about/index.html</loc>
-    
-    <lastmod>2019-03-06T13:51:12.041Z</lastmod>
     
   </url>
   
