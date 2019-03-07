@@ -679,7 +679,8 @@
       
         
           
-            <h1 id="括号"><a href="#括号" class="headerlink" title="括号"></a>括号</h1><p>&emsp;&emsp;() [] 直接写就行，而 {} 则需要转义“{ ” “}”</p>
+            <a id="more"></a>
+<h1 id="括号"><a href="#括号" class="headerlink" title="括号"></a>括号</h1><p>&emsp;&emsp;() [] 直接写就行，而 {} 则需要转义“{ ” “}”</p>
 <h1 id="上下标"><a href="#上下标" class="headerlink" title="上下标"></a>上下标</h1><p>&emsp;&emsp;a_下标，b^上标：<script type="math/tex">a_b</script>， <script type="math/tex">a^c</script></p>
 <h1 id="分数"><a href="#分数" class="headerlink" title="分数"></a>分数</h1><p> &emsp;&emsp;\frac {分子} {分母} ：<script type="math/tex">\frac {分子} {分母}</script></p>
 <h1 id="求和符号及其上下限位置"><a href="#求和符号及其上下限位置" class="headerlink" title="求和符号及其上下限位置"></a>求和符号及其上下限位置</h1><h2 id="默认情况下："><a href="#默认情况下：" class="headerlink" title="默认情况下："></a>默认情况下：</h2><p>&emsp;&emsp;默认行间公式\sum_{k=1}^n{x_k}上下限标注在上下：</p>
@@ -836,7 +837,7 @@
                 
                   <span class="post-meta-item-text">本文字数：</span>
                 
-                <span title="本文字数">950</span>
+                <span title="本文字数">951</span>
               
 
               
@@ -872,7 +873,8 @@
       
         
           
-            <h1 id="eclipse无法解析导入-javax-servlet-的解决方法"><a href="#eclipse无法解析导入-javax-servlet-的解决方法" class="headerlink" title="eclipse无法解析导入 javax.servlet 的解决方法"></a>eclipse无法解析导入 javax.servlet 的解决方法</h1><p>&emsp;&emsp;出现上述问题的原因是你的Eclipse项目没有导入JSP运行所需要的Tomcat类库，主要是servlet-api.jar文件(或者servlet.jar），tomcat容器里面有这文件，在以下位置：%Tomcat_Home%/common/lib/servlet-aip.jar,要将其导入到项目的构建路径中(如果你用的是Eclipse).</p>
+            <a id="more"></a>
+<h1 id="eclipse无法解析导入-javax-servlet-的解决方法"><a href="#eclipse无法解析导入-javax-servlet-的解决方法" class="headerlink" title="eclipse无法解析导入 javax.servlet 的解决方法"></a>eclipse无法解析导入 javax.servlet 的解决方法</h1><p>&emsp;&emsp;出现上述问题的原因是你的Eclipse项目没有导入JSP运行所需要的Tomcat类库，主要是servlet-api.jar文件(或者servlet.jar），tomcat容器里面有这文件，在以下位置：%Tomcat_Home%/common/lib/servlet-aip.jar,要将其导入到项目的构建路径中(如果你用的是Eclipse).</p>
 <p>&emsp;&emsp;导入方法：右击你的Eclipse项目，选择 “构建路径”—“配置构建路径”。点击“库”选项卡，单击右边的“添加库”按钮，在出现的“添加库”对话框中选中“服务器运行时”，单击“下一步”，在出现的对话框中选中你使用的Tomcat服务器,例如，我的是：Apache Tomcat v5.5,单击“完成”既可。这时你的Tomcat类库就添加到当前项目中了。<br>&emsp;&emsp;依次展开Java Resources: src-&gt;Libraries，就能看到Apache Tomcat v5.5[Apache Tomcat v5.5]类库已经添加到当前项目中了。</p>
 <h1 id="request中的setCharacterEncoding方法不识别"><a href="#request中的setCharacterEncoding方法不识别" class="headerlink" title="request中的setCharacterEncoding方法不识别"></a>request中的setCharacterEncoding方法不识别</h1><p>&emsp;&emsp;request中的setCharacterEncoding方法作用是用指定的编码集去覆盖request对象中的默认的”ISO-8859-1”编码集，这样request.getParameter(“”)方法就会用新的编码集去解码，必须在第一次使用request时就要调用这个方法来设置编码集，否则该方法就会无效。<br>单独加载weblogic.jar，应为它会用到request上网上说servlet-api.jar版本必须在2.4之后面的方法都试过后，我的setCharacterEncoding（“utf-8”）方法依然不识别；简直气人啊；最后用 where java 命令查看安装的jdk发现jdk地址显示“c:\programData\Oracle\java\javapath……java.exe”和环境变量配置的地址不一样，果断删除，并将path环境变量里的jdk相关配置放到最前面。</p>
 
@@ -1412,7 +1414,8 @@
       
         
           
-            <p>&emsp;&emsp;Hexo 是一个简单地、轻量地、基于Node的一个静态博客框架，可以方便的生成静态网页托管在github和Heroku上。基本原理是用Git将hexo博客在本地编译后的文件，上传到GitHub，通过地址访问。通过此种方法看到的，严格上并不是一个网站系统，而只是托管在GitHub上的一堆静态网页。但我们可以在本地更新后，同步到GitHub来实现和网站系统一样的功能。</p>
+            <a id="more"></a>
+<p>&emsp;&emsp;Hexo 是一个简单地、轻量地、基于Node的一个静态博客框架，可以方便的生成静态网页托管在github和Heroku上。基本原理是用Git将hexo博客在本地编译后的文件，上传到GitHub，通过地址访问。通过此种方法看到的，严格上并不是一个网站系统，而只是托管在GitHub上的一堆静态网页。但我们可以在本地更新后，同步到GitHub来实现和网站系统一样的功能。</p>
 <h2 id="环境准备"><a href="#环境准备" class="headerlink" title="环境准备"></a>环境准备</h2><h3 id="本地环境准备"><a href="#本地环境准备" class="headerlink" title="本地环境准备"></a>本地环境准备</h3><p>&emsp;&emsp;下载并安装Git<br>&emsp;&emsp;下载并安装Node.js</p>
 <h3 id="账号注册"><a href="#账号注册" class="headerlink" title="账号注册"></a>账号注册</h3><p>&emsp;&emsp;注册GitHub账号</p>
 <h2 id="建站过程"><a href="#建站过程" class="headerlink" title="建站过程"></a>建站过程</h2><p>&emsp;&emsp;以下过程在Git中进行。</p>
