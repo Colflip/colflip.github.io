@@ -2155,7 +2155,7 @@ pre .javascript .function {
   width: 4px;
   height: 4px;
   border-radius: 50%;
-  background: #7e2908;
+  background: #ff8cff;
 }
 .links-of-blogroll {
   font-size: 13px;
@@ -2818,101 +2818,13 @@ ul.breadcrumb li+li:last-child {
   font-weight: bold;
 }
 .header {
-  position: relative;
-  margin: 0 auto;
-  width: calc(100% - 20px);
+  width: 90%;
 }
-@media (min-width: 1200px) {
-  .header {
-    width: 1160px;
-  }
-}
-@media (min-width: 1600px) {
-  .header {
-    width: 73%;
-  }
-}
-@media (min-width: 768px) and (max-width: 991px) {
-  .header {
-    width: auto;
-  }
-}
-@media (max-width: 767px) {
-  .header {
-    width: auto;
-  }
-}
-.header-inner {
-  position: absolute;
-  top: 0;
-  overflow: hidden;
-  padding: 0;
-  width: 240px;
-  background: #fff;
-  box-shadow: initial;
-  border-radius: initial;
-}
-@media (min-width: 1200px) {
-  .container .header-inner {
-    width: 240px;
-  }
-}
-@media (min-width: 768px) and (max-width: 991px) {
-  .header-inner {
-    position: relative;
-    width: auto;
-    border-radius: initial;
-  }
-}
-@media (max-width: 767px) {
-  .header-inner {
-    position: relative;
-    width: auto;
-    border-radius: initial;
-  }
-}
-.main:before,
-.main:after {
-  content: " ";
-  display: table;
-}
-.main:after {
-  clear: both;
-}
-@media (min-width: 768px) and (max-width: 991px) {
-  .container .main-inner {
-    width: auto;
-  }
-}
-@media (max-width: 767px) {
-  .container .main-inner {
-    width: auto;
-  }
+.container .main-inner {
+  width: 90%;
 }
 .content-wrap {
-  float: right;
-  box-sizing: border-box;
-  padding: 40px;
-  width: calc(100% - 252px);
-  background: #fff;
-  min-height: 700px;
-  box-shadow: initial;
-  border-radius: initial;
-}
-@media (min-width: 768px) and (max-width: 991px) {
-  .content-wrap {
-    width: 100%;
-    padding: 20px;
-    border-radius: initial;
-  }
-}
-@media (max-width: 767px) {
-  .content-wrap {
-    width: 100%;
-    padding: 10px;
-    min-height: auto;
-    border-radius: initial;
-  }
+  width: calc(100% - 260px);
 }
 .sidebar {
   position: static;
