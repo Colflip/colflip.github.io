@@ -110,20 +110,18 @@
 
 
 
-  <meta name="description" content="&amp;emsp;&amp;emsp;为了充分发挥流水线的效率，实现高性能计算，有的流水线处理设置了向量数据表示和相应的向量指令。这种向量处理机成为向量处理机。（此处的向量和数组类似）不具有向量表示和相应的向量指令的处理机，称为标量处理机。向量处理机有专用型，其高性能是局限于求解那些可以转化为向量运算的问题。 向量处理方式&amp;emsp;&amp;emsp;主要有三种方式：①横向处理方式；②纵向处理方式；③纵横处理方式。">
+  <meta name="description" content="顺境多做事，逆境多读书。">
 <meta name="keywords" content="知识,计算机系统结构">
 <meta property="og:type" content="article">
-<meta property="og:title" content="向量处理机">
-<meta property="og:url" content="https://yohua.ml/2019/03/02/向量处理机/index.html">
+<meta property="og:title" content="动态分支预测技术">
+<meta property="og:url" content="https://yohua.ml/2019/03/07/动态分支预测技术/index.html">
 <meta property="og:site_name" content="Yohua&#39; Blog">
-<meta property="og:description" content="&amp;emsp;&amp;emsp;为了充分发挥流水线的效率，实现高性能计算，有的流水线处理设置了向量数据表示和相应的向量指令。这种向量处理机成为向量处理机。（此处的向量和数组类似）不具有向量表示和相应的向量指令的处理机，称为标量处理机。向量处理机有专用型，其高性能是局限于求解那些可以转化为向量运算的问题。 向量处理方式&amp;emsp;&amp;emsp;主要有三种方式：①横向处理方式；②纵向处理方式；③纵横处理方式。">
+<meta property="og:description" content="顺境多做事，逆境多读书。">
 <meta property="og:locale" content="zh-CN">
-<meta property="og:image" content="https://yohua.ml/2019/03/02/向量处理机/0001.gif">
-<meta property="og:updated_time" content="2019-03-05T16:25:15.063Z">
+<meta property="og:updated_time" content="2019-03-08T17:05:59.603Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="向量处理机">
-<meta name="twitter:description" content="&amp;emsp;&amp;emsp;为了充分发挥流水线的效率，实现高性能计算，有的流水线处理设置了向量数据表示和相应的向量指令。这种向量处理机成为向量处理机。（此处的向量和数组类似）不具有向量表示和相应的向量指令的处理机，称为标量处理机。向量处理机有专用型，其高性能是局限于求解那些可以转化为向量运算的问题。 向量处理方式&amp;emsp;&amp;emsp;主要有三种方式：①横向处理方式；②纵向处理方式；③纵横处理方式。">
-<meta name="twitter:image" content="https://yohua.ml/2019/03/02/向量处理机/0001.gif">
+<meta name="twitter:title" content="动态分支预测技术">
+<meta name="twitter:description" content="顺境多做事，逆境多读书。">
 
 
 
@@ -140,7 +138,7 @@
   };
 </script>
 
-  <title>向量处理机 | Yohua' Blog</title>
+  <title>动态分支预测技术 | Yohua' Blog</title>
   
 
 
@@ -388,7 +386,7 @@
   
   
   <div class="post-block">
-    <link itemprop="mainEntityOfPage" href="https://yohua.ml/2019/03/02/向量处理机/">
+    <link itemprop="mainEntityOfPage" href="https://yohua.ml/2019/03/07/动态分支预测技术/">
 
     <span hidden itemprop="author" itemscope="" itemtype="http://schema.org/Person">
       <meta itemprop="name" content="Yohua">
@@ -405,7 +403,7 @@
 
         
         
-          <h2 class="post-title" itemprop="name headline">向量处理机
+          <h2 class="post-title" itemprop="name headline">动态分支预测技术
 
               
             
@@ -431,7 +429,7 @@
                 
               
 
-              <time title="创建时间：2019-03-02 02:14:10" itemprop="dateCreated datePublished" datetime="2019-03-02T02:14:10+08:00">2019-03-02</time>
+              <time title="创建时间：2019-03-07 01:05:46" itemprop="dateCreated datePublished" datetime="2019-03-07T01:05:46+08:00">2019-03-07</time>
             
 
             
@@ -446,7 +444,7 @@
 
           
           
-            <span id="/2019/03/02/向量处理机/" class="leancloud_visitors" data-flag-title="向量处理机">
+            <span id="/2019/03/07/动态分支预测技术/" class="leancloud_visitors" data-flag-title="动态分支预测技术">
               <span class="post-meta-divider">|</span>
               <span class="post-meta-item-icon">
                 <i class="fa fa-eye"></i>
@@ -471,7 +469,7 @@
                 
                   <span class="post-meta-item-text">本文字数：</span>
                 
-                <span title="本文字数">1.1k</span>
+                <span title="本文字数">0</span>
               
 
               
@@ -485,7 +483,7 @@
                 
                   <span class="post-meta-item-text">阅读时长 &asymp;</span>
                 
-                <span title="阅读时长">4 分钟</span>
+                <span title="阅读时长">1 分钟</span>
               
             </div>
           
@@ -505,19 +503,7 @@
       
 
       
-        <p>&emsp;&emsp;为了充分发挥流水线的效率，实现高性能计算，有的流水线处理设置了向量数据表示和相应的向量指令。这种向量处理机成为向量处理机。（此处的向量和数组类似）不具有向量表示和相应的向量指令的处理机，称为标量处理机。向量处理机有专用型，其高性能是局限于求解那些可以转化为向量运算的问题。</p>
-<h1 id="向量处理方式"><a href="#向量处理方式" class="headerlink" title="向量处理方式"></a>向量处理方式</h1><p>&emsp;&emsp;主要有三种方式：①横向处理方式；②纵向处理方式；③纵横处理方式。</p>
-<h1 id="向量处理机的结构"><a href="#向量处理机的结构" class="headerlink" title="向量处理机的结构"></a>向量处理机的结构</h1><p>&emsp;&emsp;以CRAY-1机为例，介绍寄存器-寄存器型向量处理机的结构和特点。</p>
-<p><center>
-<img src="/2019/03/02/向量处理机/0001.gif" width="75%" height="100%" alt="CRAY-1机结构简图">
-</center></p>
-<h2 id="功能部件"><a href="#功能部件" class="headerlink" title="功能部件"></a>功能部件</h2><p>&emsp;&emsp;共有12条可并行工作的单功能流水线，可分别流水地进行地址、向量、标量的各种运算。它为向量运算提供了6个单功能流水部件：整数加（3拍）、逻辑运算（2拍）、移位（4拍）、浮点加（6拍）、浮点乘（7拍）和浮点迭代求倒数（14拍）。每拍为一个时钟周期，12.5ns。</p>
-<h2 id="向量寄存器组V"><a href="#向量寄存器组V" class="headerlink" title="向量寄存器组V"></a>向量寄存器组V</h2><p>&emsp;&emsp;每个向量寄存器可以每拍向功能部件提供一个数据元素，或者每拍接受一个从功能部件来的结果元素。</p>
-<h2 id="标量寄存器S和快速暂存器T"><a href="#标量寄存器S和快速暂存器T" class="headerlink" title="标量寄存器S和快速暂存器T"></a>标量寄存器S和快速暂存器T</h2><h2 id="向量屏蔽寄存器VM"><a href="#向量屏蔽寄存器VM" class="headerlink" title="向量屏蔽寄存器VM"></a>向量屏蔽寄存器VM</h2><h1 id="提高向量寄存器性能的方法"><a href="#提高向量寄存器性能的方法" class="headerlink" title="提高向量寄存器性能的方法"></a>提高向量寄存器性能的方法</h1><p>&emsp;&emsp;一般有以下方法：①设置多个功能部件，使它们并行工作；②采用链接技术，加快一串向量指令的执行；③采取循环开采技术，加快循环的处理；④采用多处理器系统，进一步提高性能。</p>
-<h2 id="设置多个功能部件"><a href="#设置多个功能部件" class="headerlink" title="设置多个功能部件"></a>设置多个功能部件</h2><p>&emsp;&emsp;通过设置多个独立的功能部件，提高性能。这行部件能并行工作并各自按照流水方式工作，从而形成了多条并行工作的运算操作流水线。</p>
-<h2 id="链接技术"><a href="#链接技术" class="headerlink" title="链接技术"></a>链接技术</h2><p>&emsp;&emsp;链接技术是指，具有先写后读相关的两条指令，在不出现功能部件冲突和源向量冲突的情况下，可以把功能部件链接起来进行流水处理，以达到加快执行的目的。链接特性是CRAY-1向量处理的一个显著特点。<br>&emsp;&emsp;链接技术实际上可以看成流水线的定向技术在向量处理机中的应用。当前一个向量功能部件产生第一个结果并送到结果向量寄存器的入口时，将该结果立即送往下一个功能部件的入口，开始后续的向量处理操作。此后依次得到的中间结果都按此处理。这样，前面功能部件的结果元素一产生，就可以立即被后面功能部件所使用，而不用等结果向量全部产生后再来使用。</p>
-<h2 id="分段开采技术"><a href="#分段开采技术" class="headerlink" title="分段开采技术"></a>分段开采技术</h2><p>&emsp;&emsp;当向量的长度大于向量寄存器的长度时，必须把长向量分成长度固定的段，然后循环分段处理，每次循环只处理一个向量段。这种技术成为分段开采技术。将长向量分段成循环处理是由系统硬件和软件控制完成的，对程序员是透明的。</p>
-<h2 id="采用多处理机系统"><a href="#采用多处理机系统" class="headerlink" title="采用多处理机系统"></a>采用多处理机系统</h2>
+        
       
     </div>
 
@@ -580,7 +566,7 @@
   <li class="post-copyright-link">
     <strong>本文链接：</strong>
     
-    <a href="https://yohua.ml/2019/03/02/向量处理机/" title="向量处理机">https://yohua.ml/2019/03/02/向量处理机/</a>
+    <a href="https://yohua.ml/2019/03/07/动态分支预测技术/" title="动态分支预测技术">https://yohua.ml/2019/03/07/动态分支预测技术/</a>
   </li>
   <li class="post-copyright-license">
     <strong>版权声明： </strong>本博客所有文章除特别声明外，均采用 <span class="exturl" data-url="aHR0cHM6Ly9jcmVhdGl2ZWNvbW1vbnMub3JnL2xpY2Vuc2VzL2J5LW5jLXNhLzQuMC96aC1DTg=="><i class="fa fa-fw fa-creative-commons"></i>BY-NC-SA</span> 许可协议。转载请注明出处！</li>
@@ -608,8 +594,8 @@
         <div class="post-nav">
           <div class="post-nav-next post-nav-item">
             
-              <a href="/2019/02/28/计算机中的流水线及其性能指标/" rel="next" title="计算机中的流水线及其性能指标">
-                <i class="fa fa-chevron-left"></i> 计算机中的流水线及其性能指标
+              <a href="/2019/03/06/HEXO-NexT-网站个性化/" rel="next" title="HEXO NexT 网站个性化">
+                <i class="fa fa-chevron-left"></i> HEXO NexT 网站个性化
               </a>
             
           </div>
@@ -617,10 +603,6 @@
           <span class="post-nav-divider"></span>
 
           <div class="post-nav-prev post-nav-item">
-            
-              <a href="/2019/03/03/排序算法/" rel="prev" title="排序算法">
-                排序算法 <i class="fa fa-chevron-right"></i>
-              </a>
             
           </div>
         </div>
@@ -669,17 +651,8 @@
       
 
       
-        <ul class="sidebar-nav motion-element">
-          <li class="sidebar-nav-toc sidebar-nav-active" data-target="post-toc-wrap">
-            文章目录
-          </li>
-          <li class="sidebar-nav-overview" data-target="site-overview-wrap">
-            站点概览
-          </li>
-        </ul>
-      
 
-      <div class="site-overview-wrap sidebar-panel">
+      <div class="site-overview-wrap sidebar-panel sidebar-panel-active">
         <div class="site-overview">
           <div class="site-author motion-element" itemprop="author" itemscope="" itemtype="http://schema.org/Person">
             
@@ -833,23 +806,6 @@
         </div>
       </div>
 
-      
-      <!--noindex-->
-        <div class="post-toc-wrap motion-element sidebar-panel sidebar-panel-active">
-          <div class="post-toc">
-
-            
-            
-            
-            
-
-            
-              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#向量处理方式"><span class="nav-number">1.</span> <span class="nav-text">向量处理方式</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#向量处理机的结构"><span class="nav-number">2.</span> <span class="nav-text">向量处理机的结构</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#功能部件"><span class="nav-number">2.1.</span> <span class="nav-text">功能部件</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#向量寄存器组V"><span class="nav-number">2.2.</span> <span class="nav-text">向量寄存器组V</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#标量寄存器S和快速暂存器T"><span class="nav-number">2.3.</span> <span class="nav-text">标量寄存器S和快速暂存器T</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#向量屏蔽寄存器VM"><span class="nav-number">2.4.</span> <span class="nav-text">向量屏蔽寄存器VM</span></a></li></ol></li><li class="nav-item nav-level-1"><a class="nav-link" href="#提高向量寄存器性能的方法"><span class="nav-number">3.</span> <span class="nav-text">提高向量寄存器性能的方法</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#设置多个功能部件"><span class="nav-number">3.1.</span> <span class="nav-text">设置多个功能部件</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#链接技术"><span class="nav-number">3.2.</span> <span class="nav-text">链接技术</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#分段开采技术"><span class="nav-number">3.3.</span> <span class="nav-text">分段开采技术</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#采用多处理机系统"><span class="nav-number">3.4.</span> <span class="nav-text">采用多处理机系统</span></a></li></ol></li></ol></div>
-            
-
-          </div>
-        </div>
-      <!--/noindex-->
       
 
       
@@ -1047,7 +1003,7 @@
   
     <script>
   window.livereOptions = {
-    refer: '2019/03/02/向量处理机/'
+    refer: '2019/03/07/动态分支预测技术/'
   };
   (function(d, s) {
     var j, e = d.getElementsByTagName(s)[0];
@@ -1462,53 +1418,6 @@
   
   
 
-  
-    
-      <script type="text/x-mathjax-config">
-  
-
-  MathJax.Hub.Config({
-    tex2jax: {
-      inlineMath: [ ['$', '$'], ['\\(', '\\)'] ],
-      processEscapes: true,
-      skipTags: ['script', 'noscript', 'style', 'textarea', 'pre', 'code']
-    },
-    TeX: {
-      
-      equationNumbers: {
-        autoNumber: 'AMS'
-      }
-    }
-  });
-  MathJax.Hub.Register.StartupHook('TeX Jax Ready', function() {
-    MathJax.InputJax.TeX.prefilterHooks.Add(function(data) {
-      if (data.display) {
-        var next = data.script.nextSibling;
-        while (next && next.nodeName.toLowerCase() === '#text') { next = next.nextSibling }
-        if (next && next.nodeName.toLowerCase() === 'br') { next.parentNode.removeChild(next) }
-      }
-    });
-  });
-</script>
-
-<script type="text/x-mathjax-config">
-  MathJax.Hub.Queue(function() {
-    var all = MathJax.Hub.getAllJax(), i;
-      for (i = 0; i < all.length; i += 1) {
-        all[i].SourceElement().parentNode.className += ' has-jax';
-      }
-  });
-</script>
-<script src="//cdn.jsdelivr.net/npm/mathjax@2.7.1/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
-
-<style>
-.MathJax_Display {
-  overflow-x: scroll;
-  overflow-y: hidden;
-}
-</style>
-
-    
   
 
 
