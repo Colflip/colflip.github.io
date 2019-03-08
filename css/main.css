@@ -2081,7 +2081,7 @@ pre .javascript .function {
   width: 4px;
   height: 4px;
   border-radius: 50%;
-  background: #69c9ff;
+  background: #79f5d9;
 }
 .links-of-blogroll {
   font-size: 13px;
@@ -3238,4 +3238,12 @@ header.post-header {
   .post-body {
     text-align: justify;
   }
+}
+* 去掉图片边框 */,
+.posts-expand .post-body img {
+  border: none;
+  padding: 0px;
+}
+.post-gallery .post-gallery-img img {
+  padding: 3px;
 }
