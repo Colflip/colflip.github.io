@@ -2155,7 +2155,7 @@ pre .javascript .function {
   width: 4px;
   height: 4px;
   border-radius: 50%;
-  background: #ac9dff;
+  background: #c8a665;
 }
 .links-of-blogroll {
   font-size: 13px;
@@ -2824,7 +2824,7 @@ ul.breadcrumb li+li:last-child {
 }
 @media (min-width: 1200px) {
   .header {
-    width: 1160px;
+    width: $content-desktop-large-100px;
   }
 }
 @media (min-width: 1600px) {
@@ -2902,7 +2902,7 @@ ul.breadcrumb li+li:last-child {
 @media (min-width: 768px) and (max-width: 991px) {
   .content-wrap {
     width: 100%;
-    padding: 20px;
+    padding: 10px;
     border-radius: initial;
   }
 }
