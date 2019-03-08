@@ -1,12 +1,13 @@
 <?xml version="1.0" encoding="utf-8"?>
 <search>
   <entry>
-    <title><![CDATA[hexo next 网站个性化]]></title>
-    <url>%2F2019%2F03%2F06%2Fhexo-next-%E7%BD%91%E7%AB%99%E4%B8%AA%E6%80%A7%E5%8C%96%2F</url>
+    <title><![CDATA[HEXO NexT 网站个性化]]></title>
+    <url>%2F2019%2F03%2F06%2FHEXO-NexT-%E7%BD%91%E7%AB%99%E4%B8%AA%E6%80%A7%E5%8C%96%2F</url>
     <content type="text"><![CDATA[添加字数统计、阅读时长&emsp;&emsp;next 6 以后版本，分两步完成 安装 npm install hexo-symbols-count-time —save 主配置文件（根hexo目录） 添加12345symbols_count_time: symbols: true time: true total_symbols: true total_time: true]]></content>
       <tags>
         <tag>教程</tag>
         <tag>技术</tag>
+        <tag>hexo</tag>
       </tags>
   </entry>
   <entry>
@@ -98,7 +99,7 @@
       </tags>
   </entry>
   <entry>
-    <title><![CDATA[markdown常用数学公式及符号]]></title>
+    <title><![CDATA[Markdown常用数学公式及符号]]></title>
     <url>%2F2019%2F02%2F23%2FMarkdown%E5%B8%B8%E7%94%A8%E6%95%B0%E5%AD%A6%E5%85%AC%E5%BC%8F%E5%8F%8A%E7%AC%A6%E5%8F%B7%2F</url>
     <content type="text"><![CDATA[括号&emsp;&emsp;() [] 直接写就行，而 {} 则需要转义“{ ” “}” 上下标&emsp;&emsp;a_下标，b^上标：a_b， a^c 分数 &emsp;&emsp;\frac {分子} {分母} ：\frac {分子} {分母} 求和符号及其上下限位置默认情况下：&emsp;&emsp;默认行间公式\sum_{k=1}^n{x_k}上下限标注在上下： \sum_{k=1}^n{x_k}可强制修改：&emsp;&emsp;强制行间公式\sum\nolimits_{k=1}^n{x_k}上下限标注在右侧： \sum\nolimits_{k=1}^n{x_k}数学符号± ：\pm× ：\times÷：\div∣：\mid ⋅：\cdot∘：\circ∗: \ast⨀：\bigodot⨂：\bigotimes⨁：\bigoplus≤：\leq≥：\geq≠：\neq≈：\approx≡：\equiv∑：\sum∏：\prod∐：\coprod 集合运算符：∅：\emptyset∈：\in∉：\notin⊂：\subset⊃ ：\supset⊆ ：\subseteq⊇ ：\supseteq⋂ ：\bigcap⋃ ：\bigcup⋁ ：\bigvee⋀ ：\bigwedge⨄ ：\biguplus⨆：\bigsqcup 对数运算符：log ：\loglg ：\lgln ：\ln 三角运算符：⊥：\bot∠：\angle30∘：30^\circsin ：\sincos ：\costan ：\tancot ：\cotsec ：\seccsc ：\csc 微积分运算符：y′x：\prime∫：\int∬ ：\iint∭ ：\iiint∬∬：\iiiint∮ ：\ointlim ：\lim∞ ：\infty∇：\nabla 逻辑运算符：∵：\because∴ ：\therefore∀ ：\forall∃ ：\exists≠ ：\not=≯：\not&gt;⊄：\not\subset 戴帽符号：y^ ：\hat{y}\check{y} ：\check{y}y˘ ：\breve{y} 连线符号：a+b+c+d¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯：\overline{a+b+c+d}a+b+c+d−−−−−−−−−− ：\underline{a+b+c+d}a+b+c1.0+d2.0：\overbrace{a+\underbrace{b+c}_{1.0}+d}^{2.0} 箭头符号：↑：\uparrow↓：\downarrow⇑ ：\Uparrow⇓：\Downarrow→：\rightarrow← ：\leftarrow⇒ ：\Rightarrow⇐ ：\Leftarrow⟶ ：\longrightarrow⟵ ：\longleftarrow⟹：\Longrightarrow⟸ ：\Longleftarrow 参考链接：https://blog.csdn.net/xingxinmanong/article/details/78528791https://www.cnblogs.com/q735613050/p/7253073.htmlhttps://blog.csdn.net/thither_shore/article/details/52260742https://blog.csdn.net/qq_38228254/article/details/78515800]]></content>
       <tags>
@@ -136,6 +137,7 @@
       <tags>
         <tag>教程</tag>
         <tag>技术</tag>
+        <tag>hexo</tag>
       </tags>
   </entry>
   <entry>
