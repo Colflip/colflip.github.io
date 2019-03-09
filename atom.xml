@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="https://yohua.ml/"/>
-  <updated>2019-03-08T17:05:59.603Z</updated>
+  <updated>2019-03-09T09:50:11.369Z</updated>
   <id>https://yohua.ml/</id>
   
   <author>
@@ -21,9 +21,17 @@
     <link href="https://yohua.ml/2019/03/07/%E5%8A%A8%E6%80%81%E5%88%86%E6%94%AF%E9%A2%84%E6%B5%8B%E6%8A%80%E6%9C%AF/"/>
     <id>https://yohua.ml/2019/03/07/动态分支预测技术/</id>
     <published>2019-03-06T17:05:46.000Z</published>
-    <updated>2019-03-08T17:05:59.603Z</updated>
+    <updated>2019-03-09T09:50:11.369Z</updated>
     
     <summary type="html">
+    
+      
+      
+        
+        
+          &lt;p&gt;&amp;emsp;&amp;emsp;当要提高ILP（指令级并行）时，控制相关就是会成为主要限定因素之一。所开发的ILP越多，控制相关的制约性就越大，分支预测就要求有更高的准确度。对于每个时钟周期流出多条指令（若为n条，就称为n流出）的处理机来说是非常重要的。这是因为：①在n流出的处理机
+        
+      
     
     </summary>
     
@@ -192,32 +200,6 @@
   </entry>
   
   <entry>
-    <title>计算机中的流水线及其性能指标</title>
-    <link href="https://yohua.ml/2019/02/28/%E8%AE%A1%E7%AE%97%E6%9C%BA%E4%B8%AD%E7%9A%84%E6%B5%81%E6%B0%B4%E7%BA%BF%E5%8F%8A%E5%85%B6%E6%80%A7%E8%83%BD%E6%8C%87%E6%A0%87/"/>
-    <id>https://yohua.ml/2019/02/28/计算机中的流水线及其性能指标/</id>
-    <published>2019-02-28T03:55:34.000Z</published>
-    <updated>2019-03-03T09:19:15.829Z</updated>
-    
-    <summary type="html">
-    
-      
-      
-        
-        
-          &lt;h1 id=&quot;基本概念&quot;&gt;&lt;a href=&quot;#基本概念&quot; class=&quot;headerlink&quot;
-        
-      
-    
-    </summary>
-    
-    
-      <category term="知识" scheme="https://yohua.ml/tags/%E7%9F%A5%E8%AF%86/"/>
-    
-      <category term="计算机系统结构" scheme="https://yohua.ml/tags/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%B3%BB%E7%BB%9F%E7%BB%93%E6%9E%84/"/>
-    
-  </entry>
-  
-  <entry>
     <title>流水线的相关与冲突</title>
     <link href="https://yohua.ml/2019/02/28/%E6%B5%81%E6%B0%B4%E7%BA%BF%E7%9A%84%E7%9B%B8%E5%85%B3%E4%B8%8E%E5%86%B2%E7%AA%81/"/>
     <id>https://yohua.ml/2019/02/28/流水线的相关与冲突/</id>
@@ -231,6 +213,32 @@
         
         
           &lt;h1 id=&quot;一段经典的5段流水线&quot;&gt;&lt;a href=&quot;#一段经典的5段流水线&quot; class=&quot;headerlink&quot; title=&quot;一段经典的5段流水线&quot;&gt;&lt;/a&gt;一段经典的5段流水线&lt;/h1&gt;&lt;p&gt;&amp;emsp;&amp;emsp;以一个经典的5段RISC（Reduced
+        
+      
+    
+    </summary>
+    
+    
+      <category term="知识" scheme="https://yohua.ml/tags/%E7%9F%A5%E8%AF%86/"/>
+    
+      <category term="计算机系统结构" scheme="https://yohua.ml/tags/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%B3%BB%E7%BB%9F%E7%BB%93%E6%9E%84/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>计算机中的流水线及其性能指标</title>
+    <link href="https://yohua.ml/2019/02/28/%E8%AE%A1%E7%AE%97%E6%9C%BA%E4%B8%AD%E7%9A%84%E6%B5%81%E6%B0%B4%E7%BA%BF%E5%8F%8A%E5%85%B6%E6%80%A7%E8%83%BD%E6%8C%87%E6%A0%87/"/>
+    <id>https://yohua.ml/2019/02/28/计算机中的流水线及其性能指标/</id>
+    <published>2019-02-28T03:55:34.000Z</published>
+    <updated>2019-03-03T09:19:15.829Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        
+        
+          &lt;h1 id=&quot;基本概念&quot;&gt;&lt;a href=&quot;#基本概念&quot; class=&quot;headerlink&quot;
         
       
     
