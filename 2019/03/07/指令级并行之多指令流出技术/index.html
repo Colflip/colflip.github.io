@@ -110,18 +110,18 @@
 
 
 
-  <meta name="description" content="顺境多做事，逆境多读书。">
+  <meta name="description" content="&amp;emsp;&amp;emsp;虽然希望CPI越小越好，但如果是每次只流出一条指令，CPI就不可能小于1。如果想再进一步提高性能，使CPI小于1，就必须采取多柳树技术（multiple issure），在每个时钟周期流出多条指令。&amp;emsp;&amp;emsp;多流出处理机有两种基本风格：超标量（superscalar）和超长指令字VLIW（Very Long Instruction Word）。超标量在每个时钟">
 <meta name="keywords" content="知识,计算机系统结构">
 <meta property="og:type" content="article">
 <meta property="og:title" content="指令级并行之多指令流出技术">
 <meta property="og:url" content="https://yohua.ml/2019/03/07/指令级并行之多指令流出技术/index.html">
 <meta property="og:site_name" content="面对疾风吧，少年！">
-<meta property="og:description" content="顺境多做事，逆境多读书。">
+<meta property="og:description" content="&amp;emsp;&amp;emsp;虽然希望CPI越小越好，但如果是每次只流出一条指令，CPI就不可能小于1。如果想再进一步提高性能，使CPI小于1，就必须采取多柳树技术（multiple issure），在每个时钟周期流出多条指令。&amp;emsp;&amp;emsp;多流出处理机有两种基本风格：超标量（superscalar）和超长指令字VLIW（Very Long Instruction Word）。超标量在每个时钟">
 <meta property="og:locale" content="zh-CN">
-<meta property="og:updated_time" content="2019-03-09T10:47:08.046Z">
+<meta property="og:updated_time" content="2019-03-09T18:36:18.421Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="指令级并行之多指令流出技术">
-<meta name="twitter:description" content="顺境多做事，逆境多读书。">
+<meta name="twitter:description" content="&amp;emsp;&amp;emsp;虽然希望CPI越小越好，但如果是每次只流出一条指令，CPI就不可能小于1。如果想再进一步提高性能，使CPI小于1，就必须采取多柳树技术（multiple issure），在每个时钟周期流出多条指令。&amp;emsp;&amp;emsp;多流出处理机有两种基本风格：超标量（superscalar）和超长指令字VLIW（Very Long Instruction Word）。超标量在每个时钟">
 
 
 
@@ -265,7 +265,7 @@
       
     
 
-    <a href="/archives/" rel="section"><i class="menu-item-icon fa fa-fw fa-archive"></i> <br>归档<span class="badge">19</span></a>
+    <a href="/archives/" rel="section"><i class="menu-item-icon fa fa-fw fa-archive"></i> <br>归档<span class="badge">20</span></a>
 
   </li>
         
@@ -284,7 +284,7 @@
       
     
 
-    <a href="/tags/" rel="section"><i class="menu-item-icon fa fa-fw fa-tags"></i> <br>标签<span class="badge">7</span></a>
+    <a href="/tags/" rel="section"><i class="menu-item-icon fa fa-fw fa-tags"></i> <br>标签<span class="badge">8</span></a>
 
   </li>
         
@@ -469,7 +469,7 @@
                 
                   <span class="post-meta-item-text">本文字数：</span>
                 
-                <span title="本文字数">0</span>
+                <span title="本文字数">1k</span>
               
 
               
@@ -483,7 +483,7 @@
                 
                   <span class="post-meta-item-text">阅读时长 &asymp;</span>
                 
-                <span title="阅读时长">1 分钟</span>
+                <span title="阅读时长">4 分钟</span>
               
             </div>
           
@@ -503,7 +503,10 @@
       
 
       
-        
+        <p>&emsp;&emsp;虽然希望CPI越小越好，但如果是每次只流出一条指令，CPI就不可能小于1。如果想再进一步提高性能，使CPI小于1，就必须采取多柳树技术（multiple issure），在每个时钟周期流出多条指令。<br>&emsp;&emsp;多流出处理机有两种基本风格：超标量（superscalar）和超长指令字VLIW（Very Long Instruction Word）。超标量在每个时钟周期流出的指令条数不固定，依代码的具体情况而定，不过有个上限。设这个上限为n，就成该处理机为n流出。对于超标量处理机，既可以通过编译器进行静态调度，也可以基于Tomasulo算法进行动态调度。静态调度的超标量处理机易班采用按序执行，而动态调度的处理机一般采用乱序执行。<br>&emsp;&emsp;与超标量处理机不同，VLIW处理机在每个时钟周期流出的指令条数是固定的，这些指令构成一条长指令或者一个指令包，在这个指令包中，指令之间的并行性是通过指令显式地表示出来的。这种处理机的指令调度是由编译器静态完成的。<br>&emsp;&emsp;超标量处理机与VLIW处理机相比有两个优点：<br>&emsp;&emsp;（1）超标量结构对程序员是透明的，因为处理机能自己检测下一条指令能否流出，从而不需要重新排列指令来满足指令的流出。<br>&emsp;&emsp;（2）即使是没有经过编译器针对超标量结构进行调度优化的代码或是旧的编译器生成的代码也可以运行，当然运行的效果不会很好。要想达到很好的效果，方法之一就是使用动态超标量调度技术。</p>
+<h1 id="基于静态调度的多流出技术"><a href="#基于静态调度的多流出技术" class="headerlink" title="基于静态调度的多流出技术"></a>基于静态调度的多流出技术</h1><p>&emsp;&emsp;典型的超标量处理机每个时钟周期可流出1~8条指令。在静态调度的超标量处理机中，指令按序流出。所有的冲突检测都在流出时进行，由硬件检测当前流出的指令之间是否存在冲突以及当前流出的指令与正在执行的指令是否有冲突。如果当前流出的指令序列中，某条指令存在上述冲突，那么就只流出该指令之前的指令。</p>
+<h1 id="基于动态调度的多流出技术"><a href="#基于动态调度的多流出技术" class="headerlink" title="基于动态调度的多流出技术"></a>基于动态调度的多流出技术</h1><p>&emsp;&emsp;在多流出处理机中，动态调度技术是提高性能的一种方法。动态调度不仅在有数据冲突的时候也能提高性能，而且还有可能克服指令流出所受的限制。尽管从硬件角度看，在每个时钟周期最多只能启动一个整数和一个浮点操作的执行，但是动态调度可以使得在流出时不受这个限制，至少在保留站全部被占用之前是如此。</p>
+<h1 id="超长指令字技术"><a href="#超长指令字技术" class="headerlink" title="超长指令字技术"></a>超长指令字技术</h1><h1 id="多流出处理器受到的限制"><a href="#多流出处理器受到的限制" class="headerlink" title="多流出处理器受到的限制"></a>多流出处理器受到的限制</h1><h1 id="超流水线处理机"><a href="#超流水线处理机" class="headerlink" title="超流水线处理机"></a>超流水线处理机</h1>
       
     </div>
 
@@ -604,6 +607,10 @@
 
           <div class="post-nav-prev post-nav-item">
             
+              <a href="/2019/03/09/要看的纪录片/" rel="prev" title="要看的纪录片">
+                要看的纪录片 <i class="fa fa-chevron-right"></i>
+              </a>
+            
           </div>
         </div>
       
@@ -651,8 +658,17 @@
       
 
       
+        <ul class="sidebar-nav motion-element">
+          <li class="sidebar-nav-toc sidebar-nav-active" data-target="post-toc-wrap">
+            文章目录
+          </li>
+          <li class="sidebar-nav-overview" data-target="site-overview-wrap">
+            站点概览
+          </li>
+        </ul>
+      
 
-      <div class="site-overview-wrap sidebar-panel sidebar-panel-active">
+      <div class="site-overview-wrap sidebar-panel">
         <div class="site-overview">
           <div class="site-author motion-element" itemprop="author" itemscope="" itemtype="http://schema.org/Person">
             
@@ -669,7 +685,7 @@
                 
                   <a href="/archives/">
                 
-                    <span class="site-state-item-count">19</span>
+                    <span class="site-state-item-count">20</span>
                     <span class="site-state-item-name">日志</span>
                   </a>
                 </div>
@@ -698,7 +714,9 @@
                     
                       
                     
-                    <span class="site-state-item-count">7</span>
+                      
+                    
+                    <span class="site-state-item-count">8</span>
                     <span class="site-state-item-name">标签</span>
                   </a>
                 </div>
@@ -803,6 +821,23 @@
       </div>
 
       
+      <!--noindex-->
+        <div class="post-toc-wrap motion-element sidebar-panel sidebar-panel-active">
+          <div class="post-toc">
+
+            
+            
+            
+            
+
+            
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#基于静态调度的多流出技术"><span class="nav-number">1.</span> <span class="nav-text">基于静态调度的多流出技术</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#基于动态调度的多流出技术"><span class="nav-number">2.</span> <span class="nav-text">基于动态调度的多流出技术</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#超长指令字技术"><span class="nav-number">3.</span> <span class="nav-text">超长指令字技术</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#多流出处理器受到的限制"><span class="nav-number">4.</span> <span class="nav-text">多流出处理器受到的限制</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#超流水线处理机"><span class="nav-number">5.</span> <span class="nav-text">超流水线处理机</span></a></li></ol></div>
+            
+
+          </div>
+        </div>
+      <!--/noindex-->
+      
 
       
         <div class="back-to-top">
@@ -838,7 +873,7 @@
       <i class="fa fa-area-chart"></i>
     </span>
     
-    <span title="站点总字数">22k</span>
+    <span title="站点总字数">24k</span>
   
 
   
@@ -847,7 +882,7 @@
       <i class="fa fa-coffee"></i>
     </span>
     
-    <span title="站点阅读时长">1:27</span>
+    <span title="站点阅读时长">1:34</span>
   
 </div>
 
