@@ -122,7 +122,7 @@
 <meta property="og:image" content="https://yohua.ml/2019/03/07/指令级并行之动态分支预测技术/002.png">
 <meta property="og:image" content="https://yohua.ml/2019/03/07/指令级并行之动态分支预测技术/003.png">
 <meta property="og:image" content="https://yohua.ml/2019/03/07/指令级并行之动态分支预测技术/004.png">
-<meta property="og:updated_time" content="2019-03-09T10:37:22.068Z">
+<meta property="og:updated_time" content="2019-03-09T10:45:18.992Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="指令级并行之动态分支预测技术">
 <meta name="twitter:description" content="&amp;emsp;&amp;emsp;当要提高ILP（指令级并行）时，控制相关就是会成为主要限定因素之一。所开发的ILP越多，控制相关的制约性就越大，分支预测就要求有更高的准确度。对于每个时钟周期流出多条指令（若为n条，就称为n流出）的处理机来说是非常重要的。这是因为：①在n流出的处理机中，遇到分支指令的可能性增加了n倍。要给处理机连续提供指令，就需要预测分支的结果；②Amdahl定律告诉我们，机器的CPI越小">
@@ -512,7 +512,7 @@
 <p><center>
 <img src="/2019/03/07/指令级并行之动态分支预测技术/001.png" width="75%" height="100%" alt=" ">
 </center></p>
-<h2 id="采用分支历史表"><a href="#采用分支历史表" class="headerlink" title="采用分支历史表"></a>采用分支历史表</h2><p>&emsp;&emsp;分支历史表（Branch History Table，BHT）有时也称为分支预测缓冲器（Branch Prediciton Buffer）。这种方法是最简单的动态分支预测法。它用BHT来记录分支指令最近一次或几次的执行情况（成功或不成功），并据此进行预测。如果只执行分支指令最近一次的历史，BHT中只需要1位二进制位，是最简单的了。为了提高预测的准确度，常采取两位二进制位来记录历史。有研究结果表明，两位分支预测的性能与n位（n&gt;2）分支预测的性能差不多。因而大多数处理机是采用分支预测。下面介绍这种方法。<br>&emsp;&emsp;两位分支预测的状态转换如下图。其中，在00和01状态下，预测分支不成功；在10和11状态下，预测分支成功。连线边上注明了分支指令的实际执行情况。只有连续两次预测错误，才会改变对分支去向的预测。在11状态下连续两次错误预测错误，状态将变为00（预测分支不成功）。</p>
+<h1 id="采用分支历史表"><a href="#采用分支历史表" class="headerlink" title="采用分支历史表"></a>采用分支历史表</h1><p>&emsp;&emsp;分支历史表（Branch History Table，BHT）有时也称为分支预测缓冲器（Branch Prediciton Buffer）。这种方法是最简单的动态分支预测法。它用BHT来记录分支指令最近一次或几次的执行情况（成功或不成功），并据此进行预测。如果只执行分支指令最近一次的历史，BHT中只需要1位二进制位，是最简单的了。为了提高预测的准确度，常采取两位二进制位来记录历史。有研究结果表明，两位分支预测的性能与n位（n&gt;2）分支预测的性能差不多。因而大多数处理机是采用分支预测。下面介绍这种方法。<br>&emsp;&emsp;两位分支预测的状态转换如下图。其中，在00和01状态下，预测分支不成功；在10和11状态下，预测分支成功。连线边上注明了分支指令的实际执行情况。只有连续两次预测错误，才会改变对分支去向的预测。在11状态下连续两次错误预测错误，状态将变为00（预测分支不成功）。</p>
 <p><center>
 <img src="/2019/03/07/指令级并行之动态分支预测技术/002.png" width="75%" height="100%" alt=" ">
 </center><br>&emsp;&emsp;两位分支预测的操作有两个步骤：①分支预测；②状态修改。当分支指令到达译码段（ID）时，根据从BHT读出的信息进行分支预测，如果是“预测成功”，那么就从分支目标地址取后续的指令。等分支指令的实际执行结果出来后，如果发现预测正确，就继续处理后续的指令，流水线没有断流。否则，就要作废已经预取和分析的指令，恢复现场，并从另一条分支路径中重新取指令。不管是哪种情况，都要按照上图状态进行修改。<br>&emsp;&emsp;在BHT方法中，只对分支是否成功进行预测，对分支目标地址没有提供支持。所以它只有在以下情况中有用：判定分支是否成功所需的时间大于确定分支目标地址所需的时间。在前述5段经典流水线中，由于判定分支是否成功和计算分支目标地址都是在ID段完成，所以BHT方法不会给该流水线带来好处。<br>&emsp;&emsp;一般来说，采用4K的BHT就可以了，如果要进一步提高预测准确率，需要采用更复杂的预测方法。<br>&emsp;&emsp;BHT可以跟分支指令一起存放在指令Cache中，也可以用一个专门的硬件来实现。如果是前者，在取指阶段，就把历史位一起读出来。如果是后者，就在取指令的同时，用指令地址的低位（例如低12位）去访问BHT，读出历史位。</p>
@@ -624,8 +624,8 @@
 
           <div class="post-nav-prev post-nav-item">
             
-              <a href="/2019/03/07/指令级并行之多指令流出技术/" rel="prev" title="指令级并行之动态分支预测技术">
-                指令级并行之动态分支预测技术 <i class="fa fa-chevron-right"></i>
+              <a href="/2019/03/07/指令级并行之多指令流出技术/" rel="prev" title="指令级并行之多指令流出技术">
+                指令级并行之多指令流出技术 <i class="fa fa-chevron-right"></i>
               </a>
             
           </div>
@@ -820,11 +820,71 @@
               <ul class="links-of-blogroll-list">
                 
                   <li class="links-of-blogroll-item">
-                    <a href="https://yohua.ml/" title="https://yohua.ml/">友链请联系我</a>
+                    <a href="/h" title="h">0</a>
                   </li>
                 
                   <li class="links-of-blogroll-item">
-                    <span class="exturl" data-url="aHR0cDovL25vdGVzLmlpc3NuYW4uY29tLw==" title="http://notes.iissnan.com/">iissnan</span>
+                    <a href="/t" title="t">1</a>
+                  </li>
+                
+                  <li class="links-of-blogroll-item">
+                    <a href="/t" title="t">2</a>
+                  </li>
+                
+                  <li class="links-of-blogroll-item">
+                    <a href="/p" title="p">3</a>
+                  </li>
+                
+                  <li class="links-of-blogroll-item">
+                    <a href="/s" title="s">4</a>
+                  </li>
+                
+                  <li class="links-of-blogroll-item">
+                    <a href="/:" title=":">5</a>
+                  </li>
+                
+                  <li class="links-of-blogroll-item">
+                    <a href="/" title="/">6</a>
+                  </li>
+                
+                  <li class="links-of-blogroll-item">
+                    <a href="/" title="/">7</a>
+                  </li>
+                
+                  <li class="links-of-blogroll-item">
+                    <a href="/y" title="y">8</a>
+                  </li>
+                
+                  <li class="links-of-blogroll-item">
+                    <a href="/o" title="o">9</a>
+                  </li>
+                
+                  <li class="links-of-blogroll-item">
+                    <a href="/h" title="h">10</a>
+                  </li>
+                
+                  <li class="links-of-blogroll-item">
+                    <a href="/u" title="u">11</a>
+                  </li>
+                
+                  <li class="links-of-blogroll-item">
+                    <a href="/a" title="a">12</a>
+                  </li>
+                
+                  <li class="links-of-blogroll-item">
+                    <a href="/." title=".">13</a>
+                  </li>
+                
+                  <li class="links-of-blogroll-item">
+                    <a href="/m" title="m">14</a>
+                  </li>
+                
+                  <li class="links-of-blogroll-item">
+                    <a href="/l" title="l">15</a>
+                  </li>
+                
+                  <li class="links-of-blogroll-item">
+                    <a href="/" title="/">16</a>
                   </li>
                 
               </ul>
@@ -850,7 +910,7 @@
             
 
             
-              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#采用分支历史表"><span class="nav-number">1.</span> <span class="nav-text">采用分支历史表</span></a></li></ol><li class="nav-item nav-level-1"><a class="nav-link" href="#采用分支目标缓冲器"><span class="nav-number"></span> <span class="nav-text">采用分支目标缓冲器</span></a></li></div>
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#采用分支历史表"><span class="nav-number">1.</span> <span class="nav-text">采用分支历史表</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#采用分支目标缓冲器"><span class="nav-number">2.</span> <span class="nav-text">采用分支目标缓冲器</span></a></li></ol></div>
             
 
           </div>
