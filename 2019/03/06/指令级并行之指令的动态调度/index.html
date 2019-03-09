@@ -110,18 +110,18 @@
 
 
 
-  <meta name="description" content="&amp;emsp;&amp;emsp;自20世纪80年代中期以来，几乎所有的处理机都利用流水线来使指令重叠并行执行，以达到提高性能目的。这种指令之间存在的潜在并行性成为指令级并行（ILP）。通过利用各种技术，在流水线思想的基础上进一步扩展，开发出更多的指令级并行。&amp;emsp;&amp;emsp;开发ILP主要分为两类：主要基于硬件的动态开发以及基于软件的静态开发方法。在实际开发中，往往需要两者兼用。特别是，把硬件与软件">
+  <meta name="description" content="&amp;emsp;&amp;emsp;在前述的流水线属于静态调度的流水线。在这样的流水线中，当取出的指令与已经在流水线中执行的指令不存在数据相关，或者虽存在数据相关但可以通过定向机制将相关隐藏时，就可以流出这条指令。如果数据相关不能被隐藏，冲突检测硬件就会从使用该数据的指令开始，使流水线停顿（stall），不再取指令和流出指令。&amp;emsp;&amp;emsp;静态调度的流水线依靠编译器对代码进行静态调度，以减少相关和调">
 <meta name="keywords" content="知识,计算机系统结构">
 <meta property="og:type" content="article">
-<meta property="og:title" content="指令级并行的概念">
-<meta property="og:url" content="https://yohua.ml/2019/03/05/指令级并行的概念/index.html">
+<meta property="og:title" content="指令的动态调度">
+<meta property="og:url" content="https://yohua.ml/2019/03/06/指令级并行之指令的动态调度/index.html">
 <meta property="og:site_name" content="面对疾风吧，少年！">
-<meta property="og:description" content="&amp;emsp;&amp;emsp;自20世纪80年代中期以来，几乎所有的处理机都利用流水线来使指令重叠并行执行，以达到提高性能目的。这种指令之间存在的潜在并行性成为指令级并行（ILP）。通过利用各种技术，在流水线思想的基础上进一步扩展，开发出更多的指令级并行。&amp;emsp;&amp;emsp;开发ILP主要分为两类：主要基于硬件的动态开发以及基于软件的静态开发方法。在实际开发中，往往需要两者兼用。特别是，把硬件与软件">
+<meta property="og:description" content="&amp;emsp;&amp;emsp;在前述的流水线属于静态调度的流水线。在这样的流水线中，当取出的指令与已经在流水线中执行的指令不存在数据相关，或者虽存在数据相关但可以通过定向机制将相关隐藏时，就可以流出这条指令。如果数据相关不能被隐藏，冲突检测硬件就会从使用该数据的指令开始，使流水线停顿（stall），不再取指令和流出指令。&amp;emsp;&amp;emsp;静态调度的流水线依靠编译器对代码进行静态调度，以减少相关和调">
 <meta property="og:locale" content="zh-CN">
-<meta property="og:updated_time" content="2019-03-07T16:18:52.071Z">
+<meta property="og:updated_time" content="2019-03-08T17:03:55.264Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="指令级并行的概念">
-<meta name="twitter:description" content="&amp;emsp;&amp;emsp;自20世纪80年代中期以来，几乎所有的处理机都利用流水线来使指令重叠并行执行，以达到提高性能目的。这种指令之间存在的潜在并行性成为指令级并行（ILP）。通过利用各种技术，在流水线思想的基础上进一步扩展，开发出更多的指令级并行。&amp;emsp;&amp;emsp;开发ILP主要分为两类：主要基于硬件的动态开发以及基于软件的静态开发方法。在实际开发中，往往需要两者兼用。特别是，把硬件与软件">
+<meta name="twitter:title" content="指令的动态调度">
+<meta name="twitter:description" content="&amp;emsp;&amp;emsp;在前述的流水线属于静态调度的流水线。在这样的流水线中，当取出的指令与已经在流水线中执行的指令不存在数据相关，或者虽存在数据相关但可以通过定向机制将相关隐藏时，就可以流出这条指令。如果数据相关不能被隐藏，冲突检测硬件就会从使用该数据的指令开始，使流水线停顿（stall），不再取指令和流出指令。&amp;emsp;&amp;emsp;静态调度的流水线依靠编译器对代码进行静态调度，以减少相关和调">
 
 
 
@@ -138,7 +138,7 @@
   };
 </script>
 
-  <title>指令级并行的概念 | 面对疾风吧，少年！</title>
+  <title>指令的动态调度 | 面对疾风吧，少年！</title>
   
 
 
@@ -265,7 +265,7 @@
       
     
 
-    <a href="/archives/" rel="section"><i class="menu-item-icon fa fa-fw fa-archive"></i> <br>归档<span class="badge">18</span></a>
+    <a href="/archives/" rel="section"><i class="menu-item-icon fa fa-fw fa-archive"></i> <br>归档<span class="badge">19</span></a>
 
   </li>
         
@@ -386,7 +386,7 @@
   
   
   <div class="post-block">
-    <link itemprop="mainEntityOfPage" href="https://yohua.ml/2019/03/05/指令级并行的概念/">
+    <link itemprop="mainEntityOfPage" href="https://yohua.ml/2019/03/06/指令级并行之指令的动态调度/">
 
     <span hidden itemprop="author" itemscope="" itemtype="http://schema.org/Person">
       <meta itemprop="name" content="Yohua">
@@ -403,7 +403,7 @@
 
         
         
-          <h2 class="post-title" itemprop="name headline">指令级并行的概念
+          <h2 class="post-title" itemprop="name headline">指令的动态调度
 
               
             
@@ -429,7 +429,7 @@
                 
               
 
-              <time title="创建时间：2019-03-05 01:26:26" itemprop="dateCreated datePublished" datetime="2019-03-05T01:26:26+08:00">2019-03-05</time>
+              <time title="创建时间：2019-03-06 01:27:05" itemprop="dateCreated datePublished" datetime="2019-03-06T01:27:05+08:00">2019-03-06</time>
             
 
             
@@ -444,7 +444,7 @@
 
           
           
-            <span id="/2019/03/05/指令级并行的概念/" class="leancloud_visitors" data-flag-title="指令级并行的概念">
+            <span id="/2019/03/06/指令级并行之指令的动态调度/" class="leancloud_visitors" data-flag-title="指令的动态调度">
               <span class="post-meta-divider">|</span>
               <span class="post-meta-item-icon">
                 <i class="fa fa-eye"></i>
@@ -469,7 +469,7 @@
                 
                   <span class="post-meta-item-text">本文字数：</span>
                 
-                <span title="本文字数">944</span>
+                <span title="本文字数">1.6k</span>
               
 
               
@@ -483,7 +483,7 @@
                 
                   <span class="post-meta-item-text">阅读时长 &asymp;</span>
                 
-                <span title="阅读时长">4 分钟</span>
+                <span title="阅读时长">6 分钟</span>
               
             </div>
           
@@ -503,9 +503,9 @@
       
 
       
-        <p>&emsp;&emsp;自20世纪80年代中期以来，几乎所有的处理机都利用流水线来使指令重叠并行执行，以达到提高性能目的。这种指令之间存在的潜在并行性成为指令级并行（ILP）。通过利用各种技术，在流水线思想的基础上进一步扩展，开发出更多的指令级并行。<br>&emsp;&emsp;开发ILP主要分为两类：主要基于硬件的动态开发以及基于软件的静态开发方法。在实际开发中，往往需要两者兼用。特别是，把硬件与软件技术以及动态的方法与静态方法结合起来，才能充分开发程序中潜在的指令级并行。<br>&emsp;&emsp;流水线处理机的实际CPI等于理想流水线的CPI加上各类停顿的时钟周期：</p>
-<p><center> $$ CPI_{流水线}=CPI_{理想}+停顿_{结构冲突}+停顿_{数据冲突}+停顿_{控制冲突} $$ </center><br>&emsp;&emsp;其中，<script type="math/tex">CPI_{理想}</script>是衡量流水线最高性能的一个指标。通过减少该式右边各项，就能减小总的CPI，从而提高IPC（Instructions Per Cycle，每个时钟周期完成的指令条数）。<br>&emsp;&emsp;相关是程序固有的一种属性，它反映了程序中指令之间的相互依赖关系。而具体的一次相关是否会导致实际冲突的发生以及该冲突会带来多长的停顿，则是流水线的属性。<br>&emsp;&emsp;主要从以下两个方面解决相关问题：<br>&emsp;&emsp;（1）保持相关，但避免发生冲突。<br>&emsp;&emsp;（2）通过代码变换，消除相关。<br>&emsp;&emsp;指令调度是一种用以避免冲突的主要方法，但它不改变相关。通过动态调度代码的硬件方法，可以消除某些相关。<br>&emsp;&emsp;由于相关的存在，必须保持程序顺序。程序书序是指，有源程序确定的在完全串行方式下指令的执行顺序。只有在可能影响程序正确性的情况下，才需要保持程序顺序。<br>&emsp;&emsp;对于正确的执行程序来说，必须保持的最关键的两个属性是：数据流（data flow）和异常行为（exception behavior）。<br>&emsp;&emsp;保持异常行为是指：无论怎么改变指令的执行顺序，都不能改变程序中异常的发生情况。<br>&emsp;&emsp;如果能做到保持程序的数据相关和控制相关，就能保持程序的数据流和异常行为。</p>
-
+        <p>&emsp;&emsp;在前述的流水线属于静态调度的流水线。在这样的流水线中，当取出的指令与已经在流水线中执行的指令不存在数据相关，或者虽存在数据相关但可以通过定向机制将相关隐藏时，就可以流出这条指令。如果数据相关不能被隐藏，冲突检测硬件就会从使用该数据的指令开始，使流水线停顿（stall），不再取指令和流出指令。<br>&emsp;&emsp;静态调度的流水线依靠编译器对代码进行静态调度，以减少相关和调度。之所以成为静态调度，是因为它不是在程序执行的过程中，而是在编译期间进行代码调度和优化。静态调度通过把相关的指令拉开距离来减少可能产生的停顿。<br>&emsp;&emsp;动态调度是在程序的执行过程中，依靠专门硬件对代码进行调度。许多线代处理器都采用了动态调度技术。动态调度能在保持数据流和异常行为的情况下，通过硬件对指令执行顺序进行重新安排，减少数据相关导致的停顿。<br>&emsp;&emsp;动态调度有许多优点：①能够处理一些编译时情况不明的相关（如涉及存储器访问的相关），并简化了编译器；②能够使本来是面向某一流水线优化编译的代码在其他的流水线（动态调度）上也能高效的执行。当然，动态调度的这些优点是以硬件复杂性的显著增加为代价的。</p>
+<h1 id="动态调度的基本思想"><a href="#动态调度的基本思想" class="headerlink" title="动态调度的基本思想"></a>动态调度的基本思想</h1><p>&emsp;&emsp;前面讨论的简单流水线有一个主演局限性，就是指令时按照程序顺序流出和按序执行的。如果某条指令在流水线中被停顿了，那么后面所有的指令都停止前进。如果相近的指令存在相关，近很可能导致冲突，引起停顿。如果系统中有多个功能部件，那么这些部件很可能因为没有指令可处理而处于空闲状态，系统效率低下。<br>&emsp;&emsp;如果可以不要求按程序顺序执行指令，那么就能进一步提高性能。<br>&emsp;&emsp;为了支持乱序执行，将前述5段流水线的译码段（ID）细分为以下两个段：<br>&emsp;&emsp;（1）流出：指令译码，并检查是否存在结构冲突。如果不存在结构冲突，就将指令流出。<br>&emsp;&emsp;（2）读操作数：等待数据冲突消失，然后读操作数。<br>&emsp;&emsp;可以看出，指令的流出还是按序流出，但它们在读操作数段可能停顿和互相跨越，因而进入执行段就可能已经乱序了。但是，原来不会发生的冲突在乱序执行时，就可能发生了。Tomasulo算法可以通过使用寄存器重命名来消除它们。<br>&emsp;&emsp;采用动态调度的流水线支持多条指令同时处于执行状态，这是动态调度的一大优点。但这要求具有多个功能部件，或者流水功能部件，或者两者兼而有之。<br>&emsp;&emsp;指令乱序完成大大增加了异常处理的复杂度。动态调度要保持正确的异常行为，即：只有那些在程序严格按程序顺序执行时会发生的异常，才能真正发生。为此动态调度处理机要做到：对于一条会产生异常的指令来说，只有当处理机确切地知道该指令将被执行后，才允许它产生异常。<br>&emsp;&emsp;即使保持了正确的异常行为，动态调度处理机仍可能发生不精确异常。所谓不精确异常是指：当执行指令i导致发生异常时，处理机的现场（状态）与严格按程序顺序执行时指令i的现场不同。反之，如果发生异常时，处理机的现场跟严格按程序顺序执行时指令i的现场相同，就称为是精确异常。不精确异常使得在异常处理后难以接着继续执行程序。<br>&emsp;&emsp;之所以会产生不精确的异常，是因为当一场发生（指令i）时：①流水线可能已经执行完按程序顺序是位于指令i之后的指令；②流水线可能还没完成按程序顺序是指令i之前的指令。<br>&emsp;&emsp;记分牌算法和Tomasulo算法是两种比较典型的动态调度算法。Tomasulo算法比记分牌算法改进很多，是一种更强的算法。许多开发指令级并行的现代处理机都采用了Tomasulo算法或其变形。</p>
+<h1 id="Tomasulo算法"><a href="#Tomasulo算法" class="headerlink" title="Tomasulo算法"></a>Tomasulo算法</h1>
       
     </div>
 
@@ -568,7 +568,7 @@
   <li class="post-copyright-link">
     <strong>本文链接：</strong>
     
-    <a href="https://yohua.ml/2019/03/05/指令级并行的概念/" title="指令级并行的概念">https://yohua.ml/2019/03/05/指令级并行的概念/</a>
+    <a href="https://yohua.ml/2019/03/06/指令级并行之指令的动态调度/" title="指令的动态调度">https://yohua.ml/2019/03/06/指令级并行之指令的动态调度/</a>
   </li>
   <li class="post-copyright-license">
     <strong>版权声明： </strong>本博客所有文章除特别声明外，均采用 <span class="exturl" data-url="aHR0cHM6Ly9jcmVhdGl2ZWNvbW1vbnMub3JnL2xpY2Vuc2VzL2J5LW5jLXNhLzQuMC96aC1DTg=="><i class="fa fa-fw fa-creative-commons"></i>BY-NC-SA</span> 许可协议。转载请注明出处！</li>
@@ -596,8 +596,8 @@
         <div class="post-nav">
           <div class="post-nav-next post-nav-item">
             
-              <a href="/2019/03/03/排序算法/" rel="next" title="排序算法">
-                <i class="fa fa-chevron-left"></i> 排序算法
+              <a href="/2019/03/05/指令级并行基本概念/" rel="next" title="指令级并行基本概念">
+                <i class="fa fa-chevron-left"></i> 指令级并行基本概念
               </a>
             
           </div>
@@ -606,8 +606,8 @@
 
           <div class="post-nav-prev post-nav-item">
             
-              <a href="/2019/03/06/指令的动态调度/" rel="prev" title="指令的动态调度">
-                指令的动态调度 <i class="fa fa-chevron-right"></i>
+              <a href="/2019/03/06/魅族手机剩余30-电量自动关机解决方法/" rel="prev" title="魅族手机剩余30%电量自动关机解决方法">
+                魅族手机剩余30%电量自动关机解决方法 <i class="fa fa-chevron-right"></i>
               </a>
             
           </div>
@@ -657,8 +657,17 @@
       
 
       
+        <ul class="sidebar-nav motion-element">
+          <li class="sidebar-nav-toc sidebar-nav-active" data-target="post-toc-wrap">
+            文章目录
+          </li>
+          <li class="sidebar-nav-overview" data-target="site-overview-wrap">
+            站点概览
+          </li>
+        </ul>
+      
 
-      <div class="site-overview-wrap sidebar-panel sidebar-panel-active">
+      <div class="site-overview-wrap sidebar-panel">
         <div class="site-overview">
           <div class="site-author motion-element" itemprop="author" itemscope="" itemtype="http://schema.org/Person">
             
@@ -675,7 +684,7 @@
                 
                   <a href="/archives/">
                 
-                    <span class="site-state-item-count">18</span>
+                    <span class="site-state-item-count">19</span>
                     <span class="site-state-item-name">日志</span>
                   </a>
                 </div>
@@ -813,6 +822,23 @@
       </div>
 
       
+      <!--noindex-->
+        <div class="post-toc-wrap motion-element sidebar-panel sidebar-panel-active">
+          <div class="post-toc">
+
+            
+            
+            
+            
+
+            
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#动态调度的基本思想"><span class="nav-number">1.</span> <span class="nav-text">动态调度的基本思想</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#Tomasulo算法"><span class="nav-number">2.</span> <span class="nav-text">Tomasulo算法</span></a></li></ol></div>
+            
+
+          </div>
+        </div>
+      <!--/noindex-->
+      
 
       
         <div class="back-to-top">
@@ -848,7 +874,7 @@
       <i class="fa fa-area-chart"></i>
     </span>
     
-    <span title="站点总字数">21k</span>
+    <span title="站点总字数">22k</span>
   
 
   
@@ -857,7 +883,7 @@
       <i class="fa fa-coffee"></i>
     </span>
     
-    <span title="站点阅读时长">1:23</span>
+    <span title="站点阅读时长">1:27</span>
   
 </div>
 
@@ -1009,7 +1035,7 @@
   
     <script>
   window.livereOptions = {
-    refer: '2019/03/05/指令级并行的概念/'
+    refer: '2019/03/06/指令级并行之指令的动态调度/'
   };
   (function(d, s) {
     var j, e = d.getElementsByTagName(s)[0];
@@ -1424,53 +1450,6 @@
   
   
 
-  
-    
-      <script type="text/x-mathjax-config">
-  
-
-  MathJax.Hub.Config({
-    tex2jax: {
-      inlineMath: [ ['$', '$'], ['\\(', '\\)'] ],
-      processEscapes: true,
-      skipTags: ['script', 'noscript', 'style', 'textarea', 'pre', 'code']
-    },
-    TeX: {
-      
-      equationNumbers: {
-        autoNumber: 'AMS'
-      }
-    }
-  });
-  MathJax.Hub.Register.StartupHook('TeX Jax Ready', function() {
-    MathJax.InputJax.TeX.prefilterHooks.Add(function(data) {
-      if (data.display) {
-        var next = data.script.nextSibling;
-        while (next && next.nodeName.toLowerCase() === '#text') { next = next.nextSibling }
-        if (next && next.nodeName.toLowerCase() === 'br') { next.parentNode.removeChild(next) }
-      }
-    });
-  });
-</script>
-
-<script type="text/x-mathjax-config">
-  MathJax.Hub.Queue(function() {
-    var all = MathJax.Hub.getAllJax(), i;
-      for (i = 0; i < all.length; i += 1) {
-        all[i].SourceElement().parentNode.className += ' has-jax';
-      }
-  });
-</script>
-<script src="//cdn.jsdelivr.net/npm/mathjax@2.7.1/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
-
-<style>
-.MathJax_Display {
-  overflow-x: scroll;
-  overflow-y: hidden;
-}
-</style>
-
-    
   
 
 
