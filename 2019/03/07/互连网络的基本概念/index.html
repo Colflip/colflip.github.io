@@ -122,7 +122,7 @@
 <meta property="og:image" content="https://yohua.ml/2019/03/07/互连网络的基本概念/002.png">
 <meta property="og:image" content="https://yohua.ml/2019/03/07/互连网络的基本概念/003.png">
 <meta property="og:image" content="https://yohua.ml/2019/03/07/互连网络的基本概念/004.png">
-<meta property="og:updated_time" content="2019-03-10T08:44:08.394Z">
+<meta property="og:updated_time" content="2019-03-10T08:48:03.633Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="互联网络的基本概念">
 <meta name="twitter:description" content="&amp;emsp;&amp;emsp;此处概念限定为“互连”，与“互联”区分。 互连网络的功能和特征&amp;emsp;&amp;emsp;互联网络（interconnection network）是一种由开关元件按照一定拓扑结构和控制方式构成的网络，用来实现计算机系统中结点之间的相互连接。这些节点可以是处理器、存储模块后其他设备。从拓扑结构角度，互联网络是从输入结点到输出结点之间的一组互连或映射（mapping）。   &amp;e">
@@ -516,7 +516,7 @@
 <h1 id="互连函数"><a href="#互连函数" class="headerlink" title="互连函数"></a>互连函数</h1><p>&emsp;&emsp;为反应不同互连函数的连接特性，每种互连网络可用一组互连函数（interconnection function）来描述。用变量x表示输入（设x=0,1，···，N-1），用函数f(x)表示输出，通过数学表达式建立输入端与输出端的一一对应关系。即在互连函数f的作用下，输入端x连接到输出端f（x）。x和f（x）可以用二进制表示，也可以用十进制表示。<br>&emsp;&emsp;互连函数反映了网络输入数组和输出数组之间对应的置换关系或排列关系，所以互连函数有事也称为置换（permutation）函数或排列函数。<br>&emsp;&emsp;互连函数f（x）有时可以采用循环表示，即（<script type="math/tex">x_0x_1x_2···x_{j-1}</script>）。它表示：</p>
 <p><center> $$ f(x_0)=x_1, f(x_1)=x_2, ···, f(x_{j-1})=x_0 $$ </center><br>&emsp;&emsp;其中，j称为该循环的长度。<br>&emsp;&emsp;下面介绍几种常用的基本互连函数及其主要特征。</p>
 <h2 id="交换函数"><a href="#交换函数" class="headerlink" title="交换函数"></a>交换函数</h2><p>&emsp;&emsp;交换函数用于实现二进制地址编码中第k位互反的输入端与输出端的连接。其表达式为：</p>
-<p><center> <script type="math/tex">E_k(x_{n-1}x_{n-2}···x_{k+1}x_{k}x_{k-1}···x_1x_0)=x_{n-1}x_{n-2}···x_{k+1}</script> \overline{x<em>{k}}$$ x</em>{k-1}···x_1x_0<br>&emsp;&emsp; 交换函数主要用来构建立方体网络和各种超立方体互连网络。它共有<script type="math/tex">n=log_2N</script> 种互连函数。N为结点个数。</center></p>
+<p><center> $$ E_k(x_{n-1}x_{n-2}···x_{k+1}x_{k}x_{k-1}···x_1x_0)=x_{n-1}x_{n-2}···x_{k+1} \overline{x_k} x_{k-1}···x_1x_0 $$ </center><br>&emsp;&emsp; 交换函数主要用来构建立方体网络和各种超立方体互连网络。它共有<script type="math/tex">n=log_2N</script> 种互连函数。N为结点个数。</p>
 <p><center>
 <img src="/2019/03/07/互连网络的基本概念/002.png" width="75%" height="100%" alt=" ">
 </center></p>
