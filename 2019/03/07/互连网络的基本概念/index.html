@@ -124,7 +124,7 @@
 <meta property="og:image" content="https://yohua.ml/2019/03/07/互连网络的基本概念/004.png">
 <meta property="og:image" content="https://yohua.ml/2019/03/07/互连网络的基本概念/005.png">
 <meta property="og:image" content="https://yohua.ml/2019/03/07/互连网络的基本概念/006.png">
-<meta property="og:updated_time" content="2019-03-10T08:54:52.500Z">
+<meta property="og:updated_time" content="2019-03-10T09:01:25.450Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="互联网络的基本概念">
 <meta name="twitter:description" content="&amp;emsp;&amp;emsp;此处概念限定为“互连”，与“互联”区分。 互连网络的功能和特征&amp;emsp;&amp;emsp;互联网络（interconnection network）是一种由开关元件按照一定拓扑结构和控制方式构成的网络，用来实现计算机系统中结点之间的相互连接。这些节点可以是处理器、存储模块后其他设备。从拓扑结构角度，互联网络是从输入结点到输出结点之间的一组互连或映射（mapping）。   &amp;e">
@@ -523,7 +523,7 @@
 <img src="/2019/03/07/互连网络的基本概念/002.png" width="75%" height="100%" alt=" ">
 </center></p>
 <p><center>
-<img src="/2019/03/07/互连网络的基本概念/003.png" width="75%" height="100%" alt=" ">
+<img src="/2019/03/07/互连网络的基本概念/003.png" width="40%" height="100%" alt=" ">
 </center></p>
 <h2 id="均匀洗牌函数"><a href="#均匀洗牌函数" class="headerlink" title="均匀洗牌函数"></a>均匀洗牌函数</h2><p>&emsp;&emsp;均匀洗牌函数（shuffle）定义为：将输入端分成数目相等的两半，前一半和后一半按类似均匀混洗扑克牌的方式交叉的连接到输出端（输出端相当于混洗的结果），其函数可表示为：</p>
 <p><center> $$ S(x_{n-1}x_{n-2}···x_{2}x_{1})=x_{n-2}···x_2x_1x_{n-1} $$ </center><br>&emsp;&emsp; 即把输入端的二进制编号循环左移一位。<br>&emsp;&emsp; 逆均匀洗牌函数于此类似，是将输入端的二进制编号循环右移一位而得到所连接的输出端编号。<br>&emsp;&emsp; 逆均匀洗牌函数是均匀洗牌函数的逆函数。两者的输入端与输出端正好互换位置（互为镜像）。<br>&emsp;&emsp; 用它们代表的链路和交换开关多级组合起来可构成Omega网络与逆Omega网络。</p>
@@ -533,12 +533,12 @@
 <h2 id="蝶式函数"><a href="#蝶式函数" class="headerlink" title="蝶式函数"></a>蝶式函数</h2><p>&emsp;&emsp;蝶式互连函数（butterfly）定义为：</p>
 <p><center> $$ B(x_{n-1}x_{n-2}···x_1x_0)=x_0x_{n-2}···x_1x_{n-1} $$ </center><br>&emsp;&emsp;即把输入端的二进制编号的最高位与最低位互换位置，便得到了输出端的编号。<br>&emsp;&emsp;与均匀混洗函数类似，只用蝶式函数不能实现任意结点之间的连接，但是蝶式变换与交换变换的多级组合可作为构成方体多级网络的基础。</p>
 <p><center>
-<img src="/2019/03/07/互连网络的基本概念/005.png" width="75%" height="100%" alt=" ">
+<img src="/2019/03/07/互连网络的基本概念/005.png" width="40%" height="100%" alt=" ">
 </center></p>
 <h2 id="反位序函数"><a href="#反位序函数" class="headerlink" title="反位序函数"></a>反位序函数</h2><p>&emsp;&emsp;反位序函数是将输入端二进制编号的位序颠倒过来求得相应输出端的编号。其互连函数为：</p>
 <p><center> $$ R(x_{n-1}x_{n-2}···x_1x_0)=x_0x_1x_2···x_{n-2}x_{n-1} $$ </center><br>&emsp;&emsp;对于N=8的情况，正好B(x)函数等于R(x)函数，其变换图形如下。</p>
 <p><center>
-<img src="/2019/03/07/互连网络的基本概念/006.png" width="75%" height="100%" alt=" ">
+<img src="/2019/03/07/互连网络的基本概念/006.png" width="40%" height="100%" alt=" ">
 </center></p>
 <h2 id="PM2I函数"><a href="#PM2I函数" class="headerlink" title="PM2I函数"></a>PM2I函数</h2><p>&emsp;&emsp;</p>
 
