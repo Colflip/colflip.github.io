@@ -129,58 +129,6 @@
   </entry>
   
   <entry>
-    <title>指令级并行之多指令流出技术</title>
-    <link href="https://yohua.ml/2019/03/07/%E6%8C%87%E4%BB%A4%E7%BA%A7%E5%B9%B6%E8%A1%8C%E4%B9%8B%E5%A4%9A%E6%8C%87%E4%BB%A4%E6%B5%81%E5%87%BA%E6%8A%80%E6%9C%AF/"/>
-    <id>https://yohua.ml/2019/03/07/指令级并行之多指令流出技术/</id>
-    <published>2019-03-06T18:31:36.000Z</published>
-    <updated>2019-03-10T06:52:12.637Z</updated>
-    
-    <summary type="html">
-    
-      
-      
-        
-        
-          &lt;p&gt;&amp;emsp;&amp;emsp;虽然希望CPI越小越好，但如果是每次只流出一条指令，CPI就不可能小于1。如果想再进一步提高性能，使CPI小于1，就必须采取多柳树技术（multiple
-        
-      
-    
-    </summary>
-    
-    
-      <category term="知识" scheme="https://yohua.ml/tags/%E7%9F%A5%E8%AF%86/"/>
-    
-      <category term="计算机系统结构" scheme="https://yohua.ml/tags/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%B3%BB%E7%BB%9F%E7%BB%93%E6%9E%84/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>指令级并行之动态分支预测技术</title>
-    <link href="https://yohua.ml/2019/03/07/%E6%8C%87%E4%BB%A4%E7%BA%A7%E5%B9%B6%E8%A1%8C%E4%B9%8B%E5%8A%A8%E6%80%81%E5%88%86%E6%94%AF%E9%A2%84%E6%B5%8B%E6%8A%80%E6%9C%AF/"/>
-    <id>https://yohua.ml/2019/03/07/指令级并行之动态分支预测技术/</id>
-    <published>2019-03-06T17:05:46.000Z</published>
-    <updated>2019-03-09T10:45:18.992Z</updated>
-    
-    <summary type="html">
-    
-      
-      
-        
-        
-          &lt;p&gt;&amp;emsp;&amp;emsp;当要提高ILP（指令级并行）时，控制相关就是会成为主要限定因素之一。所开发的ILP越多，控制相关的制约性就越大，分支预测就要求有更高的准确度。对于每个时钟周期流出多条指令（若为n条，就称为n流出）的处理机来说是非常重要的。这是因为：①在n流出的处理机
-        
-      
-    
-    </summary>
-    
-    
-      <category term="知识" scheme="https://yohua.ml/tags/%E7%9F%A5%E8%AF%86/"/>
-    
-      <category term="计算机系统结构" scheme="https://yohua.ml/tags/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%B3%BB%E7%BB%9F%E7%BB%93%E6%9E%84/"/>
-    
-  </entry>
-  
-  <entry>
     <title>HEXO NexT网站个性化</title>
     <link href="https://yohua.ml/2019/03/06/HEXO-NexT%E7%BD%91%E7%AB%99%E4%B8%AA%E6%80%A7%E5%8C%96/"/>
     <id>https://yohua.ml/2019/03/06/HEXO-NexT网站个性化/</id>
@@ -211,6 +159,32 @@
   </entry>
   
   <entry>
+    <title>指令级并行之动态分支预测技术</title>
+    <link href="https://yohua.ml/2019/03/06/%E6%8C%87%E4%BB%A4%E7%BA%A7%E5%B9%B6%E8%A1%8C%E4%B9%8B%E5%8A%A8%E6%80%81%E5%88%86%E6%94%AF%E9%A2%84%E6%B5%8B%E6%8A%80%E6%9C%AF/"/>
+    <id>https://yohua.ml/2019/03/06/指令级并行之动态分支预测技术/</id>
+    <published>2019-03-06T07:05:46.000Z</published>
+    <updated>2019-03-10T16:12:03.125Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        
+        
+          &lt;p&gt;&amp;emsp;&amp;emsp;当要提高ILP（指令级并行）时，控制相关就是会成为主要限定因素之一。所开发的ILP越多，控制相关的制约性就越大，分支预测就要求有更高的准确度。对于每个时钟周期流出多条指令（若为n条，就称为n流出）的处理机来说是非常重要的。这是因为：①在n流出的处理机
+        
+      
+    
+    </summary>
+    
+    
+      <category term="知识" scheme="https://yohua.ml/tags/%E7%9F%A5%E8%AF%86/"/>
+    
+      <category term="计算机系统结构" scheme="https://yohua.ml/tags/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%B3%BB%E7%BB%9F%E7%BB%93%E6%9E%84/"/>
+    
+  </entry>
+  
+  <entry>
     <title>魅族手机剩余30%电量自动关机解决方法</title>
     <link href="https://yohua.ml/2019/03/06/%E9%AD%85%E6%97%8F%E6%89%8B%E6%9C%BA%E5%89%A9%E4%BD%9930-%E7%94%B5%E9%87%8F%E8%87%AA%E5%8A%A8%E5%85%B3%E6%9C%BA%E8%A7%A3%E5%86%B3%E6%96%B9%E6%B3%95/"/>
     <id>https://yohua.ml/2019/03/06/魅族手机剩余30-电量自动关机解决方法/</id>
@@ -235,11 +209,37 @@
   </entry>
   
   <entry>
+    <title>指令级并行之多指令流出技术</title>
+    <link href="https://yohua.ml/2019/03/06/%E6%8C%87%E4%BB%A4%E7%BA%A7%E5%B9%B6%E8%A1%8C%E4%B9%8B%E5%A4%9A%E6%8C%87%E4%BB%A4%E6%B5%81%E5%87%BA%E6%8A%80%E6%9C%AF/"/>
+    <id>https://yohua.ml/2019/03/06/指令级并行之多指令流出技术/</id>
+    <published>2019-03-06T04:31:36.000Z</published>
+    <updated>2019-03-10T16:12:08.274Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        
+        
+          &lt;p&gt;&amp;emsp;&amp;emsp;虽然希望CPI越小越好，但如果是每次只流出一条指令，CPI就不可能小于1。如果想再进一步提高性能，使CPI小于1，就必须采取多柳树技术（multiple
+        
+      
+    
+    </summary>
+    
+    
+      <category term="知识" scheme="https://yohua.ml/tags/%E7%9F%A5%E8%AF%86/"/>
+    
+      <category term="计算机系统结构" scheme="https://yohua.ml/tags/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%B3%BB%E7%BB%9F%E7%BB%93%E6%9E%84/"/>
+    
+  </entry>
+  
+  <entry>
     <title>指令级并行之指令的动态调度</title>
     <link href="https://yohua.ml/2019/03/06/%E6%8C%87%E4%BB%A4%E7%BA%A7%E5%B9%B6%E8%A1%8C%E4%B9%8B%E6%8C%87%E4%BB%A4%E7%9A%84%E5%8A%A8%E6%80%81%E8%B0%83%E5%BA%A6/"/>
     <id>https://yohua.ml/2019/03/06/指令级并行之指令的动态调度/</id>
-    <published>2019-03-05T17:27:05.000Z</published>
-    <updated>2019-03-09T11:33:52.864Z</updated>
+    <published>2019-03-06T03:27:05.000Z</published>
+    <updated>2019-03-10T16:12:05.519Z</updated>
     
     <summary type="html">
     
@@ -262,10 +262,10 @@
   
   <entry>
     <title>指令级并行基本概念</title>
-    <link href="https://yohua.ml/2019/03/05/%E6%8C%87%E4%BB%A4%E7%BA%A7%E5%B9%B6%E8%A1%8C%E5%9F%BA%E6%9C%AC%E6%A6%82%E5%BF%B5/"/>
-    <id>https://yohua.ml/2019/03/05/指令级并行基本概念/</id>
-    <published>2019-03-04T17:26:26.000Z</published>
-    <updated>2019-03-09T11:34:03.774Z</updated>
+    <link href="https://yohua.ml/2019/03/06/%E6%8C%87%E4%BB%A4%E7%BA%A7%E5%B9%B6%E8%A1%8C%E5%9F%BA%E6%9C%AC%E6%A6%82%E5%BF%B5/"/>
+    <id>https://yohua.ml/2019/03/06/指令级并行基本概念/</id>
+    <published>2019-03-05T17:26:26.000Z</published>
+    <updated>2019-03-10T16:12:00.483Z</updated>
     
     <summary type="html">
     

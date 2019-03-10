@@ -110,18 +110,18 @@
 
 
 
-  <meta name="description" content="&amp;emsp;&amp;emsp;虽然希望CPI越小越好，但如果是每次只流出一条指令，CPI就不可能小于1。如果想再进一步提高性能，使CPI小于1，就必须采取多柳树技术（multiple issure），在每个时钟周期流出多条指令。&amp;emsp;&amp;emsp;多流出处理机有两种基本风格：超标量（superscalar）和超长指令字VLIW（Very Long Instruction Word）。超标量在每个时钟">
+  <meta name="description" content="&amp;emsp;&amp;emsp;自20世纪80年代中期以来，几乎所有的处理机都利用流水线来使指令重叠并行执行，以达到提高性能目的。这种指令之间存在的潜在并行性成为指令级并行（ILP）。通过利用各种技术，在流水线思想的基础上进一步扩展，开发出更多的指令级并行。&amp;emsp;&amp;emsp;开发ILP主要分为两类：主要基于硬件的动态开发以及基于软件的静态开发方法。在实际开发中，往往需要两者兼用。特别是，把硬件与软件">
 <meta name="keywords" content="知识,计算机系统结构">
 <meta property="og:type" content="article">
-<meta property="og:title" content="指令级并行之多指令流出技术">
-<meta property="og:url" content="https://yohua.ml/2019/03/07/指令级并行之多指令流出技术/index.html">
+<meta property="og:title" content="指令级并行基本概念">
+<meta property="og:url" content="https://yohua.ml/2019/03/06/指令级并行基本概念/index.html">
 <meta property="og:site_name" content="面对疾风吧，少年！">
-<meta property="og:description" content="&amp;emsp;&amp;emsp;虽然希望CPI越小越好，但如果是每次只流出一条指令，CPI就不可能小于1。如果想再进一步提高性能，使CPI小于1，就必须采取多柳树技术（multiple issure），在每个时钟周期流出多条指令。&amp;emsp;&amp;emsp;多流出处理机有两种基本风格：超标量（superscalar）和超长指令字VLIW（Very Long Instruction Word）。超标量在每个时钟">
+<meta property="og:description" content="&amp;emsp;&amp;emsp;自20世纪80年代中期以来，几乎所有的处理机都利用流水线来使指令重叠并行执行，以达到提高性能目的。这种指令之间存在的潜在并行性成为指令级并行（ILP）。通过利用各种技术，在流水线思想的基础上进一步扩展，开发出更多的指令级并行。&amp;emsp;&amp;emsp;开发ILP主要分为两类：主要基于硬件的动态开发以及基于软件的静态开发方法。在实际开发中，往往需要两者兼用。特别是，把硬件与软件">
 <meta property="og:locale" content="zh-CN">
-<meta property="og:updated_time" content="2019-03-10T06:52:12.637Z">
+<meta property="og:updated_time" content="2019-03-10T16:12:00.483Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="指令级并行之多指令流出技术">
-<meta name="twitter:description" content="&amp;emsp;&amp;emsp;虽然希望CPI越小越好，但如果是每次只流出一条指令，CPI就不可能小于1。如果想再进一步提高性能，使CPI小于1，就必须采取多柳树技术（multiple issure），在每个时钟周期流出多条指令。&amp;emsp;&amp;emsp;多流出处理机有两种基本风格：超标量（superscalar）和超长指令字VLIW（Very Long Instruction Word）。超标量在每个时钟">
+<meta name="twitter:title" content="指令级并行基本概念">
+<meta name="twitter:description" content="&amp;emsp;&amp;emsp;自20世纪80年代中期以来，几乎所有的处理机都利用流水线来使指令重叠并行执行，以达到提高性能目的。这种指令之间存在的潜在并行性成为指令级并行（ILP）。通过利用各种技术，在流水线思想的基础上进一步扩展，开发出更多的指令级并行。&amp;emsp;&amp;emsp;开发ILP主要分为两类：主要基于硬件的动态开发以及基于软件的静态开发方法。在实际开发中，往往需要两者兼用。特别是，把硬件与软件">
 
 
 
@@ -138,7 +138,7 @@
   };
 </script>
 
-  <title>指令级并行之多指令流出技术 | 面对疾风吧，少年！</title>
+  <title>指令级并行基本概念 | 面对疾风吧，少年！</title>
   
 
 
@@ -386,7 +386,7 @@
   
   
   <div class="post-block">
-    <link itemprop="mainEntityOfPage" href="https://yohua.ml/2019/03/07/指令级并行之多指令流出技术/">
+    <link itemprop="mainEntityOfPage" href="https://yohua.ml/2019/03/06/指令级并行基本概念/">
 
     <span hidden itemprop="author" itemscope="" itemtype="http://schema.org/Person">
       <meta itemprop="name" content="Yohua">
@@ -403,7 +403,7 @@
 
         
         
-          <h2 class="post-title" itemprop="name headline">指令级并行之多指令流出技术
+          <h2 class="post-title" itemprop="name headline">指令级并行基本概念
 
               
             
@@ -429,7 +429,7 @@
                 
               
 
-              <time title="创建时间：2019-03-07 02:31:36" itemprop="dateCreated datePublished" datetime="2019-03-07T02:31:36+08:00">2019-03-07</time>
+              <time title="创建时间：2019-03-06 01:26:26" itemprop="dateCreated datePublished" datetime="2019-03-06T01:26:26+08:00">2019-03-06</time>
             
 
             
@@ -444,7 +444,7 @@
 
           
           
-            <span id="/2019/03/07/指令级并行之多指令流出技术/" class="leancloud_visitors" data-flag-title="指令级并行之多指令流出技术">
+            <span id="/2019/03/06/指令级并行基本概念/" class="leancloud_visitors" data-flag-title="指令级并行基本概念">
               <span class="post-meta-divider">|</span>
               <span class="post-meta-item-icon">
                 <i class="fa fa-eye"></i>
@@ -469,7 +469,7 @@
                 
                   <span class="post-meta-item-text">本文字数：</span>
                 
-                <span title="本文字数">2.5k</span>
+                <span title="本文字数">944</span>
               
 
               
@@ -483,7 +483,7 @@
                 
                   <span class="post-meta-item-text">阅读时长 &asymp;</span>
                 
-                <span title="阅读时长">10 分钟</span>
+                <span title="阅读时长">4 分钟</span>
               
             </div>
           
@@ -503,13 +503,9 @@
       
 
       
-        <p>&emsp;&emsp;虽然希望CPI越小越好，但如果是每次只流出一条指令，CPI就不可能小于1。如果想再进一步提高性能，使CPI小于1，就必须采取多柳树技术（multiple issure），在每个时钟周期流出多条指令。<br>&emsp;&emsp;多流出处理机有两种基本风格：超标量（superscalar）和超长指令字VLIW（Very Long Instruction Word）。超标量在每个时钟周期流出的指令条数不固定，依代码的具体情况而定，不过有个上限。设这个上限为n，就成该处理机为n流出。对于超标量处理机，既可以通过编译器进行静态调度，也可以基于Tomasulo算法进行动态调度。静态调度的超标量处理机易班采用按序执行，而动态调度的处理机一般采用乱序执行。<br>&emsp;&emsp;与超标量处理机不同，VLIW处理机在每个时钟周期流出的指令条数是固定的，这些指令构成一条长指令或者一个指令包，在这个指令包中，指令之间的并行性是通过指令显式地表示出来的。这种处理机的指令调度是由编译器静态完成的。<br>&emsp;&emsp;超标量处理机与VLIW处理机相比有两个优点：<br>&emsp;&emsp;（1）超标量结构对程序员是透明的，因为处理机能自己检测下一条指令能否流出，从而不需要重新排列指令来满足指令的流出。<br>&emsp;&emsp;（2）即使是没有经过编译器针对超标量结构进行调度优化的代码或是旧的编译器生成的代码也可以运行，当然运行的效果不会很好。要想达到很好的效果，方法之一就是使用动态超标量调度技术。</p>
-<h1 id="基于静态调度的多流出技术"><a href="#基于静态调度的多流出技术" class="headerlink" title="基于静态调度的多流出技术"></a>基于静态调度的多流出技术</h1><p>&emsp;&emsp;典型的超标量处理机每个时钟周期可流出1~8条指令。在静态调度的超标量处理机中，指令按序流出。所有的冲突检测都在流出时进行，由硬件检测当前流出的指令之间是否存在冲突以及当前流出的指令与正在执行的指令是否有冲突。如果当前流出的指令序列中，某条指令存在上述冲突，那么就只流出该指令之前的指令。</p>
-<h1 id="基于动态调度的多流出技术"><a href="#基于动态调度的多流出技术" class="headerlink" title="基于动态调度的多流出技术"></a>基于动态调度的多流出技术</h1><p>&emsp;&emsp;在多流出处理机中，动态调度技术是提高性能的一种方法。动态调度不仅在有数据冲突的时候也能提高性能，而且还有可能克服指令流出所受的限制。尽管从硬件角度看，在每个时钟周期最多只能启动一个整数和一个浮点操作的执行，但是动态调度可以使得在流出时不受这个限制，至少在保留站全部被占用之前是如此。<br>&emsp;&emsp;假如要对Tomasulo算法进行拓展，使之能够支持超标量流水线，但是又不想乱序的向保留站流出指令，应为这会破坏程序语义。为了充分利用动态调度的好处，应该去掉每个时期周期只能流出一条整数指令和一条浮点操作指令的限制。但这会大大地增加指令流出的硬件复杂度。<br>&emsp;&emsp;另一种比较简单的方法是：将整数所用的表结构与浮点用的表结构分离，分别进行处理，这样就可以同时流出一条浮点指令和一条整数指令到各自的保留站中。<br>&emsp;&emsp;有两种不同的方法可以用来在采用动态调度的处理机中实现多流出。他们都是监理在这样一个认识之上的：关键在于对保留站的分配和对流水线控制表格的修改。一种方法是在半个时钟周期里完成露出步骤，这样一个时钟周期就能处理两条指令。另一种方法是设置一次能同时处理两条指令的逻辑电路。线代的流出4条或4条以上指令的超标量处理机经常是两种方法都采用。</p>
-<h1 id="超长指令字技术"><a href="#超长指令字技术" class="headerlink" title="超长指令字技术"></a>超长指令字技术</h1><p>&emsp;&emsp;与超标量不同，超长指令字技术在指令流出时不需要进行复杂的冲突检测，而是依靠编译器在编译时找出指令之间潜在的并行性，并通过指令调度把可能出现的数据冲突减少到最小，最后把能并行执行的多条指令组装成一条很长的指令。这种指令经常是100到几百位，超长指令字因此得名。<br>&emsp;&emsp;在VLIW处理机中一般设置多个功能部件。相应的，指令字也被分割成多个字段，每个字段称为一个操作槽，直接独立地控制一个功能部件。为了使功能部件充分忙碌，程序指令序列中应有足够的并行性，从而尽量填满每个操作槽。这种并行性是依靠编译器来挖掘的。编译器把循环展开，并在展开后的代码中进行指令调度。<br>&emsp;&emsp;在VLIW处理机中，所有的处理和指令安排都是由编译器完成的，它不需要超标量处理机中用于指令流出控制的硬件，因而控制硬件比较简单。特别是当流出宽度增加时，VLIW技术的优点更明显。</p>
-<h2 id="超长指令字技术缺点"><a href="#超长指令字技术缺点" class="headerlink" title="超长指令字技术缺点"></a>超长指令字技术缺点</h2><p>&emsp;&emsp;（1）程序代码长度增加<br>&emsp;&emsp;原因有：一个是为了提高并行性而进行的大量的循环展开，另一个是指令字中的操作槽并非总能填满。虽然编译器会尽量使得各操作部件充分忙碌，但总会出现无法安排指令到操作部件执行的情况，这时指令字中与该操作部件对应的操作槽就没有被利用起来，这会造成空间上的浪费。<br>&emsp;&emsp;为解决此问题，可采用指令共享立即数字段的方法，或者采用指令压缩存储、调入Cache或译码时展开的方法。<br>&emsp;&emsp;（2）采用了琐步机制<br>&emsp;&emsp;由于没有冲突检测硬件，早期VLIW技术都采用琐步机制。在新近的VLIW处理机中，各功能部件有了更多的独立性。可以通过设置适当的硬件动态检测机制，来允许指令流出后的非同步执行。<br>&emsp;&emsp;（3）机器代码的不兼容性<br>在VLIW中，编译生成代码时，是充分利用了指令集的特点以及具体流水线结构的细节（如指令流出数目、功能单元延迟时间等都不同）来进行优化的。所以在不同配置的VLIW中，机器代码差别很大。即使是同一系列的VLIW也难以实现机器代码的兼容。<br>&emsp;&emsp;为解决此问题，可以采用机器代码翻译或仿真的方法。这两种方法是解决所有移植问题的通用方法。</p>
-<h1 id="多流出处理器受到的限制"><a href="#多流出处理器受到的限制" class="headerlink" title="多流出处理器受到的限制"></a>多流出处理器受到的限制</h1><p>&emsp;&emsp;主要受以下三方面影响：<br>&emsp;&emsp;（1）程序所固有的指令级并行（ILP）。<br>&emsp;&emsp;（2）硬件实现上的困难。<br>&emsp;&emsp;（3）超变量和超长指令字处理机器固有的技术限制。</p>
-<h1 id="超流水线处理机"><a href="#超流水线处理机" class="headerlink" title="超流水线处理机"></a>超流水线处理机</h1>
+        <p>&emsp;&emsp;自20世纪80年代中期以来，几乎所有的处理机都利用流水线来使指令重叠并行执行，以达到提高性能目的。这种指令之间存在的潜在并行性成为指令级并行（ILP）。通过利用各种技术，在流水线思想的基础上进一步扩展，开发出更多的指令级并行。<br>&emsp;&emsp;开发ILP主要分为两类：主要基于硬件的动态开发以及基于软件的静态开发方法。在实际开发中，往往需要两者兼用。特别是，把硬件与软件技术以及动态的方法与静态方法结合起来，才能充分开发程序中潜在的指令级并行。<br>&emsp;&emsp;流水线处理机的实际CPI等于理想流水线的CPI加上各类停顿的时钟周期：</p>
+<p><center> $$ CPI_{流水线}=CPI_{理想}+停顿_{结构冲突}+停顿_{数据冲突}+停顿_{控制冲突} $$ </center><br>&emsp;&emsp;其中，<script type="math/tex">CPI_{理想}</script>是衡量流水线最高性能的一个指标。通过减少该式右边各项，就能减小总的CPI，从而提高IPC（Instructions Per Cycle，每个时钟周期完成的指令条数）。<br>&emsp;&emsp;相关是程序固有的一种属性，它反映了程序中指令之间的相互依赖关系。而具体的一次相关是否会导致实际冲突的发生以及该冲突会带来多长的停顿，则是流水线的属性。<br>&emsp;&emsp;主要从以下两个方面解决相关问题：<br>&emsp;&emsp;（1）保持相关，但避免发生冲突。<br>&emsp;&emsp;（2）通过代码变换，消除相关。<br>&emsp;&emsp;指令调度是一种用以避免冲突的主要方法，但它不改变相关。通过动态调度代码的硬件方法，可以消除某些相关。<br>&emsp;&emsp;由于相关的存在，必须保持程序顺序。程序书序是指，有源程序确定的在完全串行方式下指令的执行顺序。只有在可能影响程序正确性的情况下，才需要保持程序顺序。<br>&emsp;&emsp;对于正确的执行程序来说，必须保持的最关键的两个属性是：数据流（data flow）和异常行为（exception behavior）。<br>&emsp;&emsp;保持异常行为是指：无论怎么改变指令的执行顺序，都不能改变程序中异常的发生情况。<br>&emsp;&emsp;如果能做到保持程序的数据相关和控制相关，就能保持程序的数据流和异常行为。</p>
+
       
     </div>
 
@@ -572,7 +568,7 @@
   <li class="post-copyright-link">
     <strong>本文链接：</strong>
     
-    <a href="https://yohua.ml/2019/03/07/指令级并行之多指令流出技术/" title="指令级并行之多指令流出技术">https://yohua.ml/2019/03/07/指令级并行之多指令流出技术/</a>
+    <a href="https://yohua.ml/2019/03/06/指令级并行基本概念/" title="指令级并行基本概念">https://yohua.ml/2019/03/06/指令级并行基本概念/</a>
   </li>
   <li class="post-copyright-license">
     <strong>版权声明： </strong>本博客所有文章除特别声明外，均采用 <span class="exturl" data-url="aHR0cHM6Ly9jcmVhdGl2ZWNvbW1vbnMub3JnL2xpY2Vuc2VzL2J5LW5jLXNhLzQuMC96aC1DTg=="><i class="fa fa-fw fa-creative-commons"></i>BY-NC-SA</span> 许可协议。转载请注明出处！</li>
@@ -600,8 +596,8 @@
         <div class="post-nav">
           <div class="post-nav-next post-nav-item">
             
-              <a href="/2019/03/07/指令级并行之动态分支预测技术/" rel="next" title="指令级并行之动态分支预测技术">
-                <i class="fa fa-chevron-left"></i> 指令级并行之动态分支预测技术
+              <a href="/2019/03/03/排序算法/" rel="next" title="排序算法">
+                <i class="fa fa-chevron-left"></i> 排序算法
               </a>
             
           </div>
@@ -610,8 +606,8 @@
 
           <div class="post-nav-prev post-nav-item">
             
-              <a href="/2019/03/07/互连网络的基本概念/" rel="prev" title="互联网络的基本概念">
-                互联网络的基本概念 <i class="fa fa-chevron-right"></i>
+              <a href="/2019/03/06/指令级并行之指令的动态调度/" rel="prev" title="指令级并行之指令的动态调度">
+                指令级并行之指令的动态调度 <i class="fa fa-chevron-right"></i>
               </a>
             
           </div>
@@ -661,17 +657,8 @@
       
 
       
-        <ul class="sidebar-nav motion-element">
-          <li class="sidebar-nav-toc sidebar-nav-active" data-target="post-toc-wrap">
-            文章目录
-          </li>
-          <li class="sidebar-nav-overview" data-target="site-overview-wrap">
-            站点概览
-          </li>
-        </ul>
-      
 
-      <div class="site-overview-wrap sidebar-panel">
+      <div class="site-overview-wrap sidebar-panel sidebar-panel-active">
         <div class="site-overview">
           <div class="site-author motion-element" itemprop="author" itemscope="" itemtype="http://schema.org/Person">
             
@@ -835,23 +822,6 @@
         </div>
       </div>
 
-      
-      <!--noindex-->
-        <div class="post-toc-wrap motion-element sidebar-panel sidebar-panel-active">
-          <div class="post-toc">
-
-            
-            
-            
-            
-
-            
-              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#基于静态调度的多流出技术"><span class="nav-number">1.</span> <span class="nav-text">基于静态调度的多流出技术</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#基于动态调度的多流出技术"><span class="nav-number">2.</span> <span class="nav-text">基于动态调度的多流出技术</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#超长指令字技术"><span class="nav-number">3.</span> <span class="nav-text">超长指令字技术</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#超长指令字技术缺点"><span class="nav-number">3.1.</span> <span class="nav-text">超长指令字技术缺点</span></a></li></ol></li><li class="nav-item nav-level-1"><a class="nav-link" href="#多流出处理器受到的限制"><span class="nav-number">4.</span> <span class="nav-text">多流出处理器受到的限制</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#超流水线处理机"><span class="nav-number">5.</span> <span class="nav-text">超流水线处理机</span></a></li></ol></div>
-            
-
-          </div>
-        </div>
-      <!--/noindex-->
       
 
       
@@ -1049,7 +1019,7 @@
   
     <script>
   window.livereOptions = {
-    refer: '2019/03/07/指令级并行之多指令流出技术/'
+    refer: '2019/03/06/指令级并行基本概念/'
   };
   (function(d, s) {
     var j, e = d.getElementsByTagName(s)[0];
@@ -1464,6 +1434,53 @@
   
   
 
+  
+    
+      <script type="text/x-mathjax-config">
+  
+
+  MathJax.Hub.Config({
+    tex2jax: {
+      inlineMath: [ ['$', '$'], ['\\(', '\\)'] ],
+      processEscapes: true,
+      skipTags: ['script', 'noscript', 'style', 'textarea', 'pre', 'code']
+    },
+    TeX: {
+      
+      equationNumbers: {
+        autoNumber: 'AMS'
+      }
+    }
+  });
+  MathJax.Hub.Register.StartupHook('TeX Jax Ready', function() {
+    MathJax.InputJax.TeX.prefilterHooks.Add(function(data) {
+      if (data.display) {
+        var next = data.script.nextSibling;
+        while (next && next.nodeName.toLowerCase() === '#text') { next = next.nextSibling }
+        if (next && next.nodeName.toLowerCase() === 'br') { next.parentNode.removeChild(next) }
+      }
+    });
+  });
+</script>
+
+<script type="text/x-mathjax-config">
+  MathJax.Hub.Queue(function() {
+    var all = MathJax.Hub.getAllJax(), i;
+      for (i = 0; i < all.length; i += 1) {
+        all[i].SourceElement().parentNode.className += ' has-jax';
+      }
+  });
+</script>
+<script src="//cdn.jsdelivr.net/npm/mathjax@2.7.1/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
+
+<style>
+.MathJax_Display {
+  overflow-x: scroll;
+  overflow-y: hidden;
+}
+</style>
+
+    
   
 
 

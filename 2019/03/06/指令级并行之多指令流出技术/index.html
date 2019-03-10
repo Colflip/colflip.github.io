@@ -110,23 +110,18 @@
 
 
 
-  <meta name="description" content="&amp;emsp;&amp;emsp;当要提高ILP（指令级并行）时，控制相关就是会成为主要限定因素之一。所开发的ILP越多，控制相关的制约性就越大，分支预测就要求有更高的准确度。对于每个时钟周期流出多条指令（若为n条，就称为n流出）的处理机来说是非常重要的。这是因为：①在n流出的处理机中，遇到分支指令的可能性增加了n倍。要给处理机连续提供指令，就需要预测分支的结果；②Amdahl定律告诉我们，机器的CPI越小">
+  <meta name="description" content="&amp;emsp;&amp;emsp;虽然希望CPI越小越好，但如果是每次只流出一条指令，CPI就不可能小于1。如果想再进一步提高性能，使CPI小于1，就必须采取多柳树技术（multiple issure），在每个时钟周期流出多条指令。&amp;emsp;&amp;emsp;多流出处理机有两种基本风格：超标量（superscalar）和超长指令字VLIW（Very Long Instruction Word）。超标量在每个时钟">
 <meta name="keywords" content="知识,计算机系统结构">
 <meta property="og:type" content="article">
-<meta property="og:title" content="指令级并行之动态分支预测技术">
-<meta property="og:url" content="https://yohua.ml/2019/03/07/指令级并行之动态分支预测技术/index.html">
+<meta property="og:title" content="指令级并行之多指令流出技术">
+<meta property="og:url" content="https://yohua.ml/2019/03/06/指令级并行之多指令流出技术/index.html">
 <meta property="og:site_name" content="面对疾风吧，少年！">
-<meta property="og:description" content="&amp;emsp;&amp;emsp;当要提高ILP（指令级并行）时，控制相关就是会成为主要限定因素之一。所开发的ILP越多，控制相关的制约性就越大，分支预测就要求有更高的准确度。对于每个时钟周期流出多条指令（若为n条，就称为n流出）的处理机来说是非常重要的。这是因为：①在n流出的处理机中，遇到分支指令的可能性增加了n倍。要给处理机连续提供指令，就需要预测分支的结果；②Amdahl定律告诉我们，机器的CPI越小">
+<meta property="og:description" content="&amp;emsp;&amp;emsp;虽然希望CPI越小越好，但如果是每次只流出一条指令，CPI就不可能小于1。如果想再进一步提高性能，使CPI小于1，就必须采取多柳树技术（multiple issure），在每个时钟周期流出多条指令。&amp;emsp;&amp;emsp;多流出处理机有两种基本风格：超标量（superscalar）和超长指令字VLIW（Very Long Instruction Word）。超标量在每个时钟">
 <meta property="og:locale" content="zh-CN">
-<meta property="og:image" content="https://yohua.ml/2019/03/07/指令级并行之动态分支预测技术/001.png">
-<meta property="og:image" content="https://yohua.ml/2019/03/07/指令级并行之动态分支预测技术/002.png">
-<meta property="og:image" content="https://yohua.ml/2019/03/07/指令级并行之动态分支预测技术/003.png">
-<meta property="og:image" content="https://yohua.ml/2019/03/07/指令级并行之动态分支预测技术/004.png">
-<meta property="og:updated_time" content="2019-03-09T10:45:18.992Z">
+<meta property="og:updated_time" content="2019-03-10T16:12:08.274Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="指令级并行之动态分支预测技术">
-<meta name="twitter:description" content="&amp;emsp;&amp;emsp;当要提高ILP（指令级并行）时，控制相关就是会成为主要限定因素之一。所开发的ILP越多，控制相关的制约性就越大，分支预测就要求有更高的准确度。对于每个时钟周期流出多条指令（若为n条，就称为n流出）的处理机来说是非常重要的。这是因为：①在n流出的处理机中，遇到分支指令的可能性增加了n倍。要给处理机连续提供指令，就需要预测分支的结果；②Amdahl定律告诉我们，机器的CPI越小">
-<meta name="twitter:image" content="https://yohua.ml/2019/03/07/指令级并行之动态分支预测技术/001.png">
+<meta name="twitter:title" content="指令级并行之多指令流出技术">
+<meta name="twitter:description" content="&amp;emsp;&amp;emsp;虽然希望CPI越小越好，但如果是每次只流出一条指令，CPI就不可能小于1。如果想再进一步提高性能，使CPI小于1，就必须采取多柳树技术（multiple issure），在每个时钟周期流出多条指令。&amp;emsp;&amp;emsp;多流出处理机有两种基本风格：超标量（superscalar）和超长指令字VLIW（Very Long Instruction Word）。超标量在每个时钟">
 
 
 
@@ -143,7 +138,7 @@
   };
 </script>
 
-  <title>指令级并行之动态分支预测技术 | 面对疾风吧，少年！</title>
+  <title>指令级并行之多指令流出技术 | 面对疾风吧，少年！</title>
   
 
 
@@ -391,7 +386,7 @@
   
   
   <div class="post-block">
-    <link itemprop="mainEntityOfPage" href="https://yohua.ml/2019/03/07/指令级并行之动态分支预测技术/">
+    <link itemprop="mainEntityOfPage" href="https://yohua.ml/2019/03/06/指令级并行之多指令流出技术/">
 
     <span hidden itemprop="author" itemscope="" itemtype="http://schema.org/Person">
       <meta itemprop="name" content="Yohua">
@@ -408,7 +403,7 @@
 
         
         
-          <h2 class="post-title" itemprop="name headline">指令级并行之动态分支预测技术
+          <h2 class="post-title" itemprop="name headline">指令级并行之多指令流出技术
 
               
             
@@ -434,7 +429,7 @@
                 
               
 
-              <time title="创建时间：2019-03-07 01:05:46" itemprop="dateCreated datePublished" datetime="2019-03-07T01:05:46+08:00">2019-03-07</time>
+              <time title="创建时间：2019-03-06 12:31:36" itemprop="dateCreated datePublished" datetime="2019-03-06T12:31:36+08:00">2019-03-06</time>
             
 
             
@@ -449,7 +444,7 @@
 
           
           
-            <span id="/2019/03/07/指令级并行之动态分支预测技术/" class="leancloud_visitors" data-flag-title="指令级并行之动态分支预测技术">
+            <span id="/2019/03/06/指令级并行之多指令流出技术/" class="leancloud_visitors" data-flag-title="指令级并行之多指令流出技术">
               <span class="post-meta-divider">|</span>
               <span class="post-meta-item-icon">
                 <i class="fa fa-eye"></i>
@@ -474,7 +469,7 @@
                 
                   <span class="post-meta-item-text">本文字数：</span>
                 
-                <span title="本文字数">2.4k</span>
+                <span title="本文字数">2.5k</span>
               
 
               
@@ -488,7 +483,7 @@
                 
                   <span class="post-meta-item-text">阅读时长 &asymp;</span>
                 
-                <span title="阅读时长">9 分钟</span>
+                <span title="阅读时长">10 分钟</span>
               
             </div>
           
@@ -508,22 +503,13 @@
       
 
       
-        <p>&emsp;&emsp;当要提高ILP（指令级并行）时，控制相关就是会成为主要限定因素之一。所开发的ILP越多，控制相关的制约性就越大，分支预测就要求有更高的准确度。对于每个时钟周期流出多条指令（若为n条，就称为n流出）的处理机来说是非常重要的。这是因为：①在n流出的处理机中，遇到分支指令的可能性增加了n倍。要给处理机连续提供指令，就需要预测分支的结果；②Amdahl定律告诉我们，机器的CPI越小，控制停顿的相对影响就越大。<br>&emsp;&emsp;前面介绍的集中静态处理分支指令的方法，如预测成功和延迟分支。在这些方法中，所进行的操作是预先定义好的，与分支的实际执行情况无关。下面讨论动态的进行分支处理的方法。这些方法是在程序运行的时候，根据分支指令过去的表现来预测其将来的行为。如果分支行为发生了变化，预测结果也随之改变。因此有较好的预测准确度和适应性。<br>&emsp;&emsp;分支预测的有效性不仅取决于其准确性，而且还与预测正确和不正确两种情况下的分支开销有密切关系。这些分支开销是由流水线的结构、预测的方法和预测错误时的恢复策略等诸因素决定的。<br>&emsp;&emsp;采用这些动态分支预测技术的目的有两个：预测分支是否成功和尽快找到分支目标地址（或指令），从而避免控制相关造成流水线停顿。<br>&emsp;&emsp;在这些方法中，需要解决以下关键问题：①如何记录分支的历史信息；②如何根据这些信息来预测分支的去向（甚至取到指令）。<br>&emsp;&emsp;预测错误时，要作废已经预取和分析的指令，恢复现场，并从另一条分支路径上重新取指令，为了能恢复现场，需要在执行预测的目标指令之前将现场保持起来。</p>
-<p><center>
-<img src="/2019/03/07/指令级并行之动态分支预测技术/001.png" width="75%" height="100%" alt=" ">
-</center></p>
-<h1 id="采用分支历史表"><a href="#采用分支历史表" class="headerlink" title="采用分支历史表"></a>采用分支历史表</h1><p>&emsp;&emsp;分支历史表（Branch History Table，BHT）有时也称为分支预测缓冲器（Branch Prediciton Buffer）。这种方法是最简单的动态分支预测法。它用BHT来记录分支指令最近一次或几次的执行情况（成功或不成功），并据此进行预测。如果只执行分支指令最近一次的历史，BHT中只需要1位二进制位，是最简单的了。为了提高预测的准确度，常采取两位二进制位来记录历史。有研究结果表明，两位分支预测的性能与n位（n&gt;2）分支预测的性能差不多。因而大多数处理机是采用分支预测。下面介绍这种方法。<br>&emsp;&emsp;两位分支预测的状态转换如下图。其中，在00和01状态下，预测分支不成功；在10和11状态下，预测分支成功。连线边上注明了分支指令的实际执行情况。只有连续两次预测错误，才会改变对分支去向的预测。在11状态下连续两次错误预测错误，状态将变为00（预测分支不成功）。</p>
-<p><center>
-<img src="/2019/03/07/指令级并行之动态分支预测技术/002.png" width="75%" height="100%" alt=" ">
-</center><br>&emsp;&emsp;两位分支预测的操作有两个步骤：①分支预测；②状态修改。当分支指令到达译码段（ID）时，根据从BHT读出的信息进行分支预测，如果是“预测成功”，那么就从分支目标地址取后续的指令。等分支指令的实际执行结果出来后，如果发现预测正确，就继续处理后续的指令，流水线没有断流。否则，就要作废已经预取和分析的指令，恢复现场，并从另一条分支路径中重新取指令。不管是哪种情况，都要按照上图状态进行修改。<br>&emsp;&emsp;在BHT方法中，只对分支是否成功进行预测，对分支目标地址没有提供支持。所以它只有在以下情况中有用：判定分支是否成功所需的时间大于确定分支目标地址所需的时间。在前述5段经典流水线中，由于判定分支是否成功和计算分支目标地址都是在ID段完成，所以BHT方法不会给该流水线带来好处。<br>&emsp;&emsp;一般来说，采用4K的BHT就可以了，如果要进一步提高预测准确率，需要采用更复杂的预测方法。<br>&emsp;&emsp;BHT可以跟分支指令一起存放在指令Cache中，也可以用一个专门的硬件来实现。如果是前者，在取指阶段，就把历史位一起读出来。如果是后者，就在取指令的同时，用指令地址的低位（例如低12位）去访问BHT，读出历史位。</p>
-<h1 id="采用分支目标缓冲器"><a href="#采用分支目标缓冲器" class="headerlink" title="采用分支目标缓冲器"></a>采用分支目标缓冲器</h1><p>&emsp;&emsp;在高性能流水线中，特别是在多流出的处理机中，只准确的预测分支还不够，还要能够提供足够的指令流。许多现代的处理器都要要求每个时钟周期能提供4~8条指令。这需要尽早知道分支是否成功，尽早知道分支目标得治，尽早获取分支目标指令。<br>&emsp;&emsp;对于前述5段流水线，BHT方法是在ID段对BHT进行访问，所以在ID段的末尾，能够获得分支目标地址（在ID段计算出）、顺序下一条指令地址（在IF段计算出）以及预测的结果，如果能再提前一拍（即在IF段）就知道这些信息，那么分支开销就可以减少为0。分支目标缓冲器（Branch Target Buffer，BTB）能够实现这一点。BTB有时也称为分支目标Cache。</p>
-<p><center>
-<img src="/2019/03/07/指令级并行之动态分支预测技术/003.png" width="75%" height="100%" alt=" ">
-</center><br>&emsp;&emsp;如上图，可以把它看成是用专门硬件实现的一张表格。表格的每一项至少有两个字段：①执行过的成功分支指令的地址；②预测的分支目标地址。第一个字段作为该表的匹配标识。在每次取指令的同时，我们把该指令的地址与BTB中的所有项目的第一个字段进行比较。如果能匹配，就可确定该指令时分支指令且上一次执行时分支成功，据此可以预测这次执行也将分支成功，其分支目标地址由匹配项的第二个字段给出。如果没有匹配的，就把当前指令当作普通的指令（即不是分支指令）来执行。</p>
-<p><center>
-<img src="/2019/03/07/指令级并行之动态分支预测技术/004.png" width="75%" height="100%" alt=" ">
-</center><br>&emsp;&emsp;当采用BTB后，在流水线各个阶段进行的相关操作如上图所示。<br>BTB的另一种形式是在分支目标缓冲器中存储一条或者多条分支目标处的指令。有的实现方案还保留了分支目标地址，有的则降之去掉了。这种方案的3个潜在好处是：①更快地获得分支目标处的指令；②可以一次提供分支目标处的多条指令，这对于多流出处理器是很有必要的；③便于进行分支折叠优化。</p>
-
+        <p>&emsp;&emsp;虽然希望CPI越小越好，但如果是每次只流出一条指令，CPI就不可能小于1。如果想再进一步提高性能，使CPI小于1，就必须采取多柳树技术（multiple issure），在每个时钟周期流出多条指令。<br>&emsp;&emsp;多流出处理机有两种基本风格：超标量（superscalar）和超长指令字VLIW（Very Long Instruction Word）。超标量在每个时钟周期流出的指令条数不固定，依代码的具体情况而定，不过有个上限。设这个上限为n，就成该处理机为n流出。对于超标量处理机，既可以通过编译器进行静态调度，也可以基于Tomasulo算法进行动态调度。静态调度的超标量处理机易班采用按序执行，而动态调度的处理机一般采用乱序执行。<br>&emsp;&emsp;与超标量处理机不同，VLIW处理机在每个时钟周期流出的指令条数是固定的，这些指令构成一条长指令或者一个指令包，在这个指令包中，指令之间的并行性是通过指令显式地表示出来的。这种处理机的指令调度是由编译器静态完成的。<br>&emsp;&emsp;超标量处理机与VLIW处理机相比有两个优点：<br>&emsp;&emsp;（1）超标量结构对程序员是透明的，因为处理机能自己检测下一条指令能否流出，从而不需要重新排列指令来满足指令的流出。<br>&emsp;&emsp;（2）即使是没有经过编译器针对超标量结构进行调度优化的代码或是旧的编译器生成的代码也可以运行，当然运行的效果不会很好。要想达到很好的效果，方法之一就是使用动态超标量调度技术。</p>
+<h1 id="基于静态调度的多流出技术"><a href="#基于静态调度的多流出技术" class="headerlink" title="基于静态调度的多流出技术"></a>基于静态调度的多流出技术</h1><p>&emsp;&emsp;典型的超标量处理机每个时钟周期可流出1~8条指令。在静态调度的超标量处理机中，指令按序流出。所有的冲突检测都在流出时进行，由硬件检测当前流出的指令之间是否存在冲突以及当前流出的指令与正在执行的指令是否有冲突。如果当前流出的指令序列中，某条指令存在上述冲突，那么就只流出该指令之前的指令。</p>
+<h1 id="基于动态调度的多流出技术"><a href="#基于动态调度的多流出技术" class="headerlink" title="基于动态调度的多流出技术"></a>基于动态调度的多流出技术</h1><p>&emsp;&emsp;在多流出处理机中，动态调度技术是提高性能的一种方法。动态调度不仅在有数据冲突的时候也能提高性能，而且还有可能克服指令流出所受的限制。尽管从硬件角度看，在每个时钟周期最多只能启动一个整数和一个浮点操作的执行，但是动态调度可以使得在流出时不受这个限制，至少在保留站全部被占用之前是如此。<br>&emsp;&emsp;假如要对Tomasulo算法进行拓展，使之能够支持超标量流水线，但是又不想乱序的向保留站流出指令，应为这会破坏程序语义。为了充分利用动态调度的好处，应该去掉每个时期周期只能流出一条整数指令和一条浮点操作指令的限制。但这会大大地增加指令流出的硬件复杂度。<br>&emsp;&emsp;另一种比较简单的方法是：将整数所用的表结构与浮点用的表结构分离，分别进行处理，这样就可以同时流出一条浮点指令和一条整数指令到各自的保留站中。<br>&emsp;&emsp;有两种不同的方法可以用来在采用动态调度的处理机中实现多流出。他们都是监理在这样一个认识之上的：关键在于对保留站的分配和对流水线控制表格的修改。一种方法是在半个时钟周期里完成露出步骤，这样一个时钟周期就能处理两条指令。另一种方法是设置一次能同时处理两条指令的逻辑电路。线代的流出4条或4条以上指令的超标量处理机经常是两种方法都采用。</p>
+<h1 id="超长指令字技术"><a href="#超长指令字技术" class="headerlink" title="超长指令字技术"></a>超长指令字技术</h1><p>&emsp;&emsp;与超标量不同，超长指令字技术在指令流出时不需要进行复杂的冲突检测，而是依靠编译器在编译时找出指令之间潜在的并行性，并通过指令调度把可能出现的数据冲突减少到最小，最后把能并行执行的多条指令组装成一条很长的指令。这种指令经常是100到几百位，超长指令字因此得名。<br>&emsp;&emsp;在VLIW处理机中一般设置多个功能部件。相应的，指令字也被分割成多个字段，每个字段称为一个操作槽，直接独立地控制一个功能部件。为了使功能部件充分忙碌，程序指令序列中应有足够的并行性，从而尽量填满每个操作槽。这种并行性是依靠编译器来挖掘的。编译器把循环展开，并在展开后的代码中进行指令调度。<br>&emsp;&emsp;在VLIW处理机中，所有的处理和指令安排都是由编译器完成的，它不需要超标量处理机中用于指令流出控制的硬件，因而控制硬件比较简单。特别是当流出宽度增加时，VLIW技术的优点更明显。</p>
+<h2 id="超长指令字技术缺点"><a href="#超长指令字技术缺点" class="headerlink" title="超长指令字技术缺点"></a>超长指令字技术缺点</h2><p>&emsp;&emsp;（1）程序代码长度增加<br>&emsp;&emsp;原因有：一个是为了提高并行性而进行的大量的循环展开，另一个是指令字中的操作槽并非总能填满。虽然编译器会尽量使得各操作部件充分忙碌，但总会出现无法安排指令到操作部件执行的情况，这时指令字中与该操作部件对应的操作槽就没有被利用起来，这会造成空间上的浪费。<br>&emsp;&emsp;为解决此问题，可采用指令共享立即数字段的方法，或者采用指令压缩存储、调入Cache或译码时展开的方法。<br>&emsp;&emsp;（2）采用了琐步机制<br>&emsp;&emsp;由于没有冲突检测硬件，早期VLIW技术都采用琐步机制。在新近的VLIW处理机中，各功能部件有了更多的独立性。可以通过设置适当的硬件动态检测机制，来允许指令流出后的非同步执行。<br>&emsp;&emsp;（3）机器代码的不兼容性<br>在VLIW中，编译生成代码时，是充分利用了指令集的特点以及具体流水线结构的细节（如指令流出数目、功能单元延迟时间等都不同）来进行优化的。所以在不同配置的VLIW中，机器代码差别很大。即使是同一系列的VLIW也难以实现机器代码的兼容。<br>&emsp;&emsp;为解决此问题，可以采用机器代码翻译或仿真的方法。这两种方法是解决所有移植问题的通用方法。</p>
+<h1 id="多流出处理器受到的限制"><a href="#多流出处理器受到的限制" class="headerlink" title="多流出处理器受到的限制"></a>多流出处理器受到的限制</h1><p>&emsp;&emsp;主要受以下三方面影响：<br>&emsp;&emsp;（1）程序所固有的指令级并行（ILP）。<br>&emsp;&emsp;（2）硬件实现上的困难。<br>&emsp;&emsp;（3）超变量和超长指令字处理机器固有的技术限制。</p>
+<h1 id="超流水线处理机"><a href="#超流水线处理机" class="headerlink" title="超流水线处理机"></a>超流水线处理机</h1>
       
     </div>
 
@@ -586,7 +572,7 @@
   <li class="post-copyright-link">
     <strong>本文链接：</strong>
     
-    <a href="https://yohua.ml/2019/03/07/指令级并行之动态分支预测技术/" title="指令级并行之动态分支预测技术">https://yohua.ml/2019/03/07/指令级并行之动态分支预测技术/</a>
+    <a href="https://yohua.ml/2019/03/06/指令级并行之多指令流出技术/" title="指令级并行之多指令流出技术">https://yohua.ml/2019/03/06/指令级并行之多指令流出技术/</a>
   </li>
   <li class="post-copyright-license">
     <strong>版权声明： </strong>本博客所有文章除特别声明外，均采用 <span class="exturl" data-url="aHR0cHM6Ly9jcmVhdGl2ZWNvbW1vbnMub3JnL2xpY2Vuc2VzL2J5LW5jLXNhLzQuMC96aC1DTg=="><i class="fa fa-fw fa-creative-commons"></i>BY-NC-SA</span> 许可协议。转载请注明出处！</li>
@@ -614,8 +600,8 @@
         <div class="post-nav">
           <div class="post-nav-next post-nav-item">
             
-              <a href="/2019/03/06/HEXO-NexT网站个性化/" rel="next" title="HEXO NexT网站个性化">
-                <i class="fa fa-chevron-left"></i> HEXO NexT网站个性化
+              <a href="/2019/03/06/指令级并行之指令的动态调度/" rel="next" title="指令级并行之指令的动态调度">
+                <i class="fa fa-chevron-left"></i> 指令级并行之指令的动态调度
               </a>
             
           </div>
@@ -624,8 +610,8 @@
 
           <div class="post-nav-prev post-nav-item">
             
-              <a href="/2019/03/07/指令级并行之多指令流出技术/" rel="prev" title="指令级并行之多指令流出技术">
-                指令级并行之多指令流出技术 <i class="fa fa-chevron-right"></i>
+              <a href="/2019/03/06/魅族手机剩余30-电量自动关机解决方法/" rel="prev" title="魅族手机剩余30%电量自动关机解决方法">
+                魅族手机剩余30%电量自动关机解决方法 <i class="fa fa-chevron-right"></i>
               </a>
             
           </div>
@@ -860,7 +846,7 @@
             
 
             
-              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#采用分支历史表"><span class="nav-number">1.</span> <span class="nav-text">采用分支历史表</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#采用分支目标缓冲器"><span class="nav-number">2.</span> <span class="nav-text">采用分支目标缓冲器</span></a></li></ol></div>
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#基于静态调度的多流出技术"><span class="nav-number">1.</span> <span class="nav-text">基于静态调度的多流出技术</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#基于动态调度的多流出技术"><span class="nav-number">2.</span> <span class="nav-text">基于动态调度的多流出技术</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#超长指令字技术"><span class="nav-number">3.</span> <span class="nav-text">超长指令字技术</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#超长指令字技术缺点"><span class="nav-number">3.1.</span> <span class="nav-text">超长指令字技术缺点</span></a></li></ol></li><li class="nav-item nav-level-1"><a class="nav-link" href="#多流出处理器受到的限制"><span class="nav-number">4.</span> <span class="nav-text">多流出处理器受到的限制</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#超流水线处理机"><span class="nav-number">5.</span> <span class="nav-text">超流水线处理机</span></a></li></ol></div>
             
 
           </div>
@@ -1063,7 +1049,7 @@
   
     <script>
   window.livereOptions = {
-    refer: '2019/03/07/指令级并行之动态分支预测技术/'
+    refer: '2019/03/06/指令级并行之多指令流出技术/'
   };
   (function(d, s) {
     var j, e = d.getElementsByTagName(s)[0];
