@@ -122,7 +122,9 @@
 <meta property="og:image" content="https://yohua.ml/2019/03/07/互连网络的基本概念/002.png">
 <meta property="og:image" content="https://yohua.ml/2019/03/07/互连网络的基本概念/003.png">
 <meta property="og:image" content="https://yohua.ml/2019/03/07/互连网络的基本概念/004.png">
-<meta property="og:updated_time" content="2019-03-10T08:48:03.633Z">
+<meta property="og:image" content="https://yohua.ml/2019/03/07/互连网络的基本概念/005.png">
+<meta property="og:image" content="https://yohua.ml/2019/03/07/互连网络的基本概念/006.png">
+<meta property="og:updated_time" content="2019-03-10T08:54:52.500Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="互联网络的基本概念">
 <meta name="twitter:description" content="&amp;emsp;&amp;emsp;此处概念限定为“互连”，与“互联”区分。 互连网络的功能和特征&amp;emsp;&amp;emsp;互联网络（interconnection network）是一种由开关元件按照一定拓扑结构和控制方式构成的网络，用来实现计算机系统中结点之间的相互连接。这些节点可以是处理器、存储模块后其他设备。从拓扑结构角度，互联网络是从输入结点到输出结点之间的一组互连或映射（mapping）。   &amp;e">
@@ -474,7 +476,7 @@
                 
                   <span class="post-meta-item-text">本文字数：</span>
                 
-                <span title="本文字数">1.8k</span>
+                <span title="本文字数">2k</span>
               
 
               
@@ -488,7 +490,7 @@
                 
                   <span class="post-meta-item-text">阅读时长 &asymp;</span>
                 
-                <span title="阅读时长">7 分钟</span>
+                <span title="阅读时长">8 分钟</span>
               
             </div>
           
@@ -529,8 +531,15 @@
 <img src="/2019/03/07/互连网络的基本概念/004.png" width="75%" height="100%" alt=" ">
 </center></p>
 <h2 id="蝶式函数"><a href="#蝶式函数" class="headerlink" title="蝶式函数"></a>蝶式函数</h2><p>&emsp;&emsp;蝶式互连函数（butterfly）定义为：</p>
-<p><center> $$ B(x_{n-1}x_{n-2}···x_1x_0)=x_0x_{n-2}···x_1x_{n-1} $$ </center><br>&emsp;&emsp;即把输入端的二进制编号的最高位与最低位互换位置，便得到了输出端的编号。</p>
-<h2 id="反位序函数"><a href="#反位序函数" class="headerlink" title="反位序函数"></a>反位序函数</h2><p>&emsp;&emsp;</p>
+<p><center> $$ B(x_{n-1}x_{n-2}···x_1x_0)=x_0x_{n-2}···x_1x_{n-1} $$ </center><br>&emsp;&emsp;即把输入端的二进制编号的最高位与最低位互换位置，便得到了输出端的编号。<br>&emsp;&emsp;与均匀混洗函数类似，只用蝶式函数不能实现任意结点之间的连接，但是蝶式变换与交换变换的多级组合可作为构成方体多级网络的基础。</p>
+<p><center>
+<img src="/2019/03/07/互连网络的基本概念/005.png" width="75%" height="100%" alt=" ">
+</center></p>
+<h2 id="反位序函数"><a href="#反位序函数" class="headerlink" title="反位序函数"></a>反位序函数</h2><p>&emsp;&emsp;反位序函数是将输入端二进制编号的位序颠倒过来求得相应输出端的编号。其互连函数为：</p>
+<p><center> $$ R(x_{n-1}x_{n-2}···x_1x_0)=x_0x_1x_2···x_{n-2}x_{n-1} $$ </center><br>&emsp;&emsp;对于N=8的情况，正好B(x)函数等于R(x)函数，其变换图形如下。</p>
+<p><center>
+<img src="/2019/03/07/互连网络的基本概念/006.png" width="75%" height="100%" alt=" ">
+</center></p>
 <h2 id="PM2I函数"><a href="#PM2I函数" class="headerlink" title="PM2I函数"></a>PM2I函数</h2><p>&emsp;&emsp;</p>
 
       
@@ -920,7 +929,7 @@
       <i class="fa fa-coffee"></i>
     </span>
     
-    <span title="站点阅读时长">1:49</span>
+    <span title="站点阅读时长">1:50</span>
   
 </div>
 
