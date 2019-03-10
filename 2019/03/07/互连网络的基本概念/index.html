@@ -124,7 +124,9 @@
 <meta property="og:image" content="https://yohua.ml/2019/03/07/互连网络的基本概念/004.png">
 <meta property="og:image" content="https://yohua.ml/2019/03/07/互连网络的基本概念/005.png">
 <meta property="og:image" content="https://yohua.ml/2019/03/07/互连网络的基本概念/006.png">
-<meta property="og:updated_time" content="2019-03-10T09:06:59.377Z">
+<meta property="og:image" content="https://yohua.ml/2019/03/07/互连网络的基本概念/007.png">
+<meta property="og:image" content="https://yohua.ml/2019/03/07/互连网络的基本概念/008.png">
+<meta property="og:updated_time" content="2019-03-10T11:54:10.605Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="互联网络的基本概念">
 <meta name="twitter:description" content="&amp;emsp;&amp;emsp;此处概念限定为“互连”，与“互联”区分。 互连网络的功能和特征&amp;emsp;&amp;emsp;互联网络（interconnection network）是一种由开关元件按照一定拓扑结构和控制方式构成的网络，用来实现计算机系统中结点之间的相互连接。这些节点可以是处理器、存储模块后其他设备。从拓扑结构角度，互联网络是从输入结点到输出结点之间的一组互连或映射（mapping）。   &amp;e">
@@ -476,7 +478,7 @@
                 
                   <span class="post-meta-item-text">本文字数：</span>
                 
-                <span title="本文字数">2.2k</span>
+                <span title="本文字数">3.2k</span>
               
 
               
@@ -490,7 +492,7 @@
                 
                   <span class="post-meta-item-text">阅读时长 &asymp;</span>
                 
-                <span title="阅读时长">9 分钟</span>
+                <span title="阅读时长">13 分钟</span>
               
             </div>
           
@@ -542,7 +544,19 @@
 </center></p>
 <h2 id="PM2I函数"><a href="#PM2I函数" class="headerlink" title="PM2I函数"></a>PM2I函数</h2><p>&emsp;&emsp;PM2I函数是一种移数函数，它是将各输入端都循环移动一定的位置后连到输出端。其函数为：</p>
 <p><center> $$ PM2_{+i}(x)=(x+2^i) mod N $$ </center></p>
-<p><center> $$ PM2_{-i}(x)=(x-2^i) mod N $$ </center><br>&emsp;&emsp;其中，0&lt;=x&lt;=N-1,0&lt;=i&lt;=n-1,n=log_2N,N为结点数。显然，PM2I互连网络共有2n个互连函数。</p>
+<p><center> $$ PM2_{-i}(x)=(x-2^i) mod N $$ </center><br>&emsp;&emsp;其中，0&lt;=x&lt;=N-1, 0&lt;=i&lt;=n-1, n=log_2N, N为结点数。显然，PM2I互连网络共有2n个互连函数。<br>&emsp;&emsp;当N=8时，有6个PM2I函数：</p>
+<p><center> $$ PM2_{+0}: (0 1 2 3 4 5 6 7 ) $$ </center></p>
+<p><center> $$ PM2_{-0}: (7 6 5 4 3 2 1 0 ) $$ </center></p>
+<p><center> $$ PM2_{+1}: (0 2 4 6 )(1 3 5 7 ) $$ </center></p>
+<p><center> $$ PM2_{-1}: (6 4 2 0 )(7 5 3 1 ) $$ </center></p>
+<p><center> $$ PM2_{\pm2}: (0 4)(1 5)(2 6)(3 7) $$ </center><br>&emsp;&emsp;下图画出了其中3个函数的变形图形。</p>
+<p><center>
+<img src="/2019/03/07/互连网络的基本概念/007.png" width="75%" height="100%" alt=" ">
+</center><br>&emsp;&emsp;PM2I函数是构成数据变换网络的基础。<br>&emsp;&emsp;阵列计算机ILLIAC IV采用<script type="math/tex">PM2_{\pm0}</script>和<script type="math/tex">PM2_{\pm \frac{n}{2}}</script>构成互连网络，实现各处理单元之间的上下左右互连，如下图。</p>
+<p><center>
+<img src="/2019/03/07/互连网络的基本概念/008.png" width="75%" height="100%" alt=" ">
+</center></p>
+<h1 id="互连函数的性能参数"><a href="#互连函数的性能参数" class="headerlink" title="互连函数的性能参数"></a>互连函数的性能参数</h1><p>&emsp;&emsp;网络通常是用有向边或无向边连接有限个结点的图来表示。互连网络的主要特征参数有：<br>&emsp;&emsp;（1）网络规模（network size）：网络中结点的个数。它表示该网络所能连接的部件的数量、<br>&emsp;&emsp;（2）节点度（node degree）：与结点相连接的边数（通道数），包括入度（in degree）和出度（out degree）。进入结点的边数称为入度，从结点出来的边数称为出度。<br>&emsp;&emsp;（3）距离：对于网络中的任意两个结点，从一个结点出发到另一个节点终止所需要跨越的边数的最小值。<br>&emsp;&emsp;（4）网络直径（network diameter）：网络中任意两个结点之间距离的最大值。网络直径应尽可能地小。<br>&emsp;&emsp;（5）结点之间的线长：两个结点之间连线的长度，用米、千米等表示。<br>&emsp;&emsp;（6）等分宽度：当某一网路被分割成相等的两半时，沿切口的边数（通道数）的最小值称为通道等分宽度（channel bisection width），用b表示。而线等分宽度为B=b*w。其中w为通道宽度（用位表示）。该参数主要反映了网络最大流量。<br>&emsp;&emsp;（7）对称性：从任何结点看到的拓扑结构都是相同的网络称为对称网络（symmetric network）。对称网络比较容易实现，编程也比较容易。</p>
 
       
     </div>
@@ -880,7 +894,7 @@
             
 
             
-              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#互连网络的功能和特征"><span class="nav-number">1.</span> <span class="nav-text">互连网络的功能和特征</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#互连函数"><span class="nav-number">2.</span> <span class="nav-text">互连函数</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#交换函数"><span class="nav-number">2.1.</span> <span class="nav-text">交换函数</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#均匀洗牌函数"><span class="nav-number">2.2.</span> <span class="nav-text">均匀洗牌函数</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#蝶式函数"><span class="nav-number">2.3.</span> <span class="nav-text">蝶式函数</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#反位序函数"><span class="nav-number">2.4.</span> <span class="nav-text">反位序函数</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#PM2I函数"><span class="nav-number">2.5.</span> <span class="nav-text">PM2I函数</span></a></li></ol></li></ol></div>
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#互连网络的功能和特征"><span class="nav-number">1.</span> <span class="nav-text">互连网络的功能和特征</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#互连函数"><span class="nav-number">2.</span> <span class="nav-text">互连函数</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#交换函数"><span class="nav-number">2.1.</span> <span class="nav-text">交换函数</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#均匀洗牌函数"><span class="nav-number">2.2.</span> <span class="nav-text">均匀洗牌函数</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#蝶式函数"><span class="nav-number">2.3.</span> <span class="nav-text">蝶式函数</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#反位序函数"><span class="nav-number">2.4.</span> <span class="nav-text">反位序函数</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#PM2I函数"><span class="nav-number">2.5.</span> <span class="nav-text">PM2I函数</span></a></li></ol></li><li class="nav-item nav-level-1"><a class="nav-link" href="#互连函数的性能参数"><span class="nav-number">3.</span> <span class="nav-text">互连函数的性能参数</span></a></li></ol></div>
             
 
           </div>
@@ -922,7 +936,7 @@
       <i class="fa fa-area-chart"></i>
     </span>
     
-    <span title="站点总字数">28k</span>
+    <span title="站点总字数">29k</span>
   
 
   
@@ -931,7 +945,7 @@
       <i class="fa fa-coffee"></i>
     </span>
     
-    <span title="站点阅读时长">1:51</span>
+    <span title="站点阅读时长">1:55</span>
   
 </div>
 
