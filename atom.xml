@@ -48,11 +48,66 @@
   </entry>
   
   <entry>
+    <title>Atom Markdown常用技巧</title>
+    <link href="https://yohua.ml/2019/03/08/Atom-Markdown%E5%B8%B8%E7%94%A8%E6%8A%80%E5%B7%A7/"/>
+    <id>https://yohua.ml/2019/03/08/Atom-Markdown常用技巧/</id>
+    <published>2019-03-08T09:33:42.000Z</published>
+    <updated>2019-03-10T07:19:24.297Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        
+        
+          &lt;h1 id=&quot;常用快捷键&quot;&gt;&lt;a href=&quot;#常用快捷键&quot; class=&quot;headerlink&quot; title=&quot;常用快捷键&quot;&gt;&lt;/a&gt;常用快捷键&lt;/h1&gt;&lt;p&gt;&amp;emsp;&amp;emsp;只需要输入如下内容,
+        
+      
+    
+    </summary>
+    
+    
+      <category term="知识" scheme="https://yohua.ml/tags/%E7%9F%A5%E8%AF%86/"/>
+    
+      <category term="Atom" scheme="https://yohua.ml/tags/Atom/"/>
+    
+      <category term="Markdown" scheme="https://yohua.ml/tags/Markdown/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>互联网络的基本概念</title>
+    <link href="https://yohua.ml/2019/03/07/%E4%BA%92%E8%BF%9E%E7%BD%91%E7%BB%9C%E7%9A%84%E5%9F%BA%E6%9C%AC%E6%A6%82%E5%BF%B5/"/>
+    <id>https://yohua.ml/2019/03/07/互连网络的基本概念/</id>
+    <published>2019-03-07T06:53:12.000Z</published>
+    <updated>2019-03-10T07:17:53.342Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        
+        
+          &lt;p&gt;&amp;emsp;&amp;emsp;此处概念限定为“互连”，与“互联”区分。&lt;/p&gt;
+&lt;h1 id=&quot;互连网络的功能和特征&quot;&gt;&lt;a href=&quot;#互连网络的功能和特征&quot; class=&quot;headerlink&quot;
+        
+      
+    
+    </summary>
+    
+    
+      <category term="知识" scheme="https://yohua.ml/tags/%E7%9F%A5%E8%AF%86/"/>
+    
+      <category term="计算机系统结构" scheme="https://yohua.ml/tags/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%B3%BB%E7%BB%9F%E7%BB%93%E6%9E%84/"/>
+    
+  </entry>
+  
+  <entry>
     <title>指令级并行之多指令流出技术</title>
     <link href="https://yohua.ml/2019/03/07/%E6%8C%87%E4%BB%A4%E7%BA%A7%E5%B9%B6%E8%A1%8C%E4%B9%8B%E5%A4%9A%E6%8C%87%E4%BB%A4%E6%B5%81%E5%87%BA%E6%8A%80%E6%9C%AF/"/>
     <id>https://yohua.ml/2019/03/07/指令级并行之多指令流出技术/</id>
     <published>2019-03-06T18:31:36.000Z</published>
-    <updated>2019-03-09T18:36:18.421Z</updated>
+    <updated>2019-03-10T06:52:12.637Z</updated>
     
     <summary type="html">
     
@@ -104,7 +159,7 @@
     <link href="https://yohua.ml/2019/03/06/HEXO-NexT%E7%BD%91%E7%AB%99%E4%B8%AA%E6%80%A7%E5%8C%96/"/>
     <id>https://yohua.ml/2019/03/06/HEXO-NexT网站个性化/</id>
     <published>2019-03-06T14:14:49.000Z</published>
-    <updated>2019-03-09T11:36:11.009Z</updated>
+    <updated>2019-03-10T07:20:39.763Z</updated>
     
     <summary type="html">
     
@@ -123,7 +178,9 @@
     
       <category term="技术" scheme="https://yohua.ml/tags/%E6%8A%80%E6%9C%AF/"/>
     
-      <category term="hexo" scheme="https://yohua.ml/tags/hexo/"/>
+      <category term="HEXO" scheme="https://yohua.ml/tags/HEXO/"/>
+    
+      <category term="NexT" scheme="https://yohua.ml/tags/NexT/"/>
     
   </entry>
   
@@ -339,7 +396,7 @@
     <link href="https://yohua.ml/2019/02/26/%E5%B9%B6%E8%A1%8C%E6%A6%82%E5%BF%B5/"/>
     <id>https://yohua.ml/2019/02/26/并行概念/</id>
     <published>2019-02-26T06:24:16.000Z</published>
-    <updated>2019-03-06T13:47:59.337Z</updated>
+    <updated>2019-03-10T06:05:43.913Z</updated>
     
     <summary type="html">
     
@@ -389,7 +446,7 @@
     <link href="https://yohua.ml/2019/02/23/Markdown%E5%B8%B8%E7%94%A8%E6%95%B0%E5%AD%A6%E5%85%AC%E5%BC%8F%E5%8F%8A%E7%AC%A6%E5%8F%B7/"/>
     <id>https://yohua.ml/2019/02/23/Markdown常用数学公式及符号/</id>
     <published>2019-02-23T03:42:31.000Z</published>
-    <updated>2019-03-08T05:53:01.099Z</updated>
+    <updated>2019-03-10T07:20:08.973Z</updated>
     
     <summary type="html">
     
@@ -408,6 +465,8 @@
     
       <category term="知识" scheme="https://yohua.ml/tags/%E7%9F%A5%E8%AF%86/"/>
     
+      <category term="Markdown" scheme="https://yohua.ml/tags/Markdown/"/>
+    
   </entry>
   
   <entry>
@@ -415,7 +474,7 @@
     <link href="https://yohua.ml/2019/02/02/Eclipse-Java%E5%BC%80%E5%8F%91%E9%87%87%E5%9D%91/"/>
     <id>https://yohua.ml/2019/02/02/Eclipse-Java开发采坑/</id>
     <published>2019-02-02T02:54:13.000Z</published>
-    <updated>2019-03-07T13:49:51.275Z</updated>
+    <updated>2019-03-10T07:19:54.599Z</updated>
     
     <summary type="html">
     
@@ -431,7 +490,9 @@
     </summary>
     
     
-      <category term="知识" scheme="https://yohua.ml/tags/%E7%9F%A5%E8%AF%86/"/>
+      <category term="Eclipse" scheme="https://yohua.ml/tags/Eclipse/"/>
+    
+      <category term="Java" scheme="https://yohua.ml/tags/Java/"/>
     
   </entry>
   
@@ -474,59 +535,6 @@
         
           &lt;center&gt;自题金山画像  &lt;/center&gt;
 &lt;center&gt; 苏轼 
-        
-      
-    
-    </summary>
-    
-    
-      <category term="人文" scheme="https://yohua.ml/tags/%E4%BA%BA%E6%96%87/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>利用HEXO框架和GitHub搭建个人博客</title>
-    <link href="https://yohua.ml/2018/10/31/%E5%88%A9%E7%94%A8HEXO%E6%A1%86%E6%9E%B6%E5%92%8CGitHub%E6%90%AD%E5%BB%BA%E4%B8%AA%E4%BA%BA%E5%8D%9A%E5%AE%A2/"/>
-    <id>https://yohua.ml/2018/10/31/利用HEXO框架和GitHub搭建个人博客/</id>
-    <published>2018-10-31T06:24:16.000Z</published>
-    <updated>2019-03-08T08:09:10.848Z</updated>
-    
-    <summary type="html">
-    
-      
-      
-        
-        
-          &lt;p&gt;&amp;emsp;&amp;emsp;Hexo
-        
-      
-    
-    </summary>
-    
-    
-      <category term="教程" scheme="https://yohua.ml/tags/%E6%95%99%E7%A8%8B/"/>
-    
-      <category term="技术" scheme="https://yohua.ml/tags/%E6%8A%80%E6%9C%AF/"/>
-    
-      <category term="hexo" scheme="https://yohua.ml/tags/hexo/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>《魔道祖师》——每个人都是一个江湖</title>
-    <link href="https://yohua.ml/2018/10/28/%E3%80%8A%E9%AD%94%E9%81%93%E7%A5%96%E5%B8%88%E3%80%8B%E2%80%94%E2%80%94%E6%AF%8F%E4%B8%AA%E4%BA%BA%E9%83%BD%E6%98%AF%E4%B8%80%E4%B8%AA%E6%B1%9F%E6%B9%96/"/>
-    <id>https://yohua.ml/2018/10/28/《魔道祖师》——每个人都是一个江湖/</id>
-    <published>2018-10-27T16:24:02.000Z</published>
-    <updated>2019-03-06T13:48:05.932Z</updated>
-    
-    <summary type="html">
-    
-      
-      
-        
-        
-          &lt;p&gt;&amp;emsp;&amp;emsp;前段时间，不经意间看到了《魔道祖师》的动画，感觉很棒。无论是动画形象，题材。比那些大IP好很多，为了补贴经费啥都干，吃相太难看。苍山乱烟外，玉树微雨里。举目人不见，凄凄风又起。（来源网络）&lt;/p&gt;
-&lt;h2 id=&quot;引&quot;&gt;&lt;a href=&quot;#引&quot;
         
       
     
