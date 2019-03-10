@@ -20,8 +20,8 @@
       </tags>
   </entry>
   <entry>
-    <title><![CDATA[互联网络的基本概念]]></title>
-    <url>%2F2019%2F03%2F08%2F%E4%BA%92%E8%BF%9E%E7%BD%91%E7%BB%9C%E7%9A%84%E7%BB%93%E6%9E%84%2F</url>
+    <title><![CDATA[互联网络的结构]]></title>
+    <url>%2F2019%2F03%2F07%2F%E4%BA%92%E8%BF%9E%E7%BD%91%E7%BB%9C%E7%9A%84%E7%BB%93%E6%9E%84%2F</url>
     <content type="text"><![CDATA[静态互连网络&emsp;&emsp;互连网络可以分为两类：静态互连网络（static interconnection network）和动态互连网络（dynamic interconnection network）。静态互连网络是指各节点之间有固定的连接通路，且在运行中不能改变的网络。而动态互连网络则是由交换开关构成、可按运行程序的要求动态的改变连接状态的网络。静态互连网路比较适合用于构造通信模式预测或用静态连接实现的计算机。 线性阵列环和带环循环移数网络树形和星形胖树形网格形和环网形超立方体动态互连网络总线多级互连网络&emsp;&emsp;（1）Omega网络&emsp;&emsp;下图是一个88的Omega网络，共有3级，每级由4个22开关构成。级间互连采用均匀洗牌模式。网络的左侧是8个输入，右侧是8个输出。 &emsp;&emsp;一般来说，一个N输入的Omega网络有log_2N级，每级用\frac{N}{2} 个22开关模块，共需要 Nlog_2\frac{N}{2}个开关。每个开关模块均采用单元控制方式。&emsp;&emsp;（2）多级立方体网络&emsp;&emsp;多级立方体网络采用二功能（直送和交换）的22开关和交换函数构成，其级间互连按照从左到右的次序分别是C_0、C_1、C_2 互连函数。可以通过设置开关的工作状态来得到不同的多级互连网络。]]></content>
       <tags>
         <tag>知识</tag>
