@@ -118,7 +118,7 @@
 <meta property="og:site_name" content="面对疾风吧，少年！">
 <meta property="og:description" content="计算机系统设计的定量原理以经常性事件为重点Amdahl定律&amp;emsp;&amp;emsp;此定律指出：加快某个部件执行速度所能获得的系统性能提升，受限于此部件的执行时间占系统中总执行时间的占比。&amp;emsp;&amp;emsp;系统加速比公式：&amp;emsp;&amp;emsp;&amp;emsp;&amp;emsp; 系统加速比=\frac {系统性能_{改进后}} {系统性能_{改进前}}=\frac {总执行时间_{改进前}} {总执行">
 <meta property="og:locale" content="zh-CN">
-<meta property="og:updated_time" content="2019-03-11T03:15:43.009Z">
+<meta property="og:updated_time" content="2019-03-11T03:21:27.693Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="定量分析技术">
 <meta name="twitter:description" content="计算机系统设计的定量原理以经常性事件为重点Amdahl定律&amp;emsp;&amp;emsp;此定律指出：加快某个部件执行速度所能获得的系统性能提升，受限于此部件的执行时间占系统中总执行时间的占比。&amp;emsp;&amp;emsp;系统加速比公式：&amp;emsp;&amp;emsp;&amp;emsp;&amp;emsp; 系统加速比=\frac {系统性能_{改进后}} {系统性能_{改进前}}=\frac {总执行时间_{改进前}} {总执行">
@@ -469,7 +469,7 @@
                 
                   <span class="post-meta-item-text">本文字数：</span>
                 
-                <span title="本文字数">1.7k</span>
+                <span title="本文字数">1.9k</span>
               
 
               
@@ -503,8 +503,9 @@
       
 
       
-        <h1 id="计算机系统设计的定量原理"><a href="#计算机系统设计的定量原理" class="headerlink" title="计算机系统设计的定量原理"></a>计算机系统设计的定量原理</h1><h2 id="以经常性事件为重点"><a href="#以经常性事件为重点" class="headerlink" title="以经常性事件为重点"></a>以经常性事件为重点</h2><h2 id="Amdahl定律"><a href="#Amdahl定律" class="headerlink" title="Amdahl定律"></a>Amdahl定律</h2><p>&emsp;&emsp;此定律指出：加快某个部件执行速度所能获得的系统性能提升，受限于此部件的执行时间占系统中总执行时间的占比。<br>&emsp;&emsp;系统加速比公式：<br>&emsp;&emsp;&emsp;&emsp; <script type="math/tex">系统加速比=\frac {系统性能_{改进后}} {系统性能_{改进前}}=\frac {总执行时间_{改进前}} {总执行时间_{改进后}}</script><br>&emsp;&emsp;设出定义：<br>&emsp;&emsp;(1)可改进比例：在改进前的系统中，可改进部分的执行时间在总的执行时间中所占的比例。<br>&emsp;&emsp;(2)部件加速比：可改进部分在改进后性能提高的倍数。它是改进前所需执行时间和改进后所需执行时间的比。<br>&emsp;&emsp;由(1)(2)得出：<br>&emsp;&emsp;&emsp;&emsp;<script type="math/tex">总执行时间_{改进后}=\frac{可改进比例* 总执行时间_{改进前}}{部件极速比}+不可改进比例*总执行时间_{改进前}</script><br>&emsp;&emsp;&emsp;&emsp;&emsp; <script type="math/tex">=总执行时间_{改进前}* [(1-可改进比例)+ \frac{可改进比例}{部件加速比}]</script><br>&emsp;&emsp;&emsp;&emsp;<script type="math/tex">系统加速比=\frac {总执行时间_{改进前}} {总执行时间_{改进后}}=\frac {1}{(1-可改进比例)+\frac{可改进比例}{部件加速比}}</script>       </p>
-<h2 id="CPU性能公式"><a href="#CPU性能公式" class="headerlink" title="CPU性能公式"></a>CPU性能公式</h2><p>&emsp;&emsp;&emsp;&emsp; <script type="math/tex">CPU时间=执行程序所需的时钟周期数* 时钟周期时间</script><br>&emsp;&emsp;其中，时钟周期时间是系统时钟频率的倒数，即<script type="math/tex">时钟周期时间=\frac{1}{f}</script>。<br>&emsp;&emsp;引入新参数CPI（Cycles Per Instruction，每条指令的平均时钟周期数），有：<br>&emsp;&emsp;&emsp;&emsp; <script type="math/tex">CPI=\frac{执行程序所需的时钟周期数}{所执行的指令条数}</script><br>&emsp;&emsp;则推出CPU性能公式：<br>&emsp;&emsp;&emsp;&emsp; <script type="math/tex">CPU时间=IC* CPI* 时钟周期时间</script><br>&emsp;&emsp;其中，IC为所执行的指令条数。<br>&emsp;&emsp;根据上述公式，得知CPU的性能取决于以下三个参数：<br>&emsp;&emsp;&emsp;(1) 时钟周期时间：取决于硬件实现技术和计算机组成。<br>&emsp;&emsp;&emsp;(2) CPI：取决于计算机组成和指令集结构。<br>&emsp;&emsp;&emsp;(3) IC：取决于指令集结构和编译技术。<br>&emsp;&emsp;其他公式：<br>&emsp;&emsp;&emsp;&emsp; <script type="math/tex">CPU时钟周期数=\sum\limits_{i=1}^n{(CPI_i*IC_i)}</script><br>&emsp;&emsp;其中，<script type="math/tex">{IC_i}</script>为程序执行的过程中第i种指令出现的次数，<script type="math/tex">{CPI_i}</script>为执行第i种指令所需的平均时钟周期，n为指令的种数。<br>&emsp;&emsp;&emsp;&emsp; <script type="math/tex">CPU时间=CPU时钟周期数*时钟周期时间</script><br>&emsp;&emsp;&emsp;&emsp; <script type="math/tex">=\sum\limits_{i=1}^n{(CPU_i*IC_i)* 时钟周期时间}</script><br>&emsp;&emsp;&emsp;&emsp; <script type="math/tex">CPI=\frac{时钟周期数}{IC}= \frac{\sum\limits_{i=1}^n{(CPI_i*IC_i)}}{IC}</script><br>&emsp;&emsp;&emsp;&emsp; <script type="math/tex">= \sum\limits_{i=1}^n{(CPI_i* \frac{IC_i}{IC})}</script><br>&emsp;&emsp;其中，(<script type="math/tex">\frac{IC_i}{IC}</script>)反映了第i种指令在程序执行过程中所占的比例。<br>&emsp;&emsp;&emsp;&emsp;<script type="math/tex">MIPS=\frac{f}{CPI}</script></p>
+        <h1 id="计算机系统设计的定量原理"><a href="#计算机系统设计的定量原理" class="headerlink" title="计算机系统设计的定量原理"></a>计算机系统设计的定量原理</h1><h2 id="以经常性事件为重点"><a href="#以经常性事件为重点" class="headerlink" title="以经常性事件为重点"></a>以经常性事件为重点</h2><h2 id="Amdahl定律"><a href="#Amdahl定律" class="headerlink" title="Amdahl定律"></a>Amdahl定律</h2><p>&emsp;&emsp;此定律指出：加快某个部件执行速度所能获得的系统性能提升，受限于此部件的执行时间占系统中总执行时间的占比。<br>&emsp;&emsp;系统加速比公式：<br>&emsp;&emsp;&emsp;&emsp; <script type="math/tex">系统加速比=\frac {系统性能_{改进后}} {系统性能_{改进前}}=\frac {总执行时间_{改进前}} {总执行时间_{改进后}}</script><br>&emsp;&emsp;设出定义：<br>&emsp;&emsp;(1)可改进比例：在改进前的系统中，可改进部分的执行时间在总的执行时间中所占的比例。<br>&emsp;&emsp;(2)部件加速比：可改进部分在改进后性能提高的倍数。它是改进前所需执行时间和改进后所需执行时间的比。<br>&emsp;&emsp;由(1)(2)得出：<br>&emsp;&emsp;&emsp;&emsp;<script type="math/tex">总执行时间_{改进后}=\frac{可改进比例* 总执行时间_{改进前}}{部件极速比}+不可改进比例*总执行时间_{改进前}</script><br>&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp; <script type="math/tex">=总执行时间_{改进前}* [(1-可改进比例)+ \frac{可改进比例}{部件加速比}]</script><br>&emsp;&emsp;&emsp;&emsp;<script type="math/tex">系统加速比=\frac {总执行时间_{改进前}} {总执行时间_{改进后}}</script><br>&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp; <script type="math/tex">=\frac {1}{(1-可改进比例)+\frac{可改进比例}{部件加速比}}</script>       </p>
+<h2 id="CPU性能公式"><a href="#CPU性能公式" class="headerlink" title="CPU性能公式"></a>CPU性能公式</h2><p>&emsp;&emsp;&emsp;&emsp; <script type="math/tex">CPU时间=执行程序所需的时钟周期数* 时钟周期时间</script><br>&emsp;&emsp;其中，时钟周期时间是系统时钟频率的倒数，即<script type="math/tex">时钟周期时间=\frac{1}{f}</script>。<br>&emsp;&emsp;引入新参数CPI（Cycles Per Instruction，每条指令的平均时钟周期数），有：<br>&emsp;&emsp;&emsp;&emsp; <script type="math/tex">CPI=\frac{执行程序所需的时钟周期数}{所执行的指令条数}</script><br>&emsp;&emsp;则推出CPU性能公式：<br>&emsp;&emsp;&emsp;&emsp; <script type="math/tex">CPU时间=IC* CPI* 时钟周期时间</script><br>&emsp;&emsp;其中，IC为所执行的指令条数。<br>&emsp;&emsp;根据上述公式，得知CPU的性能取决于以下三个参数：<br>&emsp;&emsp;&emsp;(1) 时钟周期时间：取决于硬件实现技术和计算机组成。<br>&emsp;&emsp;&emsp;(2) CPI：取决于计算机组成和指令集结构。<br>&emsp;&emsp;&emsp;(3) IC：取决于指令集结构和编译技术。<br>&emsp;&emsp;其他公式：<br>&emsp;&emsp;&emsp;&emsp; <script type="math/tex">CPU时钟周期数=\sum\limits_{i=1}^n{(CPI_i*IC_i)}</script><br>&emsp;&emsp;其中，<script type="math/tex">{IC_i}</script>为程序执行的过程中第i种指令出现的次数，<script type="math/tex">{CPI_i}</script>为执行第i种指令所需的平均时钟周期，n为指令的种数。<br>&emsp;&emsp;&emsp;&emsp; <script type="math/tex">CPU时间=CPU时钟周期数*时钟周期时间</script><br>&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp; <script type="math/tex">=\sum\limits_{i=1}^n{(CPU_i*IC_i)* 时钟周期时间}</script>   </p>
+<p>&emsp;&emsp;&emsp;&emsp; <script type="math/tex">CPI=\frac{时钟周期数}{IC}</script><br>&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp; <script type="math/tex">= \frac{\sum\limits_{i=1}^n{(CPI_i*IC_i)}}{IC}</script><br>&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp; <script type="math/tex">= \sum\limits_{i=1}^n{(CPI_i* \frac{IC_i}{IC})}</script><br>&emsp;&emsp;其中，(<script type="math/tex">\frac{IC_i}{IC}</script>)反映了第i种指令在程序执行过程中所占的比例。<br>&emsp;&emsp;&emsp;&emsp;<script type="math/tex">MIPS=\frac{f}{CPI}</script></p>
 <h2 id="程序的局部性原理"><a href="#程序的局部性原理" class="headerlink" title="程序的局部性原理"></a>程序的局部性原理</h2><h1 id="计算机系统的性能评测"><a href="#计算机系统的性能评测" class="headerlink" title="计算机系统的性能评测"></a>计算机系统的性能评测</h1><h2 id="执行时间和吞吐率"><a href="#执行时间和吞吐率" class="headerlink" title="执行时间和吞吐率"></a>执行时间和吞吐率</h2><h2 id="基准测试程序"><a href="#基准测试程序" class="headerlink" title="基准测试程序"></a>基准测试程序</h2><p>&emsp;&emsp;用于测试和比较性能的基准测试程序的最佳选择是真实应用程序（例如编译器）。</p>
 
       
@@ -607,8 +608,8 @@
 
           <div class="post-nav-prev post-nav-item">
             
-              <a href="/2019/02/28/流水线的相关与冲突/" rel="prev" title="流水线的相关与冲突">
-                流水线的相关与冲突 <i class="fa fa-chevron-right"></i>
+              <a href="/2019/02/28/流水线基本概念及其性能指标/" rel="prev" title="流水线基本概念及其性能指标">
+                流水线基本概念及其性能指标 <i class="fa fa-chevron-right"></i>
               </a>
             
           </div>
