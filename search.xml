@@ -38,8 +38,8 @@
       </tags>
   </entry>
   <entry>
-    <title><![CDATA[HEXO NexT网站个性化]]></title>
-    <url>%2F2019%2F03%2F06%2FHEXO-NexT%E7%BD%91%E7%AB%99%E4%B8%AA%E6%80%A7%E5%8C%96%2F</url>
+    <title><![CDATA[Hexo NexT网站个性化]]></title>
+    <url>%2F2019%2F03%2F06%2FHexo-NexT%E7%BD%91%E7%AB%99%E4%B8%AA%E6%80%A7%E5%8C%96%2F</url>
     <content type="text"><![CDATA[添加字数统计、阅读时长&emsp;&emsp;适用于next 6 以后版本，分两步完成 安装 npm install hexo-symbols-count-time —save 主配置文件（根hexo目录） 添加12345symbols_count_time: symbols: true time: true total_symbols: true total_time: true 添加404公益界面&emsp;&emsp;创建页面，在 Hexo 文件夹根目录下 /source/404/index.html； 12345678910111213141516---title: 404 Not Found：该页无法显示toc: falsecomments: falsepermalink: /404---&lt;!DOCTYPE html&gt;&lt;html&gt; &lt;head&gt; &lt;meta charset="UTF-8" /&gt; &lt;title&gt;404&lt;/title&gt; &lt;/head&gt; &lt;body&gt; &lt;script type="text/javascript" src="//qzonestyle.gtimg.cn/qzone/hybrid/app/404/search_children.js" homePageName="返回首页" homePageUrl="https://yohua.ml"&gt;&lt;/script&gt; &lt;/body&gt;&lt;/html&gt; &emsp;&emsp;部署 1hexo d -g]]></content>
       <tags>
         <tag>教程</tag>
