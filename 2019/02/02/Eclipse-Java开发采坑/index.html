@@ -118,7 +118,7 @@
 <meta property="og:site_name" content="面对疾风吧，少年！">
 <meta property="og:description" content="eclipse无法解析导入 javax.servlet 的解决方法&amp;emsp;&amp;emsp;出现上述问题的原因是你的Eclipse项目没有导入JSP运行所需要的Tomcat类库，主要是servlet-api.jar文件(或者servlet.jar），tomcat容器里面有这文件，在以下位置：%Tomcat_Home%/common/lib/servlet-aip.jar,要将其导入到项目的构建路径">
 <meta property="og:locale" content="zh-CN">
-<meta property="og:updated_time" content="2019-03-14T15:09:56.984Z">
+<meta property="og:updated_time" content="2019-03-16T07:22:00.940Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="Eclipse Java开发采坑">
 <meta name="twitter:description" content="eclipse无法解析导入 javax.servlet 的解决方法&amp;emsp;&amp;emsp;出现上述问题的原因是你的Eclipse项目没有导入JSP运行所需要的Tomcat类库，主要是servlet-api.jar文件(或者servlet.jar），tomcat容器里面有这文件，在以下位置：%Tomcat_Home%/common/lib/servlet-aip.jar,要将其导入到项目的构建路径">
@@ -506,7 +506,7 @@
                 
                   <span class="post-meta-item-text">本文字数：</span>
                 
-                <span title="本文字数">951</span>
+                <span title="本文字数">1.8k</span>
               
 
               
@@ -520,7 +520,7 @@
                 
                   <span class="post-meta-item-text">阅读时长 &asymp;</span>
                 
-                <span title="阅读时长">4 分钟</span>
+                <span title="阅读时长">7 分钟</span>
               
             </div>
           
@@ -544,6 +544,11 @@
 <h1 id="eclipse无法解析导入-javax-servlet-的解决方法"><a href="#eclipse无法解析导入-javax-servlet-的解决方法" class="headerlink" title="eclipse无法解析导入 javax.servlet 的解决方法"></a>eclipse无法解析导入 javax.servlet 的解决方法</h1><p>&emsp;&emsp;出现上述问题的原因是你的Eclipse项目没有导入JSP运行所需要的Tomcat类库，主要是servlet-api.jar文件(或者servlet.jar），tomcat容器里面有这文件，在以下位置：%Tomcat_Home%/common/lib/servlet-aip.jar,要将其导入到项目的构建路径中(如果你用的是Eclipse).</p>
 <p>&emsp;&emsp;导入方法：右击你的Eclipse项目，选择 “构建路径”—“配置构建路径”。点击“库”选项卡，单击右边的“添加库”按钮，在出现的“添加库”对话框中选中“服务器运行时”，单击“下一步”，在出现的对话框中选中你使用的Tomcat服务器,例如，我的是：Apache Tomcat v5.5,单击“完成”既可。这时你的Tomcat类库就添加到当前项目中了。<br>&emsp;&emsp;依次展开Java Resources: src-&gt;Libraries，就能看到Apache Tomcat v5.5[Apache Tomcat v5.5]类库已经添加到当前项目中了。</p>
 <h1 id="request中的setCharacterEncoding方法不识别"><a href="#request中的setCharacterEncoding方法不识别" class="headerlink" title="request中的setCharacterEncoding方法不识别"></a>request中的setCharacterEncoding方法不识别</h1><p>&emsp;&emsp;request中的setCharacterEncoding方法作用是用指定的编码集去覆盖request对象中的默认的”ISO-8859-1”编码集，这样request.getParameter(“”)方法就会用新的编码集去解码，必须在第一次使用request时就要调用这个方法来设置编码集，否则该方法就会无效。<br>单独加载weblogic.jar，应为它会用到request上网上说servlet-api.jar版本必须在2.4之后面的方法都试过后，我的setCharacterEncoding（“utf-8”）方法依然不识别；简直气人啊；最后用 where java 命令查看安装的jdk发现jdk地址显示“c:\programData\Oracle\java\javapath……java.exe”和环境变量配置的地址不一样，果断删除，并将path环境变量里的jdk相关配置放到最前面。</p>
+<h1 id="启动Tomcat服务器报错："><a href="#启动Tomcat服务器报错：" class="headerlink" title="启动Tomcat服务器报错："></a>启动Tomcat服务器报错：</h1><p>Several ports (8005, 8080, 8009) required by Tomcat v5.5 Server at localhost are already in use. The server may already be running in another process, or a system process may be using the port. To start this server you will need to stop the other process or change the port number(s).</p>
+<p>&emsp;&emsp;解决方法：</p>
+<p>&emsp;&emsp;方法1：杀掉占用端口的软件。<br>&emsp;&emsp;打开任务管理器，找到java虚拟机相关的进程javaw.exe，将它结束掉。</p>
+<p>&emsp;&emsp;方法2：修改tomcat默认端口号。<br>&emsp;&emsp;修改Tomcat的配置文件。<br>&emsp;&emsp;例如：C:/tomcat5.5.25/conf/server.xml<br><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line"> &lt;Connector port=<span class="string">"8080"</span> maxHttpHeaderSize=<span class="string">"8192"</span></span><br><span class="line">               maxThreads=<span class="string">"150"</span> minSpareThreads=<span class="string">"25"</span> maxSpareThreads=<span class="string">"75"</span></span><br><span class="line">               enableLookups=<span class="string">"false"</span> redirectPort=<span class="string">"8443"</span> acceptCount=<span class="string">"100"</span></span><br><span class="line">               connectionTimeout=<span class="string">"20000"</span> disableUploadTimeout=<span class="string">"true"</span> /&gt;</span><br></pre></td></tr></table></figure></p>
+<p>&emsp;&emsp;Connector 节点，将port=”8080”中的端口改为一个没有被占用的端口。</p>
 
       
     </div>
@@ -927,7 +932,7 @@
             
 
             
-              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#eclipse无法解析导入-javax-servlet-的解决方法"><span class="nav-number">1.</span> <span class="nav-text">eclipse无法解析导入 javax.servlet 的解决方法</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#request中的setCharacterEncoding方法不识别"><span class="nav-number">2.</span> <span class="nav-text">request中的setCharacterEncoding方法不识别</span></a></li></ol></div>
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#eclipse无法解析导入-javax-servlet-的解决方法"><span class="nav-number">1.</span> <span class="nav-text">eclipse无法解析导入 javax.servlet 的解决方法</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#request中的setCharacterEncoding方法不识别"><span class="nav-number">2.</span> <span class="nav-text">request中的setCharacterEncoding方法不识别</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#启动Tomcat服务器报错："><span class="nav-number">3.</span> <span class="nav-text">启动Tomcat服务器报错：</span></a></li></ol></div>
             
 
           </div>
@@ -969,7 +974,7 @@
       <i class="fa fa-area-chart"></i>
     </span>
     
-    <span title="站点总字数">32k</span>
+    <span title="站点总字数">33k</span>
   
 
   
@@ -978,7 +983,7 @@
       <i class="fa fa-coffee"></i>
     </span>
     
-    <span title="站点阅读时长">2:05</span>
+    <span title="站点阅读时长">2:08</span>
   
 </div>
 
