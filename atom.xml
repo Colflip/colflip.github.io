@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="https://yohua.ml/"/>
-  <updated>2019-03-18T04:03:53.882Z</updated>
+  <updated>2019-03-19T03:20:25.730Z</updated>
   <id>https://yohua.ml/</id>
   
   <author>
@@ -17,11 +17,11 @@
   <generator uri="http://hexo.io/">Hexo</generator>
   
   <entry>
-    <title>很重要的能力——身体控制精神</title>
-    <link href="https://yohua.ml/2019/03/18/%E5%BE%88%E9%87%8D%E8%A6%81%E7%9A%84%E8%83%BD%E5%8A%9B%E2%80%94%E2%80%94%E8%BA%AB%E4%BD%93%E6%8E%A7%E5%88%B6%E7%B2%BE%E7%A5%9E/"/>
-    <id>https://yohua.ml/2019/03/18/很重要的能力——身体控制精神/</id>
+    <title>Java Web以输入输出流实现读取数据库图片</title>
+    <link href="https://yohua.ml/2019/03/18/Java-Web%E4%BB%A5%E8%BE%93%E5%85%A5%E8%BE%93%E5%87%BA%E6%B5%81%E5%AE%9E%E7%8E%B0%E8%AF%BB%E5%8F%96%E6%95%B0%E6%8D%AE%E5%BA%93%E5%9B%BE%E7%89%87/"/>
+    <id>https://yohua.ml/2019/03/18/Java-Web以输入输出流实现读取数据库图片/</id>
     <published>2019-03-18T04:03:52.000Z</published>
-    <updated>2019-03-18T04:03:53.882Z</updated>
+    <updated>2019-03-19T03:20:25.730Z</updated>
     
     <summary type="html">
     
@@ -29,7 +29,40 @@
       
         
         
-          &lt;p&gt;大多数人做事的逻辑，无非是：我先弄好一个目标，然后想清楚我有什么资源，然后该按照什么计划来搞，再加上一点自我监督，按结果给自己一点奖励和惩罚。&lt;br&gt;比如读书，我们今年的目标是50本，那么我们可以列出一个书单，和一个计划表，把一个月、一周、一天的哪些时间分配给读书，接着，一
+          &lt;p&gt;&amp;emsp;&amp;emsp;在web开发中，读取显示图片非常常见，实现方式也有很多，下面介绍一种以流的形式实现读取数据库图片。环境java：eclipse，数据库：MySQL。&lt;br&gt;&amp;emsp;&amp;emsp;其他过程忽略，只写Servlet和jsp代码。&lt;/p&gt;
+&lt;h1
+        
+      
+    
+    </summary>
+    
+      <category term="编程开发" scheme="https://yohua.ml/categories/%E7%BC%96%E7%A8%8B%E5%BC%80%E5%8F%91/"/>
+    
+    
+      <category term="Java" scheme="https://yohua.ml/tags/Java/"/>
+    
+      <category term="Web" scheme="https://yohua.ml/tags/Web/"/>
+    
+      <category term="输入输出流" scheme="https://yohua.ml/tags/%E8%BE%93%E5%85%A5%E8%BE%93%E5%87%BA%E6%B5%81/"/>
+    
+      <category term="数据库" scheme="https://yohua.ml/tags/%E6%95%B0%E6%8D%AE%E5%BA%93/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>很重要的能力——身体控制精神</title>
+    <link href="https://yohua.ml/2019/03/18/%E5%BE%88%E9%87%8D%E8%A6%81%E7%9A%84%E8%83%BD%E5%8A%9B%E2%80%94%E2%80%94%E8%BA%AB%E4%BD%93%E6%8E%A7%E5%88%B6%E7%B2%BE%E7%A5%9E/"/>
+    <id>https://yohua.ml/2019/03/18/很重要的能力——身体控制精神/</id>
+    <published>2019-03-18T04:03:52.000Z</published>
+    <updated>2019-03-19T02:53:04.821Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        
+        
+          &lt;p&gt;&amp;emsp;&amp;emsp;大多数人做事的逻辑，无非是：我先弄好一个目标，然后想清楚我有什么资源，然后该按照什么计划来搞，再加上一点自我监督，按结果给自己一点奖励和惩罚。&lt;br&gt;&amp;emsp;&amp;emsp;比如读书，我们今年的目标是50本，那么我们可以列出一个书单，和一个计划表，把
         
       
     
@@ -533,33 +566,6 @@
       <category term="历史" scheme="https://yohua.ml/tags/%E5%8E%86%E5%8F%B2/"/>
     
       <category term="唐" scheme="https://yohua.ml/tags/%E5%94%90/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>Markdown常用数学公式及符号</title>
-    <link href="https://yohua.ml/2019/02/23/Markdown%E5%B8%B8%E7%94%A8%E6%95%B0%E5%AD%A6%E5%85%AC%E5%BC%8F%E5%8F%8A%E7%AC%A6%E5%8F%B7/"/>
-    <id>https://yohua.ml/2019/02/23/Markdown常用数学公式及符号/</id>
-    <published>2019-02-23T03:42:31.000Z</published>
-    <updated>2019-03-10T08:04:42.281Z</updated>
-    
-    <summary type="html">
-    
-      
-      
-        
-        
-          &lt;a id=&quot;more&quot;&gt;&lt;/a&gt;
-&lt;h1 id=&quot;基本符号&quot;&gt;&lt;a href=&quot;#基本符号&quot; class=&quot;headerlink&quot; title=&quot;基本符号&quot;&gt;&lt;/a&gt;基本符号&lt;/h1&gt;&lt;h2 id=&quot;括号&quot;&gt;&lt;a href=&quot;#括号&quot; class=&quot;headerlink&quot;
-        
-      
-    
-    </summary>
-    
-    
-      <category term="Markdown" scheme="https://yohua.ml/tags/Markdown/"/>
-    
-      <category term="知识" scheme="https://yohua.ml/tags/%E7%9F%A5%E8%AF%86/"/>
     
   </entry>
   
