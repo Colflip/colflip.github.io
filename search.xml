@@ -17,8 +17,8 @@
         <category>编程开发</category>
       </categories>
       <tags>
-        <tag>Java</tag>
         <tag>Web</tag>
+        <tag>Java</tag>
         <tag>输入输出流</tag>
         <tag>数据库</tag>
       </tags>
@@ -96,7 +96,7 @@
   <entry>
     <title><![CDATA[Hexo NexT网站个性化]]></title>
     <url>%2F2019%2F03%2F06%2FHexo-NexT%E7%BD%91%E7%AB%99%E4%B8%AA%E6%80%A7%E5%8C%96%2F</url>
-    <content type="text"><![CDATA[添加字数统计、阅读时长&emsp;&emsp;适用于next 6 以后版本，分两步完成 安装 npm install hexo-symbols-count-time —save 主配置文件（根hexo目录） 添加12345symbols_count_time: symbols: true time: true total_symbols: true total_time: true 添加404公益界面&emsp;&emsp;创建页面，在 Hexo 文件夹根目录下 /source/404/index.html； 12345678910111213141516---title: 404 Not Found：该页无法显示toc: falsecomments: falsepermalink: /404---&lt;!DOCTYPE html&gt;&lt;html&gt; &lt;head&gt; &lt;meta charset="UTF-8" /&gt; &lt;title&gt;404&lt;/title&gt; &lt;/head&gt; &lt;body&gt; &lt;script type="text/javascript" src="//qzonestyle.gtimg.cn/qzone/hybrid/app/404/search_children.js" homePageName="返回首页" homePageUrl="https://yohua.ml"&gt;&lt;/script&gt; &lt;/body&gt;&lt;/html&gt; &emsp;&emsp;部署 1hexo d -g 添加网易云音乐&emsp;&emsp;在网易云音乐生成外链，将代码放置合适位置即可。1&lt;iframe frameborder="no" border="0" marginwidth="0" marginheight="0" width=330 height=46 src="//music.163.com/outchain/player?type=2&amp;id=25638273&amp;auto=0&amp;height=46"&gt;&lt;/iframe&gt; 首页隐藏部分文章&emsp;&emsp;使用插件hexo-generator-index2。&emsp;&emsp;安装hexo-generator-index212$ npm install hexo-generator-index2 --save$ npm uninstall hexo-generator-index --save &emsp;&emsp;修改hexo的配置文件1234567891011# index2 generator是否包含官方的hexo-generator-index，默认true（包含）index2_include_index: true # defult is true# 配置index2 generator，可以是数组或对象index2_generator: per_page: 10 order_by: -date include: - category Web # 只包含Web分类下的文章 exclude: - tag Hexo # 不包含标签为Hexo的文章 &emsp;&emsp;参考：https://github.com/Jamling/hexo-generator-index2/blob/master/README_zh.md]]></content>
+    <content type="text"><![CDATA[添加字数统计、阅读时长&emsp;&emsp;适用于next 6 以后版本，分两步完成 安装 npm install hexo-symbols-count-time —save 主配置文件（根hexo目录） 添加12345symbols_count_time: symbols: true time: true total_symbols: true total_time: true 添加404公益界面&emsp;&emsp;创建页面，在 Hexo 文件夹根目录下 /source/404/index.html； 12345678910111213141516---title: 404 Not Found：该页无法显示toc: falsecomments: falsepermalink: /404---&lt;!DOCTYPE html&gt;&lt;html&gt; &lt;head&gt; &lt;meta charset="UTF-8" /&gt; &lt;title&gt;404&lt;/title&gt; &lt;/head&gt; &lt;body&gt; &lt;script type="text/javascript" src="//qzonestyle.gtimg.cn/qzone/hybrid/app/404/search_children.js" homePageName="返回首页" homePageUrl="https://yohua.ml"&gt;&lt;/script&gt; &lt;/body&gt;&lt;/html&gt; &emsp;&emsp;部署 1hexo d -g 添加网易云音乐&emsp;&emsp;在网易云音乐生成外链，将代码放置合适位置即可。1&lt;iframe frameborder="no" border="0" marginwidth="0" marginheight="0" width=330 height=46 src="//music.163.com/outchain/player?type=2&amp;id=25638273&amp;auto=0&amp;height=46"&gt;&lt;/iframe&gt; 首页隐藏部分文章&emsp;&emsp;使用插件hexo-generator-index2。&emsp;&emsp;安装hexo-generator-index212$ npm install hexo-generator-index2 --save$ npm uninstall hexo-generator-index --save &emsp;&emsp;修改hexo的配置文件1234567891011# index2 generator是否包含官方的hexo-generator-index，默认true（包含）index2_include_index: true # defult is true# 配置index2 generator，可以是数组或对象index2_generator: per_page: 10 order_by: -date include: - category Web # 只包含Web分类下的文章 exclude: - tag Hexo # 不包含标签为Hexo的文章 &emsp;&emsp;插件链接：https://github.com/Jamling/hexo-generator-index2/blob/master/README_zh.md]]></content>
       <categories>
         <category>编程开发</category>
       </categories>
