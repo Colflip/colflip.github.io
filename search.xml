@@ -4,9 +4,6 @@
     <title><![CDATA[多路复用]]></title>
     <url>%2F2019%2F03%2F20%2F%E5%A4%9A%E8%B7%AF%E5%A4%8D%E7%94%A8%2F</url>
     <content type="text"></content>
-      <categories>
-        <category>hide</category>
-      </categories>
       <tags>
         <tag>hide</tag>
         <tag>计算机网络</tag>
@@ -20,8 +17,8 @@
         <category>编程开发</category>
       </categories>
       <tags>
-        <tag>Web</tag>
         <tag>Java</tag>
+        <tag>Web</tag>
         <tag>输入输出流</tag>
         <tag>数据库</tag>
       </tags>
