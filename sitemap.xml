@@ -2,6 +2,13 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
+    <loc>https://yohua.ml/links/index.html</loc>
+    
+    <lastmod>2019-03-22T14:01:32.398Z</lastmod>
+    
+  </url>
+  
+  <url>
     <loc>https://yohua.ml/2019/03/06/Hexo-NexT%E7%BD%91%E7%AB%99%E4%B8%AA%E6%80%A7%E5%8C%96/</loc>
     
     <lastmod>2019-03-22T10:34:16.293Z</lastmod>
@@ -75,13 +82,6 @@
     <loc>https://yohua.ml/2019/02/02/Eclipse-Java%E5%BC%80%E5%8F%91%E9%87%87%E5%9D%91/</loc>
     
     <lastmod>2019-03-17T15:57:18.302Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>https://yohua.ml/links/index.html</loc>
-    
-    <lastmod>2019-03-14T15:16:09.308Z</lastmod>
     
   </url>
   
