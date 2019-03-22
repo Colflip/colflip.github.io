@@ -1897,6 +1897,12 @@ pre .javascript .function {
   box-shadow: inset 0 2px 6px #000;
   background: #222;
   -webkit-transform: translateZ(0);
+/*+tablet() {
+    hide() if not hexo-config('sidebar.onmobile');
+  }
+  +mobile() {
+    hide() if not hexo-config('sidebar.onmobile');
+  }*/
 }
 .sidebar a,
 .sidebar .exturl {
@@ -1946,18 +1952,14 @@ pre .javascript .function {
   z-index: 1050;
   cursor: pointer;
   -webkit-transform: translateZ(0);
-}
-@media (min-width: 768px) and (max-width: 991px) {
-  .sidebar-toggle {
-    right: 20px;
-    opacity: 0.8;
+/*+tablet() {
+    fixbutton() if hexo-config('sidebar.onmobile');
+    hide() if not hexo-config('sidebar.onmobile');
   }
-}
-@media (max-width: 767px) {
-  .sidebar-toggle {
-    right: 20px;
-    opacity: 0.8;
-  }
+  +mobile() {
+    fixbutton() if hexo-config('sidebar.onmobile');
+    hide() if not hexo-config('sidebar.onmobile');
+  }*/
 }
 .sidebar-toggle-line {
   position: relative;
@@ -2065,7 +2067,7 @@ pre .javascript .function {
   width: 4px;
   height: 4px;
   border-radius: 50%;
-  background: #99bb50;
+  background: #f4ffff;
 }
 .links-of-blogroll {
   font-size: 13px;
