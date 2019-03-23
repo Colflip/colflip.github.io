@@ -1,6 +1,17 @@
 <?xml version="1.0" encoding="utf-8"?>
 <search>
   <entry>
+    <title><![CDATA[后端程序员面试题]]></title>
+    <url>%2F2019%2F03%2F24%2F%E5%90%8E%E7%AB%AF%E7%A8%8B%E5%BA%8F%E5%91%98%E9%9D%A2%E8%AF%95%E9%A2%98%2F</url>
+    <content type="text"><![CDATA[http://xargin.com/backend-engineer-interview/]]></content>
+      <categories>
+        <category>专业知识</category>
+      </categories>
+      <tags>
+        <tag>面试</tag>
+      </tags>
+  </entry>
+  <entry>
     <title><![CDATA[多路复用技术]]></title>
     <url>%2F2019%2F03%2F20%2F%E5%A4%9A%E8%B7%AF%E5%A4%8D%E7%94%A8%E6%8A%80%E6%9C%AF%2F</url>
     <content type="text"><![CDATA[在计算机网络或数据通信系统中，传输介质的传输能力往往会超过传输单一信号的要求。为了提高通信线路的利用率，实现在一条通信线路上同时发送多个信号，使得一条通信线路可以由多个数据终端设备同时使用而互不影响，这就是多路复用技术。 常见的多路复用技术主要由两大类：一种是将带宽较大的信道分割成为多个子信道，即频分多路复用技术；另一种是将多个带宽较窄的信道组合成一个频率较大的信道，即时分多路复用技术。 参考来源]]></content>
