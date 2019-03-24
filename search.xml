@@ -1,17 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <search>
   <entry>
-    <title><![CDATA[后端程序员面试题]]></title>
-    <url>%2F2019%2F03%2F24%2F%E5%90%8E%E7%AB%AF%E7%A8%8B%E5%BA%8F%E5%91%98%E9%9D%A2%E8%AF%95%E9%A2%98%2F</url>
-    <content type="text"><![CDATA[&emsp;&emsp;http://xargin.com/backend-engineer-interview/]]></content>
-      <categories>
-        <category>编程开发</category>
-      </categories>
-      <tags>
-        <tag>面试</tag>
-      </tags>
-  </entry>
-  <entry>
     <title><![CDATA[多路复用技术]]></title>
     <url>%2F2019%2F03%2F20%2F%E5%A4%9A%E8%B7%AF%E5%A4%8D%E7%94%A8%E6%8A%80%E6%9C%AF%2F</url>
     <content type="text"><![CDATA[&emsp;&emsp;也称信道复用技术。复用(multiplexing)是通信技术中的基本概念。&emsp;&emsp;在计算机网络或数据通信系统中，传输介质的传输能力往往会超过传输单一信号的要求。为了提高通信线路的利用率，实现在一条通信线路上同时发送多个信号，使得一条通信线路可以由多个数据终端设备同时使用而互不影响，这就是多路复用技术。 常见的多路复用技术主要由两大类：一种是将带宽较大的信道分割成为多个子信道，即频分多路复用技术；另一种是将多个带宽较窄的信道组合成一个频率较大的信道，即时分多路复用技术。 基本复用频分复用 FDM (Frequency Division Multiplexing)时分复用统计时分复用波分复用码分复用参考来源]]></content>
@@ -30,8 +19,8 @@
         <category>编程开发</category>
       </categories>
       <tags>
-        <tag>Java</tag>
         <tag>Web</tag>
+        <tag>Java</tag>
         <tag>JSP</tag>
         <tag>输入输出流</tag>
         <tag>数据库</tag>
@@ -80,8 +69,8 @@
         <category>编程开发</category>
       </categories>
       <tags>
-        <tag>Atom</tag>
         <tag>Markdown</tag>
+        <tag>Atom</tag>
         <tag>快捷键</tag>
       </tags>
   </entry>
@@ -259,8 +248,8 @@
     <url>%2F2019%2F02%2F23%2FMarkdown%E5%B8%B8%E7%94%A8%E6%95%B0%E5%AD%A6%E5%85%AC%E5%BC%8F%E5%8F%8A%E7%AC%A6%E5%8F%B7%2F</url>
     <content type="text"><![CDATA[基本符号括号&emsp;&emsp;() [] 直接写就行，而 {} 则需要转义“\ { ” “\ }”。 （\和{}之间无空格) 上下标&emsp;&emsp;a_下标，b^上标：a_b， a^c。 分数 &emsp;&emsp;\frac {分子} {分母} ：\frac {分子} {分母}。 求和符号及其上下限位置默认情况下：&emsp;&emsp;默认行间公式\sum_{k=1}^n{x_k}上下限标注在上下： \sum_{k=1}^n{x_k}可强制修改：&emsp;&emsp;强制行间公式\sum\nolimits_{k=1}^n{x_k}上下限标注在右侧： \sum\nolimits_{k=1}^n{x_k}数学符号± ：\pm× ：\times÷：\div∣：\mid ⋅：\cdot∘：\circ∗: \ast⨀：\bigodot⨂：\bigotimes⨁：\bigoplus≤：\leq≥：\geq≠：\neq≈：\approx≡：\equiv∑：\sum∏：\prod∐：\coprod 集合运算符：∅：\emptyset∈：\in∉：\notin⊂：\subset⊃ ：\supset⊆ ：\subseteq⊇ ：\supseteq⋂ ：\bigcap⋃ ：\bigcup⋁ ：\bigvee⋀ ：\bigwedge⨄ ：\biguplus⨆：\bigsqcup 对数运算符：log ：\loglg ：\lgln ：\ln 三角运算符：⊥：\bot∠：\angle30∘：30^\circsin ：\sincos ：\costan ：\tancot ：\cotsec ：\seccsc ：\csc 微积分运算符：y′x：\prime∫：\int∬ ：\iint∭ ：\iiint∬∬：\iiiint∮ ：\ointlim ：\lim∞ ：\infty∇：\nabla 逻辑运算符：∵：\because∴ ：\therefore∀ ：\forall∃ ：\exists≠ ：\not=≯：\not&gt;⊄：\not\subset 戴帽符号：y^ ：\hat{y}\check{y} ：\check{y}y˘ ：\breve{y} 连线符号：a+b+c+d¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯：\overline{a+b+c+d}a+b+c+d−−−−−−−−−− ：\underline{a+b+c+d}a+b+c1.0+d2.0：\overbrace{a+\underbrace{b+c}_{1.0}+d}^{2.0} 箭头符号：↑：\uparrow↓：\downarrow⇑ ：\Uparrow⇓：\Downarrow→：\rightarrow← ：\leftarrow⇒ ：\Rightarrow⇐ ：\Leftarrow⟶ ：\longrightarrow⟵ ：\longleftarrow⟹：\Longrightarrow⟸ ：\Longleftarrow 表达(向量,平均值,(线性回归，直线方程) y尖,无穷小,一阶导,二阶导)\vec{a} 向量$\overline{a}$ 平均值$\widehat{a}$ (线性回归，直线方程) y尖$\widetilde{a}$ 颚化符号 等价无穷小$\dot{a}$ 一阶导数$\ddot{a}$ 二阶导数a a¯ \overline{a}a aˆ \widehat{a}a a˜ \widetilde{a}a a˙ \dot{a}a˙ a¨ \ddot{a}a ¨参考链接：https://blog.csdn.net/xingxinmanong/article/details/78528791https://www.cnblogs.com/q735613050/p/7253073.htmlhttps://blog.csdn.net/thither_shore/article/details/52260742https://blog.csdn.net/qq_38228254/article/details/78515800https://blog.csdn.net/u013163834/article/details/87904444]]></content>
       <tags>
-        <tag>Markdown</tag>
         <tag>知识</tag>
+        <tag>Markdown</tag>
       </tags>
   </entry>
   <entry>
@@ -271,8 +260,8 @@
         <category>编程开发</category>
       </categories>
       <tags>
-        <tag>Eclipse</tag>
         <tag>Java</tag>
+        <tag>Eclipse</tag>
         <tag>采坑</tag>
       </tags>
   </entry>
