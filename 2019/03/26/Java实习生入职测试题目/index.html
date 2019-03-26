@@ -112,13 +112,13 @@
 
   <meta name="description" content="String类为什么是final的？JDKB的HashMap的源码，实现原理，底层结构。反射中，Class.forName 和classloader 的区别。session和cookie的区别和联系，session的生命周期，多个服务器部署时session管理。Java中的队列都有哪些，有什么区别。详谈一下Java的内存模型以及GC算法。Java10、Java11的新特性。Java内存泄漏的问题调">
 <meta name="keywords" content="面试">
-<meta property="og:type" content="website">
+<meta property="og:type" content="article">
 <meta property="og:title" content="Java实习生入职测试题目">
-<meta property="og:url" content="https://yohua.ml/Java实习生入职测试题目.html">
+<meta property="og:url" content="https://yohua.ml/2019/03/26/Java实习生入职测试题目/index.html">
 <meta property="og:site_name" content="饮冰">
 <meta property="og:description" content="String类为什么是final的？JDKB的HashMap的源码，实现原理，底层结构。反射中，Class.forName 和classloader 的区别。session和cookie的区别和联系，session的生命周期，多个服务器部署时session管理。Java中的队列都有哪些，有什么区别。详谈一下Java的内存模型以及GC算法。Java10、Java11的新特性。Java内存泄漏的问题调">
 <meta property="og:locale" content="zh-CN">
-<meta property="og:updated_time" content="2019-03-26T13:10:41.920Z">
+<meta property="og:updated_time" content="2019-03-26T13:17:47.835Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="Java实习生入职测试题目">
 <meta name="twitter:description" content="String类为什么是final的？JDKB的HashMap的源码，实现原理，底层结构。反射中，Class.forName 和classloader 的区别。session和cookie的区别和联系，session的生命周期，多个服务器部署时session管理。Java中的队列都有哪些，有什么区别。详谈一下Java的内存模型以及GC算法。Java10、Java11的新特性。Java内存泄漏的问题调">
@@ -360,70 +360,271 @@
           
             
 
-    
-    
-      
-      
-    
-      
-      
-    
-      
-      
-    
-      
-      
-    
-    
-
-  
-
-
           
           <div id="content" class="content">
             
 
   <div id="posts" class="posts-expand">
     
+
+  
+
+  
+  
+  
+
+  
+    <div class="reading-progress-bar"></div>
+  
+
+  <article class="post post-type-normal" itemscope="" itemtype="http://schema.org/Article">
+  
+  
+  
+  <div class="post-block">
+    <link itemprop="mainEntityOfPage" href="https://yohua.ml/2019/03/26/Java实习生入职测试题目/">
+
+    <span hidden itemprop="author" itemscope="" itemtype="http://schema.org/Person">
+      <meta itemprop="name" content="Yohua">
+      <meta itemprop="description" content="顺境多做事，逆境多读书。">
+      <meta itemprop="image" content="/images/avatar.png">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope="" itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="饮冰">
+    </span>
+
     
-    
-    <div class="post-block page">
       <header class="post-header">
 
-<h2 class="post-title" itemprop="name headline">Java实习生入职测试题目
-
-</h2>
-
-<div class="post-meta">
-  
-  
-
-
-
-</div>
-
-</header>
-
-      
-      
-      
-      <div class="post-body han-init-context">
         
         
-          <h1 id="String类为什么是final的？"><a href="#String类为什么是final的？" class="headerlink" title="String类为什么是final的？"></a>String类为什么是final的？</h1><h1 id="JDKB的HashMap的源码，实现原理，底层结构。"><a href="#JDKB的HashMap的源码，实现原理，底层结构。" class="headerlink" title="JDKB的HashMap的源码，实现原理，底层结构。"></a>JDKB的HashMap的源码，实现原理，底层结构。</h1><h1 id="反射中，Class-forName-和classloader-的区别。"><a href="#反射中，Class-forName-和classloader-的区别。" class="headerlink" title="反射中，Class.forName 和classloader 的区别。"></a>反射中，Class.forName 和classloader 的区别。</h1><h1 id="session和cookie的区别和联系，session的生命周期，多个服务器部署时session管理。"><a href="#session和cookie的区别和联系，session的生命周期，多个服务器部署时session管理。" class="headerlink" title="session和cookie的区别和联系，session的生命周期，多个服务器部署时session管理。"></a>session和cookie的区别和联系，session的生命周期，多个服务器部署时session管理。</h1><h1 id="Java中的队列都有哪些，有什么区别。"><a href="#Java中的队列都有哪些，有什么区别。" class="headerlink" title="Java中的队列都有哪些，有什么区别。"></a>Java中的队列都有哪些，有什么区别。</h1><h1 id="详谈一下Java的内存模型以及GC算法。"><a href="#详谈一下Java的内存模型以及GC算法。" class="headerlink" title="详谈一下Java的内存模型以及GC算法。"></a>详谈一下Java的内存模型以及GC算法。</h1><h1 id="Java10、Java11的新特性。"><a href="#Java10、Java11的新特性。" class="headerlink" title="Java10、Java11的新特性。"></a>Java10、Java11的新特性。</h1><h1 id="Java内存泄漏的问题调查定位：jmap，jstack的使用。"><a href="#Java内存泄漏的问题调查定位：jmap，jstack的使用。" class="headerlink" title="Java内存泄漏的问题调查定位：jmap，jstack的使用。"></a>Java内存泄漏的问题调查定位：jmap，jstack的使用。</h1><h1 id="Spring的体系结构和jar用法。"><a href="#Spring的体系结构和jar用法。" class="headerlink" title="Spring的体系结构和jar用法。"></a>Spring的体系结构和jar用法。</h1><h1 id="Spring-MVC的运行原理。"><a href="#Spring-MVC的运行原理。" class="headerlink" title="Spring MVC的运行原理。"></a>Spring MVC的运行原理。</h1><h1 id="Spring-Boot的执行过程。"><a href="#Spring-Boot的执行过程。" class="headerlink" title="Spring Boot的执行过程。"></a>Spring Boot的执行过程。</h1><h1 id="Spring的事务隔离级别，实现原理。"><a href="#Spring的事务隔离级别，实现原理。" class="headerlink" title="Spring的事务隔离级别，实现原理。"></a>Spring的事务隔离级别，实现原理。</h1><h1 id="Spring-IOC和AOP的底层实现。"><a href="#Spring-IOC和AOP的底层实现。" class="headerlink" title="Spring IOC和AOP的底层实现。"></a>Spring IOC和AOP的底层实现。</h1><h1 id="String-Boot的优点和缺点，以及使用场景等。"><a href="#String-Boot的优点和缺点，以及使用场景等。" class="headerlink" title="String Boot的优点和缺点，以及使用场景等。"></a>String Boot的优点和缺点，以及使用场景等。</h1><h1 id="讲一下SpringCloud-和Dubbo-的优缺点。"><a href="#讲一下SpringCloud-和Dubbo-的优缺点。" class="headerlink" title="讲一下SpringCloud 和Dubbo 的优缺点。"></a>讲一下SpringCloud 和Dubbo 的优缺点。</h1><h1 id="什么是Hystrix？它如何实现容错？"><a href="#什么是Hystrix？它如何实现容错？" class="headerlink" title="什么是Hystrix？它如何实现容错？"></a>什么是Hystrix？它如何实现容错？</h1><h1 id="什么是Netflix-Feign？它的优点是什么？"><a href="#什么是Netflix-Feign？它的优点是什么？" class="headerlink" title="什么是Netflix Feign？它的优点是什么？"></a>什么是Netflix Feign？它的优点是什么？</h1><h1 id="谈一谈分布式一致性到CAP理论、BASE理论。"><a href="#谈一谈分布式一致性到CAP理论、BASE理论。" class="headerlink" title="谈一谈分布式一致性到CAP理论、BASE理论。"></a>谈一谈分布式一致性到CAP理论、BASE理论。</h1><h1 id="常用的线程池模式以及不同线程池的使用场景。"><a href="#常用的线程池模式以及不同线程池的使用场景。" class="headerlink" title="常用的线程池模式以及不同线程池的使用场景。"></a>常用的线程池模式以及不同线程池的使用场景。</h1><h1 id="ReentrantLock-和synchronized-的区别。"><a href="#ReentrantLock-和synchronized-的区别。" class="headerlink" title="ReentrantLock 和synchronized 的区别。"></a>ReentrantLock 和synchronized 的区别。</h1><h1 id="atronicnteger-和volatile-等线程池安全操作的关键字的理解和使用。"><a href="#atronicnteger-和volatile-等线程池安全操作的关键字的理解和使用。" class="headerlink" title="atronicnteger 和volatile 等线程池安全操作的关键字的理解和使用。"></a>atronicnteger 和volatile 等线程池安全操作的关键字的理解和使用。</h1><h1 id="分布式锁的三种实现方式。"><a href="#分布式锁的三种实现方式。" class="headerlink" title="分布式锁的三种实现方式。"></a>分布式锁的三种实现方式。</h1><h1 id="socket框架netty的使用，以及NIO的实现原理，为什么是异步非阻塞。"><a href="#socket框架netty的使用，以及NIO的实现原理，为什么是异步非阻塞。" class="headerlink" title="socket框架netty的使用，以及NIO的实现原理，为什么是异步非阻塞。"></a>socket框架netty的使用，以及NIO的实现原理，为什么是异步非阻塞。</h1><h1 id="简述NIO的最佳实践。"><a href="#简述NIO的最佳实践。" class="headerlink" title="简述NIO的最佳实践。"></a>简述NIO的最佳实践。</h1><h1 id="Zookeeper-的用途，选举的原理是什么？"><a href="#Zookeeper-的用途，选举的原理是什么？" class="headerlink" title="Zookeeper 的用途，选举的原理是什么？"></a>Zookeeper 的用途，选举的原理是什么？</h1><h1 id="手写一个哈夫曼树。"><a href="#手写一个哈夫曼树。" class="headerlink" title="手写一个哈夫曼树。"></a>手写一个哈夫曼树。</h1>
+          <h2 class="post-title" itemprop="name headline">Java实习生入职测试题目
+
+              
+            
+          </h2>
         
-      </div>
+
+        <div class="post-meta">
+          <span class="post-time">
+
+            
+            
+            
+
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">发表于</span>
+              
+
+              
+                
+              
+
+              <time title="创建时间：2019-03-26 21:10:40" itemprop="dateCreated datePublished" datetime="2019-03-26T21:10:40+08:00">2019-03-26</time>
+            
+
+            
+          </span>
+
+          
+            <span class="post-category">
+            
+              <span class="post-meta-divider">|</span>
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-folder-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">分类于</span>
+              
+              
+                <span itemprop="about" itemscope="" itemtype="http://schema.org/Thing"><a href="/categories/编程开发/" itemprop="url" rel="index"><span itemprop="name">编程开发</span></a></span>
+
+                
+                
+              
+            </span>
+          
+
+          
+            
+            
+          
+
+          
+          
+            <span id="/2019/03/26/Java实习生入职测试题目/" class="leancloud_visitors" data-flag-title="Java实习生入职测试题目">
+              <span class="post-meta-divider">|</span>
+              <span class="post-meta-item-icon">
+                <i class="fa fa-eye"></i>
+              </span>
+              
+                <span class="post-meta-item-text">阅读次数：</span>
+              
+                <span class="leancloud-visitors-count"></span>
+            </span>
+          
+
+          
+
+          
+            <div class="post-symbolscount">
+              
+
+              
+                <span class="post-meta-item-icon">
+                  <i class="fa fa-file-word-o"></i>
+                </span>
+                
+                  <span class="post-meta-item-text">本文字数：</span>
+                
+                <span title="本文字数">618</span>
+              
+
+              
+                <span class="post-meta-divider">|</span>
+              
+
+              
+                <span class="post-meta-item-icon">
+                  <i class="fa fa-clock-o"></i>
+                </span>
+                
+                  <span class="post-meta-item-text">阅读时长 &asymp;</span>
+                
+                <span title="阅读时长">1 分钟</span>
+              
+            </div>
+          
+
+          
+
+        </div>
+      </header>
+    
+
+    
+    
+    
+    <div class="post-body han-init-context" itemprop="articleBody">
+
       
       
+
+      
+        <h1 id="String类为什么是final的？"><a href="#String类为什么是final的？" class="headerlink" title="String类为什么是final的？"></a>String类为什么是final的？</h1><h1 id="JDKB的HashMap的源码，实现原理，底层结构。"><a href="#JDKB的HashMap的源码，实现原理，底层结构。" class="headerlink" title="JDKB的HashMap的源码，实现原理，底层结构。"></a>JDKB的HashMap的源码，实现原理，底层结构。</h1><h1 id="反射中，Class-forName-和classloader-的区别。"><a href="#反射中，Class-forName-和classloader-的区别。" class="headerlink" title="反射中，Class.forName 和classloader 的区别。"></a>反射中，Class.forName 和classloader 的区别。</h1><h1 id="session和cookie的区别和联系，session的生命周期，多个服务器部署时session管理。"><a href="#session和cookie的区别和联系，session的生命周期，多个服务器部署时session管理。" class="headerlink" title="session和cookie的区别和联系，session的生命周期，多个服务器部署时session管理。"></a>session和cookie的区别和联系，session的生命周期，多个服务器部署时session管理。</h1><h1 id="Java中的队列都有哪些，有什么区别。"><a href="#Java中的队列都有哪些，有什么区别。" class="headerlink" title="Java中的队列都有哪些，有什么区别。"></a>Java中的队列都有哪些，有什么区别。</h1><h1 id="详谈一下Java的内存模型以及GC算法。"><a href="#详谈一下Java的内存模型以及GC算法。" class="headerlink" title="详谈一下Java的内存模型以及GC算法。"></a>详谈一下Java的内存模型以及GC算法。</h1><h1 id="Java10、Java11的新特性。"><a href="#Java10、Java11的新特性。" class="headerlink" title="Java10、Java11的新特性。"></a>Java10、Java11的新特性。</h1><h1 id="Java内存泄漏的问题调查定位：jmap，jstack的使用。"><a href="#Java内存泄漏的问题调查定位：jmap，jstack的使用。" class="headerlink" title="Java内存泄漏的问题调查定位：jmap，jstack的使用。"></a>Java内存泄漏的问题调查定位：jmap，jstack的使用。</h1><h1 id="Spring的体系结构和jar用法。"><a href="#Spring的体系结构和jar用法。" class="headerlink" title="Spring的体系结构和jar用法。"></a>Spring的体系结构和jar用法。</h1><h1 id="Spring-MVC的运行原理。"><a href="#Spring-MVC的运行原理。" class="headerlink" title="Spring MVC的运行原理。"></a>Spring MVC的运行原理。</h1><h1 id="Spring-Boot的执行过程。"><a href="#Spring-Boot的执行过程。" class="headerlink" title="Spring Boot的执行过程。"></a>Spring Boot的执行过程。</h1><h1 id="Spring的事务隔离级别，实现原理。"><a href="#Spring的事务隔离级别，实现原理。" class="headerlink" title="Spring的事务隔离级别，实现原理。"></a>Spring的事务隔离级别，实现原理。</h1><h1 id="Spring-IOC和AOP的底层实现。"><a href="#Spring-IOC和AOP的底层实现。" class="headerlink" title="Spring IOC和AOP的底层实现。"></a>Spring IOC和AOP的底层实现。</h1><h1 id="String-Boot的优点和缺点，以及使用场景等。"><a href="#String-Boot的优点和缺点，以及使用场景等。" class="headerlink" title="String Boot的优点和缺点，以及使用场景等。"></a>String Boot的优点和缺点，以及使用场景等。</h1><h1 id="讲一下SpringCloud-和Dubbo-的优缺点。"><a href="#讲一下SpringCloud-和Dubbo-的优缺点。" class="headerlink" title="讲一下SpringCloud 和Dubbo 的优缺点。"></a>讲一下SpringCloud 和Dubbo 的优缺点。</h1><h1 id="什么是Hystrix？它如何实现容错？"><a href="#什么是Hystrix？它如何实现容错？" class="headerlink" title="什么是Hystrix？它如何实现容错？"></a>什么是Hystrix？它如何实现容错？</h1><h1 id="什么是Netflix-Feign？它的优点是什么？"><a href="#什么是Netflix-Feign？它的优点是什么？" class="headerlink" title="什么是Netflix Feign？它的优点是什么？"></a>什么是Netflix Feign？它的优点是什么？</h1><h1 id="谈一谈分布式一致性到CAP理论、BASE理论。"><a href="#谈一谈分布式一致性到CAP理论、BASE理论。" class="headerlink" title="谈一谈分布式一致性到CAP理论、BASE理论。"></a>谈一谈分布式一致性到CAP理论、BASE理论。</h1><h1 id="常用的线程池模式以及不同线程池的使用场景。"><a href="#常用的线程池模式以及不同线程池的使用场景。" class="headerlink" title="常用的线程池模式以及不同线程池的使用场景。"></a>常用的线程池模式以及不同线程池的使用场景。</h1><h1 id="ReentrantLock-和synchronized-的区别。"><a href="#ReentrantLock-和synchronized-的区别。" class="headerlink" title="ReentrantLock 和synchronized 的区别。"></a>ReentrantLock 和synchronized 的区别。</h1><h1 id="atronicnteger-和volatile-等线程池安全操作的关键字的理解和使用。"><a href="#atronicnteger-和volatile-等线程池安全操作的关键字的理解和使用。" class="headerlink" title="atronicnteger 和volatile 等线程池安全操作的关键字的理解和使用。"></a>atronicnteger 和volatile 等线程池安全操作的关键字的理解和使用。</h1><h1 id="分布式锁的三种实现方式。"><a href="#分布式锁的三种实现方式。" class="headerlink" title="分布式锁的三种实现方式。"></a>分布式锁的三种实现方式。</h1><h1 id="socket框架netty的使用，以及NIO的实现原理，为什么是异步非阻塞。"><a href="#socket框架netty的使用，以及NIO的实现原理，为什么是异步非阻塞。" class="headerlink" title="socket框架netty的使用，以及NIO的实现原理，为什么是异步非阻塞。"></a>socket框架netty的使用，以及NIO的实现原理，为什么是异步非阻塞。</h1><h1 id="简述NIO的最佳实践。"><a href="#简述NIO的最佳实践。" class="headerlink" title="简述NIO的最佳实践。"></a>简述NIO的最佳实践。</h1><h1 id="Zookeeper-的用途，选举的原理是什么？"><a href="#Zookeeper-的用途，选举的原理是什么？" class="headerlink" title="Zookeeper 的用途，选举的原理是什么？"></a>Zookeeper 的用途，选举的原理是什么？</h1><h1 id="手写一个哈夫曼树。"><a href="#手写一个哈夫曼树。" class="headerlink" title="手写一个哈夫曼树。"></a>手写一个哈夫曼树。</h1>
       
     </div>
+
     
+
+    
+    
+    
+
+    
+
+    
+      
+    
+    
+      <div>
+        <div style="padding: 10px 0; margin: 20px auto; width: 90%; text-align: center;">
+  <div></div>
+  <button id="rewardButton" disable="enable" onclick="var qr = document.getElementById(&quot;QR&quot;); if (qr.style.display === 'none') {qr.style.display='block';} else {qr.style.display='none'}">
+    <span>打赏</span>
+  </button>
+  <div id="QR" style="display: none;">
+
+    
+
+    
+      <div id="alipay" style="display: inline-block">
+        <img id="alipay_qr" src="/images/11.png" alt="Yohua 向我付款">
+        <p>向我付款</p>
+      </div>
+    
+
+    
+
+  </div>
+</div>
+
+      </div>
+    
+
+    
+      <div>
+        
 
 
 
+
+  
+
+
+
+<ul class="post-copyright">
+  <li class="post-copyright-author">
+    <strong>本文作者： </strong>Yohua</li>
+  <li class="post-copyright-link">
+    <strong>本文链接：</strong>
     
+    <a href="https://yohua.ml/2019/03/26/Java实习生入职测试题目/" title="Java实习生入职测试题目">https://yohua.ml/2019/03/26/Java实习生入职测试题目/</a>
+  </li>
+  <li class="post-copyright-license">
+    <strong>版权声明： </strong>本博客所有文章除特别声明外，均采用 <span class="exturl" data-url="aHR0cHM6Ly9jcmVhdGl2ZWNvbW1vbnMub3JnL2xpY2Vuc2VzL2J5LW5jLXNhLzQuMC96aC1DTg=="><i class="fa fa-fw fa-creative-commons"></i>BY-NC-SA</span> 许可协议。转载请注明出处！</li>
+</ul>
+
+      </div>
     
-    
+
+    <footer class="post-footer">
+      
+        <div class="post-tags">
+          
+            <a href="/tags/面试/" rel="tag"># 面试</a>
+          
+        </div>
+      
+
+      
+      
+      
+
+      
+        <div class="post-nav">
+          <div class="post-nav-next post-nav-item">
+            
+              <a href="/2019/03/26/CS架构和BS架构区别/" rel="next" title="CS架构和BS架构区别">
+                <i class="fa fa-chevron-left"></i> CS架构和BS架构区别
+              </a>
+            
+          </div>
+
+          <span class="post-nav-divider"></span>
+
+          <div class="post-nav-prev post-nav-item">
+            
+          </div>
+        </div>
+      
+
+      
+      
+    </footer>
+  </div>
+  
+  
+  
+  </article>
+
+
   </div>
 
 
@@ -484,7 +685,7 @@
                 
                   <a href="/archives/">
                 
-                    <span class="site-state-item-count">29</span>
+                    <span class="site-state-item-count">30</span>
                     <span class="site-state-item-name">日志</span>
                   </a>
                 </div>
@@ -596,7 +797,7 @@
                     
                       
                     
-                    <span class="site-state-item-count">37</span>
+                    <span class="site-state-item-count">38</span>
                     <span class="site-state-item-name">标签</span>
                   </a>
                 </div>
@@ -758,7 +959,7 @@
       <i class="fa fa-area-chart"></i>
     </span>
     
-    <span title="站点总字数">38k</span>
+    <span title="站点总字数">39k</span>
   
 
   
@@ -767,7 +968,7 @@
       <i class="fa fa-coffee"></i>
     </span>
     
-    <span title="站点阅读时长">1:15</span>
+    <span title="站点阅读时长">1:16</span>
   
 </div>
 
@@ -919,7 +1120,7 @@
   
     <script>
   window.livereOptions = {
-    refer: 'Java实习生入职测试题目.html'
+    refer: '2019/03/26/Java实习生入职测试题目/'
   };
   (function(d, s) {
     var j, e = d.getElementsByTagName(s)[0];
@@ -1263,38 +1464,37 @@
   
   <script>
     
-    function showTime(Counter) {
-      var entries = [];
+    function addCount(Counter) {
       var $visitors = $('.leancloud_visitors');
+      var url = $visitors.attr('id').trim();
+      var title = $visitors.attr('data-flag-title').trim();
 
-      $visitors.each(function() {
-        entries.push( $(this).attr('id').trim() );
-      });
-
-      Counter('get', '/classes/Counter', { where: JSON.stringify({ url: { '$in': entries } }) })
+      Counter('get', '/classes/Counter', { where: JSON.stringify({ url }) })
         .done(function({ results }) {
-          var COUNT_CONTAINER_REF = '.leancloud-visitors-count';
-
-          if (results.length === 0) {
-            $visitors.find(COUNT_CONTAINER_REF).text(0);
-            return;
-          }
-
-          for (var i = 0; i < results.length; i++) {
-            var item = results[i];
-            var url = item.url;
-            var time = item.time;
-            var element = document.getElementById(url);
-
-            $(element).find(COUNT_CONTAINER_REF).text(time);
-          }
-          for (var i = 0; i < entries.length; i++) {
-            var url = entries[i];
-            var element = document.getElementById(url);
-            var countSpan = $(element).find(COUNT_CONTAINER_REF);
-            if (countSpan.text() == '') {
-              countSpan.text(0);
-            }
+          if (results.length > 0) {
+            var counter = results[0];
+            
+            Counter('put', '/classes/Counter/' + counter.objectId, JSON.stringify({ time: { '__op': 'Increment', 'amount': 1 } }))
+            
+              .done(function() {
+                var $element = $(document.getElementById(url));
+                $element.find('.leancloud-visitors-count').text(counter.time + 1);
+              })
+            
+              .fail(function ({ responseJSON }) {
+                console.log('Failed to save Visitor num, with error message: ' + responseJSON.error);
+              })
+          } else {
+            
+              Counter('post', '/classes/Counter', JSON.stringify({ title: title, url: url, time: 1 }))
+                .done(function() {
+                  var $element = $(document.getElementById(url));
+                  $element.find('.leancloud-visitors-count').text(1);
+                })
+                .fail(function() {
+                  console.log('Failed to create');
+                });
+            
           }
         })
         .fail(function ({ responseJSON }) {
@@ -1319,9 +1519,7 @@
             });
           };
           
-            if ($('.post-title-link').length >= 1) {
-              showTime(Counter);
-            }
+            addCount(Counter);
           
         });
     });
