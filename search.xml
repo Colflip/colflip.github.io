@@ -2,7 +2,7 @@
 <search>
   <entry>
     <title><![CDATA[CS架构和BS架构区别]]></title>
-    <url>%2F2019%2F03%2F25%2FCS%E6%9E%B6%E6%9E%84%E5%92%8CBS%E6%9E%B6%E6%9E%84%E5%8C%BA%E5%88%AB%2F</url>
+    <url>%2F2019%2F03%2F26%2FCS%E6%9E%B6%E6%9E%84%E5%92%8CBS%E6%9E%B6%E6%9E%84%E5%8C%BA%E5%88%AB%2F</url>
     <content type="text"><![CDATA[&emsp;&emsp; 即Client/Server (客户机/服务器) 结构，是一种熟知的软件系统体系结构，通过将任务合理分配到Client端和Server端，降低了系统的通讯开销，需要安装客户端才可进行管理操作。B/S架构即浏览器和服务器架构模式。它是随着Internet技术的兴起，对C/S架构的一种变化或者改进的架构。在这种架构下，用户工作界面是通过WWW浏览器来实现，极少部分事务逻辑在前端(Browser)实现，但是主要事务逻辑在服务器端(Server)实现，形成所谓三层3-tier结构。| 对象 | 使用环境 | 客户端要求 | 软件安装 | 升级和维护 | 安全性 || ——— | ——— | ——— |——— | ——— | ——— || C/S | 用户固定，并且处于相同区域，要求拥有相同的操作系统 | 需要一定配置要求 | 每一个客户端都必须安装和配置软件 | 需要用户自己升级 | 安全性高 || B/S | 要有操作系统和浏览器，与操作系统平台无关 | 对配置基本无要求 | 可以在任何地方进行操作而不用安装任何专门的软件 | 无需用户操作 | 安全性较低 |]]></content>
       <categories>
         <category>专业知识</category>
@@ -43,8 +43,8 @@
         <category>编程开发</category>
       </categories>
       <tags>
-        <tag>Web</tag>
         <tag>Java</tag>
+        <tag>Web</tag>
         <tag>JSP</tag>
         <tag>输入输出流</tag>
         <tag>数据库</tag>
@@ -284,8 +284,8 @@
         <category>编程开发</category>
       </categories>
       <tags>
-        <tag>Eclipse</tag>
         <tag>Java</tag>
+        <tag>Eclipse</tag>
         <tag>采坑</tag>
       </tags>
   </entry>

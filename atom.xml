@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="https://yohua.ml/"/>
-  <updated>2019-03-26T04:01:39.868Z</updated>
+  <updated>2019-03-26T04:01:43.914Z</updated>
   <id>https://yohua.ml/</id>
   
   <author>
@@ -18,10 +18,10 @@
   
   <entry>
     <title>CS架构和BS架构区别</title>
-    <link href="https://yohua.ml/2019/03/25/CS%E6%9E%B6%E6%9E%84%E5%92%8CBS%E6%9E%B6%E6%9E%84%E5%8C%BA%E5%88%AB/"/>
-    <id>https://yohua.ml/2019/03/25/CS架构和BS架构区别/</id>
-    <published>2019-03-25T03:25:31.000Z</published>
-    <updated>2019-03-26T04:01:39.868Z</updated>
+    <link href="https://yohua.ml/2019/03/26/CS%E6%9E%B6%E6%9E%84%E5%92%8CBS%E6%9E%B6%E6%9E%84%E5%8C%BA%E5%88%AB/"/>
+    <id>https://yohua.ml/2019/03/26/CS架构和BS架构区别/</id>
+    <published>2019-03-26T04:01:42.000Z</published>
+    <updated>2019-03-26T04:01:43.914Z</updated>
     
     <summary type="html">
     
@@ -122,9 +122,9 @@
       <category term="编程开发" scheme="https://yohua.ml/categories/%E7%BC%96%E7%A8%8B%E5%BC%80%E5%8F%91/"/>
     
     
-      <category term="Web" scheme="https://yohua.ml/tags/Web/"/>
-    
       <category term="Java" scheme="https://yohua.ml/tags/Java/"/>
+    
+      <category term="Web" scheme="https://yohua.ml/tags/Web/"/>
     
       <category term="JSP" scheme="https://yohua.ml/tags/JSP/"/>
     
