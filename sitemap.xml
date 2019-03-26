@@ -2,6 +2,13 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
+    <loc>https://yohua.ml/links/index.html</loc>
+    
+    <lastmod>2019-03-26T14:08:45.531Z</lastmod>
+    
+  </url>
+  
+  <url>
     <loc>https://yohua.ml/2019/03/26/Java%E5%AE%9E%E4%B9%A0%E7%94%9F%E5%85%A5%E8%81%8C%E6%B5%8B%E8%AF%95%E9%A2%98%E7%9B%AE/</loc>
     
     <lastmod>2019-03-26T13:17:47.835Z</lastmod>
@@ -40,13 +47,6 @@
     <loc>https://yohua.ml/2019/03/25/%E5%8F%AF%E8%A1%8C%E6%80%A7%E7%A0%94%E7%A9%B6/</loc>
     
     <lastmod>2019-03-26T03:51:40.491Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>https://yohua.ml/links/index.html</loc>
-    
-    <lastmod>2019-03-24T08:40:30.283Z</lastmod>
     
   </url>
   
