@@ -122,9 +122,9 @@
       <category term="编程开发" scheme="https://yohua.ml/categories/%E7%BC%96%E7%A8%8B%E5%BC%80%E5%8F%91/"/>
     
     
-      <category term="Web" scheme="https://yohua.ml/tags/Web/"/>
-    
       <category term="Java" scheme="https://yohua.ml/tags/Java/"/>
+    
+      <category term="Web" scheme="https://yohua.ml/tags/Web/"/>
     
       <category term="JSP" scheme="https://yohua.ml/tags/JSP/"/>
     
@@ -365,7 +365,7 @@
     <link href="https://yohua.ml/2019/03/06/%E9%AD%85%E6%97%8F%E6%89%8B%E6%9C%BA%E5%89%A9%E4%BD%9930-%E7%94%B5%E9%87%8F%E8%87%AA%E5%8A%A8%E5%85%B3%E6%9C%BA%E8%A7%A3%E5%86%B3%E6%96%B9%E6%B3%95/"/>
     <id>https://yohua.ml/2019/03/06/魅族手机剩余30-电量自动关机解决方法/</id>
     <published>2019-03-06T06:09:21.000Z</published>
-    <updated>2019-03-14T12:21:26.394Z</updated>
+    <updated>2019-03-26T08:04:37.428Z</updated>
     
     <summary type="html">
     
@@ -378,6 +378,8 @@
       
     
     </summary>
+    
+      <category term="生活杂记" scheme="https://yohua.ml/categories/%E7%94%9F%E6%B4%BB%E6%9D%82%E8%AE%B0/"/>
     
     
       <category term="魅族" scheme="https://yohua.ml/tags/%E9%AD%85%E6%97%8F/"/>
@@ -522,32 +524,6 @@
   </entry>
   
   <entry>
-    <title>流水线的相关与冲突</title>
-    <link href="https://yohua.ml/2019/02/28/%E6%B5%81%E6%B0%B4%E7%BA%BF%E7%9A%84%E7%9B%B8%E5%85%B3%E4%B8%8E%E5%86%B2%E7%AA%81/"/>
-    <id>https://yohua.ml/2019/02/28/流水线的相关与冲突/</id>
-    <published>2019-02-28T03:55:34.000Z</published>
-    <updated>2019-03-14T11:33:51.551Z</updated>
-    
-    <summary type="html">
-    
-      
-      
-        
-        
-          &lt;h1 id=&quot;一段经典的5段流水线&quot;&gt;&lt;a href=&quot;#一段经典的5段流水线&quot; class=&quot;headerlink&quot; title=&quot;一段经典的5段流水线&quot;&gt;&lt;/a&gt;一段经典的5段流水线&lt;/h1&gt;&lt;p&gt;&amp;emsp;&amp;emsp;以一个经典的5段RISC（Reduced
-        
-      
-    
-    </summary>
-    
-      <category term="专业知识" scheme="https://yohua.ml/categories/%E4%B8%93%E4%B8%9A%E7%9F%A5%E8%AF%86/"/>
-    
-    
-      <category term="计算机系统结构" scheme="https://yohua.ml/tags/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%B3%BB%E7%BB%9F%E7%BB%93%E6%9E%84/"/>
-    
-  </entry>
-  
-  <entry>
     <title>流水线基本概念及其性能指标</title>
     <link href="https://yohua.ml/2019/02/28/%E6%B5%81%E6%B0%B4%E7%BA%BF%E5%9F%BA%E6%9C%AC%E6%A6%82%E5%BF%B5%E5%8F%8A%E5%85%B6%E6%80%A7%E8%83%BD%E6%8C%87%E6%A0%87/"/>
     <id>https://yohua.ml/2019/02/28/流水线基本概念及其性能指标/</id>
@@ -561,6 +537,32 @@
         
         
           &lt;h1 id=&quot;基本概念&quot;&gt;&lt;a href=&quot;#基本概念&quot; class=&quot;headerlink&quot;
+        
+      
+    
+    </summary>
+    
+      <category term="专业知识" scheme="https://yohua.ml/categories/%E4%B8%93%E4%B8%9A%E7%9F%A5%E8%AF%86/"/>
+    
+    
+      <category term="计算机系统结构" scheme="https://yohua.ml/tags/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%B3%BB%E7%BB%9F%E7%BB%93%E6%9E%84/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>流水线的相关与冲突</title>
+    <link href="https://yohua.ml/2019/02/28/%E6%B5%81%E6%B0%B4%E7%BA%BF%E7%9A%84%E7%9B%B8%E5%85%B3%E4%B8%8E%E5%86%B2%E7%AA%81/"/>
+    <id>https://yohua.ml/2019/02/28/流水线的相关与冲突/</id>
+    <published>2019-02-28T03:55:34.000Z</published>
+    <updated>2019-03-14T11:33:51.551Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        
+        
+          &lt;h1 id=&quot;一段经典的5段流水线&quot;&gt;&lt;a href=&quot;#一段经典的5段流水线&quot; class=&quot;headerlink&quot; title=&quot;一段经典的5段流水线&quot;&gt;&lt;/a&gt;一段经典的5段流水线&lt;/h1&gt;&lt;p&gt;&amp;emsp;&amp;emsp;以一个经典的5段RISC（Reduced
         
       
     
