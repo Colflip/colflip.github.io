@@ -118,7 +118,7 @@
 <meta property="og:site_name" content="饮冰">
 <meta property="og:description" content="&amp;emsp;&amp;emsp;B/S架构即Client/Server (客户机/服务器) 结构，是一种熟知的软件系统体系结构，通过将任务合理分配到Client端和Server端，降低了系统的通讯开销，需要安装客户端才可进行管理操作。B/S架构即浏览器和服务器架构模式。它是随着Internet技术的兴起，对C/S架构的一种变化或者改进的架构。在这种架构下，用户工作界面是通过WWW浏览器来实现，极少部分事务">
 <meta property="og:locale" content="zh-CN">
-<meta property="og:updated_time" content="2019-03-26T07:11:46.753Z">
+<meta property="og:updated_time" content="2019-03-26T07:30:08.753Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="CS架构和BS架构区别">
 <meta name="twitter:description" content="&amp;emsp;&amp;emsp;B/S架构即Client/Server (客户机/服务器) 结构，是一种熟知的软件系统体系结构，通过将任务合理分配到Client端和Server端，降低了系统的通讯开销，需要安装客户端才可进行管理操作。B/S架构即浏览器和服务器架构模式。它是随着Internet技术的兴起，对C/S架构的一种变化或者改进的架构。在这种架构下，用户工作界面是通过WWW浏览器来实现，极少部分事务">
@@ -466,7 +466,7 @@
                 
                   <span class="post-meta-item-text">本文字数：</span>
                 
-                <span title="本文字数">443</span>
+                <span title="本文字数">1.2k</span>
               
 
               
@@ -480,7 +480,7 @@
                 
                   <span class="post-meta-item-text">阅读时长 &asymp;</span>
                 
-                <span title="阅读时长">2 分钟</span>
+                <span title="阅读时长">5 分钟</span>
               
             </div>
           
@@ -533,6 +533,10 @@
 </tbody>
 </table>
 </div>
+<h1 id="C-S的优缺点"><a href="#C-S的优缺点" class="headerlink" title="C/S的优缺点"></a>C/S的优缺点</h1><h2 id="优点"><a href="#优点" class="headerlink" title="优点"></a>优点</h2><p>●能充分发挥客户端PC的处理能力，很多工作可以在客户端处理后再提交给服务器，所以CS客户端响应速度快。<br>●操作界面漂亮、形式多样，可以充分满足客户自身的个性化要求。<br>●C/S结构的管理信息系统具有较强的事务处理能力，能实现复杂的业务流程。<br>●安全性能可以很容易保证，C/S一般面向相对固定的用户群，程序更加注重流程，它可以对权限进行多层次校验，提供了更安全的存取模式，对信息安全的控制能力很强。一般高度机密的信息系统采用C/S结构适宜。</p>
+<h2 id="缺点"><a href="#缺点" class="headerlink" title="缺点"></a>缺点</h2><p>●需要专门的客户端安装程序，分布功能弱，针对点多面广且不具备网络条件的用户群体，不能够实现快速部署安装和配置。<br>●兼容性差，对于不同的开发工具，具有较大的局限性。若采用不同工具，需要重新改写程序。<br>●开发、维护成本较高，需要具有一定专业水准的技术人员才能完成，发生一次升级，则所有客户端的程序都需要改变。。<br>●用户群固定。由于程序需要安装才可使用，因此不适合面向一些不可知的用户，所以适用面窄，通常用于局域网中。</p>
+<h1 id="B-S的优缺点"><a href="#B-S的优缺点" class="headerlink" title="B/S的优缺点"></a>B/S的优缺点</h1><h2 id="优点-1"><a href="#优点-1" class="headerlink" title="优点"></a>优点</h2><p>●分布性强，客户端零维护。只要有网络、浏览器，可以随时随地进行查询、浏览等业务处理。<br>●业务扩展简单方便，通过增加网页即可增加服务器功能。<br>●维护简单方便，只需要改变网页，即可实现所有用户的同步更新。<br>●开发简单，共享性强。</p>
+<h2 id="缺点-1"><a href="#缺点-1" class="headerlink" title="缺点"></a>缺点</h2><p>●个性化特点明显降低，无法实现具有个性化的功能要求。<br>●在跨浏览器上，BS架构不尽如人意。<br>●客户端服务器端的交互是请求-响应模式，通常动态刷新页面，响应速度明显降低（Ajax可以一定程度上解决这个问题）。无法实现分页显示，给数据库访问造成较大的压力。<br>●在速度和安全性上需要花费巨大的设计成本。<br>●功能弱化，难以实现传统模式下的特殊功能要求。</p>
 
       
     </div>
@@ -678,8 +682,17 @@
       
 
       
+        <ul class="sidebar-nav motion-element">
+          <li class="sidebar-nav-toc sidebar-nav-active" data-target="post-toc-wrap">
+            文章目录
+          </li>
+          <li class="sidebar-nav-overview" data-target="site-overview-wrap">
+            站点概览
+          </li>
+        </ul>
+      
 
-      <div class="site-overview-wrap sidebar-panel sidebar-panel-active">
+      <div class="site-overview-wrap sidebar-panel">
         <div class="site-overview">
           <div class="site-author motion-element" itemprop="author" itemscope="" itemtype="http://schema.org/Person">
             
@@ -918,6 +931,23 @@
       </div>
 
       
+      <!--noindex-->
+        <div class="post-toc-wrap motion-element sidebar-panel sidebar-panel-active">
+          <div class="post-toc">
+
+            
+            
+            
+            
+
+            
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#C-S的优缺点"><span class="nav-number">1.</span> <span class="nav-text">C/S的优缺点</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#优点"><span class="nav-number">1.1.</span> <span class="nav-text">优点</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#缺点"><span class="nav-number">1.2.</span> <span class="nav-text">缺点</span></a></li></ol></li><li class="nav-item nav-level-1"><a class="nav-link" href="#B-S的优缺点"><span class="nav-number">2.</span> <span class="nav-text">B/S的优缺点</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#优点-1"><span class="nav-number">2.1.</span> <span class="nav-text">优点</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#缺点-1"><span class="nav-number">2.2.</span> <span class="nav-text">缺点</span></a></li></ol></li></ol></div>
+            
+
+          </div>
+        </div>
+      <!--/noindex-->
+      
 
       
         <div class="back-to-top">
@@ -953,7 +983,7 @@
       <i class="fa fa-area-chart"></i>
     </span>
     
-    <span title="站点总字数">37k</span>
+    <span title="站点总字数">38k</span>
   
 
   
@@ -962,7 +992,7 @@
       <i class="fa fa-coffee"></i>
     </span>
     
-    <span title="站点阅读时长">2:26</span>
+    <span title="站点阅读时长">2:29</span>
   
 </div>
 
