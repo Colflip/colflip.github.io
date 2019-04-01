@@ -110,18 +110,18 @@
 
 
 
-  <meta name="description" content="安装插件1npm install hexo-abbrlink --save 修改站点配置文件123456# permalink: :year/:month/:day/:title/# permalink_defaults:permalink: posts/:abbrlink.htmlabbrlink:  alg: crc32  # 算法：crc16(default) and crc32  rep:">
+  <meta name="description" content="方法一安装插件1npm install hexo-abbrlink --save 修改站点配置文件123456# permalink: :year/:month/:day/:title/# permalink_defaults:permalink: posts/:abbrlink.htmlabbrlink:  alg: crc32  # 算法：crc16(default) and crc32  r">
 <meta name="keywords" content="Web,Hexo,NexT">
 <meta property="og:type" content="article">
 <meta property="og:title" content="Hexo Next修改永久链接的默认格式">
 <meta property="og:url" content="https://yohua.ml/Hexo Next修改永久链接的默认格式/index.html">
 <meta property="og:site_name" content="饮冰">
-<meta property="og:description" content="安装插件1npm install hexo-abbrlink --save 修改站点配置文件123456# permalink: :year/:month/:day/:title/# permalink_defaults:permalink: posts/:abbrlink.htmlabbrlink:  alg: crc32  # 算法：crc16(default) and crc32  rep:">
+<meta property="og:description" content="方法一安装插件1npm install hexo-abbrlink --save 修改站点配置文件123456# permalink: :year/:month/:day/:title/# permalink_defaults:permalink: posts/:abbrlink.htmlabbrlink:  alg: crc32  # 算法：crc16(default) and crc32  r">
 <meta property="og:locale" content="zh-CN">
-<meta property="og:updated_time" content="2019-04-01T03:04:37.538Z">
+<meta property="og:updated_time" content="2019-04-01T13:36:25.445Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="Hexo Next修改永久链接的默认格式">
-<meta name="twitter:description" content="安装插件1npm install hexo-abbrlink --save 修改站点配置文件123456# permalink: :year/:month/:day/:title/# permalink_defaults:permalink: posts/:abbrlink.htmlabbrlink:  alg: crc32  # 算法：crc16(default) and crc32  rep:">
+<meta name="twitter:description" content="方法一安装插件1npm install hexo-abbrlink --save 修改站点配置文件123456# permalink: :year/:month/:day/:title/# permalink_defaults:permalink: posts/:abbrlink.htmlabbrlink:  alg: crc32  # 算法：crc16(default) and crc32  r">
 
 
 
@@ -483,7 +483,7 @@
                 
                   <span class="post-meta-item-text">本文字数：</span>
                 
-                <span title="本文字数">303</span>
+                <span title="本文字数">364</span>
               
 
               
@@ -517,9 +517,10 @@
       
 
       
-        <h1 id="安装插件"><a href="#安装插件" class="headerlink" title="安装插件"></a>安装插件</h1><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">npm install hexo-abbrlink --save</span><br></pre></td></tr></table></figure>
-<h1 id="修改站点配置文件"><a href="#修改站点配置文件" class="headerlink" title="修改站点配置文件"></a>修改站点配置文件</h1><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment"># permalink: :year/:month/:day/:title/</span></span><br><span class="line"><span class="comment"># permalink_defaults:</span></span><br><span class="line">permalink: posts/:abbrlink.html</span><br><span class="line">abbrlink:</span><br><span class="line">  alg: crc32  <span class="comment"># 算法：crc16(default) and crc32</span></span><br><span class="line">  rep: hex    <span class="comment"># 进制：dec(default) and hex</span></span><br></pre></td></tr></table></figure>
+        <h1 id="方法一"><a href="#方法一" class="headerlink" title="方法一"></a>方法一</h1><h2 id="安装插件"><a href="#安装插件" class="headerlink" title="安装插件"></a>安装插件</h2><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">npm install hexo-abbrlink --save</span><br></pre></td></tr></table></figure>
+<h2 id="修改站点配置文件"><a href="#修改站点配置文件" class="headerlink" title="修改站点配置文件"></a>修改站点配置文件</h2><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment"># permalink: :year/:month/:day/:title/</span></span><br><span class="line"><span class="comment"># permalink_defaults:</span></span><br><span class="line">permalink: posts/:abbrlink.html</span><br><span class="line">abbrlink:</span><br><span class="line">  alg: crc32  <span class="comment"># 算法：crc16(default) and crc32</span></span><br><span class="line">  rep: hex    <span class="comment"># 进制：dec(default) and hex</span></span><br></pre></td></tr></table></figure>
 <p>&emsp;&emsp;修改完成后，文章链接变成 /posts/xxxxx.html的形式，避免中文带来的问题，和有利于搜索引擎的抓取。</p>
+<h1 id="方法二"><a href="#方法二" class="headerlink" title="方法二"></a>方法二</h1><p>&emsp;&emsp;<span class="exturl" data-url="aHR0cHM6Ly9oZXhvLmlvL3poLWNuL2RvY3MvcGVybWFsaW5rcy5odG1s" title="https://hexo.io/zh-cn/docs/permalinks.html">https://hexo.io/zh-cn/docs/permalinks.html<i class="fa fa-external-link"></i></span></p>
 
       
     </div>
@@ -618,6 +619,10 @@
 
           <div class="post-nav-prev post-nav-item">
             
+              <a href="/老板老板,你这里有胡萝卜汁吗/" rel="prev" title="Hexo Next修改永久链接的默认格式">
+                Hexo Next修改永久链接的默认格式 <i class="fa fa-chevron-right"></i>
+              </a>
+            
           </div>
         </div>
       
@@ -692,7 +697,7 @@
                 
                   <a href="/archives/">
                 
-                    <span class="site-state-item-count">31</span>
+                    <span class="site-state-item-count">32</span>
                     <span class="site-state-item-name">日志</span>
                   </a>
                 </div>
@@ -924,7 +929,7 @@
             
 
             
-              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#安装插件"><span class="nav-number">1.</span> <span class="nav-text">安装插件</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#修改站点配置文件"><span class="nav-number">2.</span> <span class="nav-text">修改站点配置文件</span></a></li></ol></div>
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#方法一"><span class="nav-number">1.</span> <span class="nav-text">方法一</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#安装插件"><span class="nav-number">1.1.</span> <span class="nav-text">安装插件</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#修改站点配置文件"><span class="nav-number">1.2.</span> <span class="nav-text">修改站点配置文件</span></a></li></ol></li><li class="nav-item nav-level-1"><a class="nav-link" href="#方法二"><span class="nav-number">2.</span> <span class="nav-text">方法二</span></a></li></ol></div>
             
 
           </div>
@@ -966,7 +971,7 @@
       <i class="fa fa-area-chart"></i>
     </span>
     
-    <span title="站点总字数">39k</span>
+    <span title="站点总字数">40k</span>
   
 
   
