@@ -2067,7 +2067,7 @@ pre .javascript .function {
   width: 4px;
   height: 4px;
   border-radius: 50%;
-  background: #ffb3ff;
+  background: #a4ff47;
 }
 .links-of-blogroll {
   font-size: 13px;
@@ -3248,12 +3248,4 @@ header.post-header {
 }
 .post-gallery .post-gallery-img img {
   padding: 3px;
-}
-.post-body a {
-  color: #0593d3;
-  border-bottom: none;
-}
-.post-body a:hover {
-  color: #0477ab;
-  text-decoration: underline;
 }
