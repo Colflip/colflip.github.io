@@ -2067,7 +2067,7 @@ pre .javascript .function {
   width: 4px;
   height: 4px;
   border-radius: 50%;
-  background: #62ff9f;
+  background: #bb3bb5;
 }
 .links-of-blogroll {
   font-size: 13px;
@@ -2878,7 +2878,7 @@ ul.breadcrumb li+li:last-child {
   padding-right: 260px;
 }
 header {
-  width: 71% !important;
+  width: 74% !important;
 }
 header.post-header {
   width: auto !important;
