@@ -75,8 +75,8 @@
         <category>编程开发</category>
       </categories>
       <tags>
-        <tag>Web</tag>
         <tag>Java</tag>
+        <tag>Web</tag>
         <tag>JSP</tag>
         <tag>输入输出流</tag>
         <tag>数据库</tag>
@@ -322,8 +322,8 @@
         <category>编程开发</category>
       </categories>
       <tags>
-        <tag>Java</tag>
         <tag>Eclipse</tag>
+        <tag>Java</tag>
         <tag>采坑</tag>
       </tags>
   </entry>
