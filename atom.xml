@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <feed xmlns="http://www.w3.org/2005/Atom">
-  <title>几字痴妄</title>
+  <title>YOHUA</title>
   
   
   <link href="/atom.xml" rel="self"/>
@@ -18,8 +18,8 @@
   
   <entry>
     <title>老板老板,你这里有胡萝卜汁吗？</title>
-    <link href="https://yohua.ml/2019/04/01/%E8%80%81%E6%9D%BF%E8%80%81%E6%9D%BF,%E4%BD%A0%E8%BF%99%E9%87%8C%E6%9C%89%E8%83%A1%E8%90%9D%E5%8D%9C%E6%B1%81%E5%90%97/"/>
-    <id>https://yohua.ml/2019/04/01/老板老板,你这里有胡萝卜汁吗/</id>
+    <link href="https://yohua.ml/%E8%80%81%E6%9D%BF%E8%80%81%E6%9D%BF,%E4%BD%A0%E8%BF%99%E9%87%8C%E6%9C%89%E8%83%A1%E8%90%9D%E5%8D%9C%E6%B1%81%E5%90%97/"/>
+    <id>https://yohua.ml/老板老板,你这里有胡萝卜汁吗/</id>
     <published>2019-04-01T13:31:22.000Z</published>
     <updated>2019-04-01T13:42:47.824Z</updated>
     
@@ -42,8 +42,8 @@
   
   <entry>
     <title>Hexo Next修改永久链接的默认格式</title>
-    <link href="https://yohua.ml/2019/04/01/Hexo%20Next%E4%BF%AE%E6%94%B9%E6%B0%B8%E4%B9%85%E9%93%BE%E6%8E%A5%E7%9A%84%E9%BB%98%E8%AE%A4%E6%A0%BC%E5%BC%8F/"/>
-    <id>https://yohua.ml/2019/04/01/Hexo Next修改永久链接的默认格式/</id>
+    <link href="https://yohua.ml/Hexo%20Next%E4%BF%AE%E6%94%B9%E6%B0%B8%E4%B9%85%E9%93%BE%E6%8E%A5%E7%9A%84%E9%BB%98%E8%AE%A4%E6%A0%BC%E5%BC%8F/"/>
+    <id>https://yohua.ml/Hexo Next修改永久链接的默认格式/</id>
     <published>2019-04-01T02:52:50.000Z</published>
     <updated>2019-04-01T13:36:25.445Z</updated>
     
@@ -72,8 +72,8 @@
   
   <entry>
     <title>Java实习生入职测试题目</title>
-    <link href="https://yohua.ml/2019/03/26/Java%E5%AE%9E%E4%B9%A0%E7%94%9F%E5%85%A5%E8%81%8C%E6%B5%8B%E8%AF%95%E9%A2%98%E7%9B%AE/"/>
-    <id>https://yohua.ml/2019/03/26/Java实习生入职测试题目/</id>
+    <link href="https://yohua.ml/Java%E5%AE%9E%E4%B9%A0%E7%94%9F%E5%85%A5%E8%81%8C%E6%B5%8B%E8%AF%95%E9%A2%98%E7%9B%AE/"/>
+    <id>https://yohua.ml/Java实习生入职测试题目/</id>
     <published>2019-03-26T13:10:40.000Z</published>
     <updated>2019-04-01T03:04:37.548Z</updated>
     
@@ -98,8 +98,8 @@
   
   <entry>
     <title>CS架构和BS架构区别</title>
-    <link href="https://yohua.ml/2019/03/26/CS%E6%9E%B6%E6%9E%84%E5%92%8CBS%E6%9E%B6%E6%9E%84%E5%8C%BA%E5%88%AB/"/>
-    <id>https://yohua.ml/2019/03/26/CS架构和BS架构区别/</id>
+    <link href="https://yohua.ml/CS%E6%9E%B6%E6%9E%84%E5%92%8CBS%E6%9E%B6%E6%9E%84%E5%8C%BA%E5%88%AB/"/>
+    <id>https://yohua.ml/CS架构和BS架构区别/</id>
     <published>2019-03-26T04:01:42.000Z</published>
     <updated>2019-04-01T03:04:37.519Z</updated>
     
@@ -128,8 +128,8 @@
   
   <entry>
     <title>可行性研究</title>
-    <link href="https://yohua.ml/2019/03/25/%E5%8F%AF%E8%A1%8C%E6%80%A7%E7%A0%94%E7%A9%B6/"/>
-    <id>https://yohua.ml/2019/03/25/可行性研究/</id>
+    <link href="https://yohua.ml/%E5%8F%AF%E8%A1%8C%E6%80%A7%E7%A0%94%E7%A9%B6/"/>
+    <id>https://yohua.ml/可行性研究/</id>
     <published>2019-03-25T03:25:31.000Z</published>
     <updated>2019-04-01T03:04:37.629Z</updated>
     
@@ -155,8 +155,8 @@
   
   <entry>
     <title>多路复用技术</title>
-    <link href="https://yohua.ml/2019/03/20/%E5%A4%9A%E8%B7%AF%E5%A4%8D%E7%94%A8%E6%8A%80%E6%9C%AF/"/>
-    <id>https://yohua.ml/2019/03/20/多路复用技术/</id>
+    <link href="https://yohua.ml/%E5%A4%9A%E8%B7%AF%E5%A4%8D%E7%94%A8%E6%8A%80%E6%9C%AF/"/>
+    <id>https://yohua.ml/多路复用技术/</id>
     <published>2019-03-20T15:12:57.000Z</published>
     <updated>2019-04-01T03:35:02.844Z</updated>
     
@@ -181,8 +181,8 @@
   
   <entry>
     <title>Java Web以输入输出流实现读取数据库图片</title>
-    <link href="https://yohua.ml/2019/03/19/Java%20Web%E4%BB%A5%E8%BE%93%E5%85%A5%E8%BE%93%E5%87%BA%E6%B5%81%E5%AE%9E%E7%8E%B0%E8%AF%BB%E5%8F%96%E6%95%B0%E6%8D%AE%E5%BA%93%E5%9B%BE%E7%89%87/"/>
-    <id>https://yohua.ml/2019/03/19/Java Web以输入输出流实现读取数据库图片/</id>
+    <link href="https://yohua.ml/Java%20Web%E4%BB%A5%E8%BE%93%E5%85%A5%E8%BE%93%E5%87%BA%E6%B5%81%E5%AE%9E%E7%8E%B0%E8%AF%BB%E5%8F%96%E6%95%B0%E6%8D%AE%E5%BA%93%E5%9B%BE%E7%89%87/"/>
+    <id>https://yohua.ml/Java Web以输入输出流实现读取数据库图片/</id>
     <published>2019-03-19T03:32:05.000Z</published>
     <updated>2019-04-01T03:04:37.544Z</updated>
     
@@ -216,8 +216,8 @@
   
   <entry>
     <title>很重要的能力——身体控制精神</title>
-    <link href="https://yohua.ml/2019/03/18/%E5%BE%88%E9%87%8D%E8%A6%81%E7%9A%84%E8%83%BD%E5%8A%9B%E2%80%94%E2%80%94%E8%BA%AB%E4%BD%93%E6%8E%A7%E5%88%B6%E7%B2%BE%E7%A5%9E/"/>
-    <id>https://yohua.ml/2019/03/18/很重要的能力——身体控制精神/</id>
+    <link href="https://yohua.ml/%E5%BE%88%E9%87%8D%E8%A6%81%E7%9A%84%E8%83%BD%E5%8A%9B%E2%80%94%E2%80%94%E8%BA%AB%E4%BD%93%E6%8E%A7%E5%88%B6%E7%B2%BE%E7%A5%9E/"/>
+    <id>https://yohua.ml/很重要的能力——身体控制精神/</id>
     <published>2019-03-18T04:03:52.000Z</published>
     <updated>2019-04-01T03:04:37.703Z</updated>
     
@@ -246,8 +246,8 @@
   
   <entry>
     <title>阶级固化现象越来越严重，向上的路越来越难</title>
-    <link href="https://yohua.ml/2019/03/14/%E9%98%B6%E7%BA%A7%E5%9B%BA%E5%8C%96%E7%8E%B0%E8%B1%A1%E8%B6%8A%E6%9D%A5%E8%B6%8A%E4%B8%A5%E9%87%8D%EF%BC%8C%E5%90%91%E4%B8%8A%E7%9A%84%E8%B7%AF%E8%B6%8A%E6%9D%A5%E8%B6%8A%E9%9A%BE/"/>
-    <id>https://yohua.ml/2019/03/14/阶级固化现象越来越严重，向上的路越来越难/</id>
+    <link href="https://yohua.ml/%E9%98%B6%E7%BA%A7%E5%9B%BA%E5%8C%96%E7%8E%B0%E8%B1%A1%E8%B6%8A%E6%9D%A5%E8%B6%8A%E4%B8%A5%E9%87%8D%EF%BC%8C%E5%90%91%E4%B8%8A%E7%9A%84%E8%B7%AF%E8%B6%8A%E6%9D%A5%E8%B6%8A%E9%9A%BE/"/>
+    <id>https://yohua.ml/阶级固化现象越来越严重，向上的路越来越难/</id>
     <published>2019-03-14T11:24:18.000Z</published>
     <updated>2019-04-01T03:04:37.794Z</updated>
     
@@ -272,8 +272,8 @@
   
   <entry>
     <title>要看的纪录片</title>
-    <link href="https://yohua.ml/2019/03/09/%E8%A6%81%E7%9C%8B%E7%9A%84%E7%BA%AA%E5%BD%95%E7%89%87/"/>
-    <id>https://yohua.ml/2019/03/09/要看的纪录片/</id>
+    <link href="https://yohua.ml/%E8%A6%81%E7%9C%8B%E7%9A%84%E7%BA%AA%E5%BD%95%E7%89%87/"/>
+    <id>https://yohua.ml/要看的纪录片/</id>
     <published>2019-03-09T13:45:47.000Z</published>
     <updated>2019-04-01T03:04:37.786Z</updated>
     
@@ -303,8 +303,8 @@
   
   <entry>
     <title>Atom Markdown常用技巧</title>
-    <link href="https://yohua.ml/2019/03/08/Atom%20Markdown%E5%B8%B8%E7%94%A8%E6%8A%80%E5%B7%A7/"/>
-    <id>https://yohua.ml/2019/03/08/Atom Markdown常用技巧/</id>
+    <link href="https://yohua.ml/Atom%20Markdown%E5%B8%B8%E7%94%A8%E6%8A%80%E5%B7%A7/"/>
+    <id>https://yohua.ml/Atom Markdown常用技巧/</id>
     <published>2019-03-08T09:33:42.000Z</published>
     <updated>2019-04-01T03:04:37.512Z</updated>
     
@@ -333,8 +333,8 @@
   
   <entry>
     <title>互联网络的结构</title>
-    <link href="https://yohua.ml/2019/03/07/%E4%BA%92%E8%BF%9E%E7%BD%91%E7%BB%9C%E7%9A%84%E7%BB%93%E6%9E%84/"/>
-    <id>https://yohua.ml/2019/03/07/互连网络的结构/</id>
+    <link href="https://yohua.ml/%E4%BA%92%E8%BF%9E%E7%BD%91%E7%BB%9C%E7%9A%84%E7%BB%93%E6%9E%84/"/>
+    <id>https://yohua.ml/互连网络的结构/</id>
     <published>2019-03-07T08:23:43.000Z</published>
     <updated>2019-04-01T03:04:37.625Z</updated>
     
@@ -359,8 +359,8 @@
   
   <entry>
     <title>互联网络的基本概念</title>
-    <link href="https://yohua.ml/2019/03/07/%E4%BA%92%E8%BF%9E%E7%BD%91%E7%BB%9C%E7%9A%84%E5%9F%BA%E6%9C%AC%E6%A6%82%E5%BF%B5/"/>
-    <id>https://yohua.ml/2019/03/07/互连网络的基本概念/</id>
+    <link href="https://yohua.ml/%E4%BA%92%E8%BF%9E%E7%BD%91%E7%BB%9C%E7%9A%84%E5%9F%BA%E6%9C%AC%E6%A6%82%E5%BF%B5/"/>
+    <id>https://yohua.ml/互连网络的基本概念/</id>
     <published>2019-03-07T06:53:12.000Z</published>
     <updated>2019-04-01T03:04:37.603Z</updated>
     
@@ -386,8 +386,8 @@
   
   <entry>
     <title>Hexo NexT网站个性化</title>
-    <link href="https://yohua.ml/2019/03/06/Hexo%20NexT%E7%BD%91%E7%AB%99%E4%B8%AA%E6%80%A7%E5%8C%96/"/>
-    <id>https://yohua.ml/2019/03/06/Hexo NexT网站个性化/</id>
+    <link href="https://yohua.ml/Hexo%20NexT%E7%BD%91%E7%AB%99%E4%B8%AA%E6%80%A7%E5%8C%96/"/>
+    <id>https://yohua.ml/Hexo NexT网站个性化/</id>
     <published>2019-03-06T14:14:49.000Z</published>
     <updated>2019-04-01T03:04:37.530Z</updated>
     
@@ -416,8 +416,8 @@
   
   <entry>
     <title>指令级并行之动态分支预测技术</title>
-    <link href="https://yohua.ml/2019/03/06/%E6%8C%87%E4%BB%A4%E7%BA%A7%E5%B9%B6%E8%A1%8C%E4%B9%8B%E5%8A%A8%E6%80%81%E5%88%86%E6%94%AF%E9%A2%84%E6%B5%8B%E6%8A%80%E6%9C%AF/"/>
-    <id>https://yohua.ml/2019/03/06/指令级并行之动态分支预测技术/</id>
+    <link href="https://yohua.ml/%E6%8C%87%E4%BB%A4%E7%BA%A7%E5%B9%B6%E8%A1%8C%E4%B9%8B%E5%8A%A8%E6%80%81%E5%88%86%E6%94%AF%E9%A2%84%E6%B5%8B%E6%8A%80%E6%9C%AF/"/>
+    <id>https://yohua.ml/指令级并行之动态分支预测技术/</id>
     <published>2019-03-06T07:05:46.000Z</published>
     <updated>2019-04-01T03:04:37.733Z</updated>
     
@@ -442,8 +442,8 @@
   
   <entry>
     <title>魅族手机剩余30%电量自动关机解决方法</title>
-    <link href="https://yohua.ml/2019/03/06/%E9%AD%85%E6%97%8F%E6%89%8B%E6%9C%BA%E5%89%A9%E4%BD%9930%25%E7%94%B5%E9%87%8F%E8%87%AA%E5%8A%A8%E5%85%B3%E6%9C%BA%E8%A7%A3%E5%86%B3%E6%96%B9%E6%B3%95/"/>
-    <id>https://yohua.ml/2019/03/06/魅族手机剩余30%电量自动关机解决方法/</id>
+    <link href="https://yohua.ml/%E9%AD%85%E6%97%8F%E6%89%8B%E6%9C%BA%E5%89%A9%E4%BD%9930%25%E7%94%B5%E9%87%8F%E8%87%AA%E5%8A%A8%E5%85%B3%E6%9C%BA%E8%A7%A3%E5%86%B3%E6%96%B9%E6%B3%95/"/>
+    <id>https://yohua.ml/魅族手机剩余30%电量自动关机解决方法/</id>
     <published>2019-03-06T06:09:21.000Z</published>
     <updated>2019-04-01T03:04:37.814Z</updated>
     
@@ -472,8 +472,8 @@
   
   <entry>
     <title>指令级并行之多指令流出技术</title>
-    <link href="https://yohua.ml/2019/03/06/%E6%8C%87%E4%BB%A4%E7%BA%A7%E5%B9%B6%E8%A1%8C%E4%B9%8B%E5%A4%9A%E6%8C%87%E4%BB%A4%E6%B5%81%E5%87%BA%E6%8A%80%E6%9C%AF/"/>
-    <id>https://yohua.ml/2019/03/06/指令级并行之多指令流出技术/</id>
+    <link href="https://yohua.ml/%E6%8C%87%E4%BB%A4%E7%BA%A7%E5%B9%B6%E8%A1%8C%E4%B9%8B%E5%A4%9A%E6%8C%87%E4%BB%A4%E6%B5%81%E5%87%BA%E6%8A%80%E6%9C%AF/"/>
+    <id>https://yohua.ml/指令级并行之多指令流出技术/</id>
     <published>2019-03-06T04:31:36.000Z</published>
     <updated>2019-04-01T03:04:37.764Z</updated>
     
@@ -498,8 +498,8 @@
   
   <entry>
     <title>指令级并行之指令的动态调度</title>
-    <link href="https://yohua.ml/2019/03/06/%E6%8C%87%E4%BB%A4%E7%BA%A7%E5%B9%B6%E8%A1%8C%E4%B9%8B%E6%8C%87%E4%BB%A4%E7%9A%84%E5%8A%A8%E6%80%81%E8%B0%83%E5%BA%A6/"/>
-    <id>https://yohua.ml/2019/03/06/指令级并行之指令的动态调度/</id>
+    <link href="https://yohua.ml/%E6%8C%87%E4%BB%A4%E7%BA%A7%E5%B9%B6%E8%A1%8C%E4%B9%8B%E6%8C%87%E4%BB%A4%E7%9A%84%E5%8A%A8%E6%80%81%E8%B0%83%E5%BA%A6/"/>
+    <id>https://yohua.ml/指令级并行之指令的动态调度/</id>
     <published>2019-03-06T03:27:05.000Z</published>
     <updated>2019-04-01T03:04:37.738Z</updated>
     
@@ -524,8 +524,8 @@
   
   <entry>
     <title>指令级并行基本概念</title>
-    <link href="https://yohua.ml/2019/03/06/%E6%8C%87%E4%BB%A4%E7%BA%A7%E5%B9%B6%E8%A1%8C%E5%9F%BA%E6%9C%AC%E6%A6%82%E5%BF%B5/"/>
-    <id>https://yohua.ml/2019/03/06/指令级并行基本概念/</id>
+    <link href="https://yohua.ml/%E6%8C%87%E4%BB%A4%E7%BA%A7%E5%B9%B6%E8%A1%8C%E5%9F%BA%E6%9C%AC%E6%A6%82%E5%BF%B5/"/>
+    <id>https://yohua.ml/指令级并行基本概念/</id>
     <published>2019-03-05T17:26:26.000Z</published>
     <updated>2019-04-01T03:04:37.769Z</updated>
     
@@ -550,8 +550,8 @@
   
   <entry>
     <title>排序算法</title>
-    <link href="https://yohua.ml/2019/03/03/%E6%8E%92%E5%BA%8F%E7%AE%97%E6%B3%95/"/>
-    <id>https://yohua.ml/2019/03/03/排序算法/</id>
+    <link href="https://yohua.ml/%E6%8E%92%E5%BA%8F%E7%AE%97%E6%B3%95/"/>
+    <id>https://yohua.ml/排序算法/</id>
     <published>2019-03-03T15:46:21.000Z</published>
     <updated>2019-04-01T03:04:37.773Z</updated>
     
@@ -562,7 +562,7 @@
         
         
           &lt;center&gt;
-&lt;img src=&quot;/2019/03/03/排序算法/001.png&quot; width=&quot;75%&quot; height=&quot;100%&quot; alt=&quot;
+&lt;img src=&quot;/排序算法/001.png&quot; width=&quot;75%&quot; height=&quot;100%&quot; alt=&quot;
         
       
     
