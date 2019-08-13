@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://yohua.ml/"/>
-  <updated>2019-04-01T13:42:47.824Z</updated>
+  <updated>2019-08-13T15:29:21.660Z</updated>
   <id>http://yohua.ml/</id>
   
   <author>
@@ -15,6 +15,31 @@
   </author>
   
   <generator uri="http://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>12306WEB端买票硬卧选上中下铺</title>
+    <link href="http://yohua.ml/2019/08/13/12306WEB%E7%AB%AF%E4%B9%B0%E7%A5%A8%E7%A1%AC%E5%8D%A7%E9%80%89%E4%B8%8A%E4%B8%AD%E4%B8%8B%E9%93%BA/"/>
+    <id>http://yohua.ml/2019/08/13/12306WEB端买票硬卧选上中下铺/</id>
+    <published>2019-08-13T15:24:35.000Z</published>
+    <updated>2019-08-13T15:29:21.660Z</updated>
+    
+    <content type="html"><![CDATA[<p>&emsp;&emsp;在选中硬卧以后，进入检查。在硬卧标签后面加入如下代码：<br><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">&lt;select name=<span class="string">"passenger_1_seat_detail_select"</span>style=<span class="string">"display:block"</span>  id=<span class="string">"passenger_1_seat_detail_select"</span>onchange=<span class="string">"setSeatDetail('1')"</span>&gt;&lt;option value=<span class="string">"0"</span>&gt;随机&lt;/option&gt;&lt;option value=<span class="string">"3"</span>&gt;上铺&lt;/option&gt;&lt;option value=<span class="string">"2"</span>&gt;中铺&lt;/option&gt;&lt;option value=<span class="string">"1"</span>&gt;下铺&lt;/option&gt;&lt;/select&gt;</span><br></pre></td></tr></table></figure></p><p>来源参考：<span class="exturl" data-url="aHR0cHM6Ly9qaW5neWFuLmJhaWR1LmNvbS9hcnRpY2xlLzJmOWI0ODBkOWY1MDk4NDFjYjZjYzJkYi5odG1s" title="https://jingyan.baidu.com/article/2f9b480d9f509841cb6cc2db.html">https://jingyan.baidu.com/article/2f9b480d9f509841cb6cc2db.html<i class="fa fa-external-link"></i></span></p>]]></content>
+    
+    <summary type="html">
+    
+      
+      
+        &lt;p&gt;&amp;emsp;&amp;emsp;在选中硬卧以后，进入检查。在硬卧标签后面加入如下代码：&lt;br&gt;&lt;figure class=&quot;highlight bash&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;1&lt;/span&gt;&lt;
+      
+    
+    </summary>
+    
+      <category term="生活杂记" scheme="http://yohua.ml/categories/%E7%94%9F%E6%B4%BB%E6%9D%82%E8%AE%B0/"/>
+    
+    
+      <category term="杂记" scheme="http://yohua.ml/tags/%E6%9D%82%E8%AE%B0/"/>
+    
+  </entry>
   
   <entry>
     <title>老板老板,你这里有胡萝卜汁吗？</title>
@@ -195,9 +220,9 @@
       <category term="编程开发" scheme="http://yohua.ml/categories/%E7%BC%96%E7%A8%8B%E5%BC%80%E5%8F%91/"/>
     
     
-      <category term="Java" scheme="http://yohua.ml/tags/Java/"/>
-    
       <category term="Web" scheme="http://yohua.ml/tags/Web/"/>
+    
+      <category term="Java" scheme="http://yohua.ml/tags/Java/"/>
     
       <category term="JSP" scheme="http://yohua.ml/tags/JSP/"/>
     
@@ -529,36 +554,6 @@
     
     
       <category term="计算机系统结构" scheme="http://yohua.ml/tags/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%B3%BB%E7%BB%9F%E7%BB%93%E6%9E%84/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>排序算法</title>
-    <link href="http://yohua.ml/2019/03/03/%E6%8E%92%E5%BA%8F%E7%AE%97%E6%B3%95/"/>
-    <id>http://yohua.ml/2019/03/03/排序算法/</id>
-    <published>2019-03-03T15:46:21.000Z</published>
-    <updated>2019-04-01T03:04:37.773Z</updated>
-    
-    <content type="html"><![CDATA[<center><img src="001.png" width="75%" height="100%" alt=" "></center>]]></content>
-    
-    <summary type="html">
-    
-      
-      
-        &lt;center&gt;
-&lt;img src=&quot;001.png&quot; width=&quot;75%&quot; height=&quot;100%&quot; alt=&quot; &quot;&gt;
-&lt;/center&gt;
-
-      
-    
-    </summary>
-    
-      <category term="专业知识" scheme="http://yohua.ml/categories/%E4%B8%93%E4%B8%9A%E7%9F%A5%E8%AF%86/"/>
-    
-    
-      <category term="数据结构" scheme="http://yohua.ml/tags/%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84/"/>
-    
-      <category term="算法" scheme="http://yohua.ml/tags/%E7%AE%97%E6%B3%95/"/>
     
   </entry>
   
