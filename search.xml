@@ -3,7 +3,7 @@
   <entry>
     <title><![CDATA[12306WEB端买票硬卧选上中下铺]]></title>
     <url>%2F2019%2F08%2F13%2F12306WEB%E7%AB%AF%E4%B9%B0%E7%A5%A8%E7%A1%AC%E5%8D%A7%E9%80%89%E4%B8%8A%E4%B8%AD%E4%B8%8B%E9%93%BA%2F</url>
-    <content type="text"><![CDATA[&emsp;&emsp;在选中硬卧以后，进入检查。在硬卧标签后面加入如下代码：1&lt;select name="passenger_1_seat_detail_select"style="display:block" id="passenger_1_seat_detail_select"onchange="setSeatDetail('1')"&gt;&lt;option value="0"&gt;随机&lt;/option&gt;&lt;option value="3"&gt;上铺&lt;/option&gt;&lt;option value="2"&gt;中铺&lt;/option&gt;&lt;option value="1"&gt;下铺&lt;/option&gt;&lt;/select&gt; 来源参考：https://jingyan.baidu.com/article/2f9b480d9f509841cb6cc2db.html]]></content>
+    <content type="text"><![CDATA[&emsp;&emsp;在选中硬卧以后，右击页面进入检查。在硬卧标签后面加入如下代码：1&lt;select name="passenger_1_seat_detail_select"style="display:block" id="passenger_1_seat_detail_select"onchange="setSeatDetail('1')"&gt;&lt;option value="0"&gt;随机&lt;/option&gt;&lt;option value="3"&gt;上铺&lt;/option&gt;&lt;option value="2"&gt;中铺&lt;/option&gt;&lt;option value="1"&gt;下铺&lt;/option&gt;&lt;/select&gt; 来源参考：https://jingyan.baidu.com/article/2f9b480d9f509841cb6cc2db.html]]></content>
       <categories>
         <category>生活杂记</category>
       </categories>
