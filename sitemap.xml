@@ -2,6 +2,13 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
+    <loc>http://yohua.ml/tj/index.html</loc>
+    
+    <lastmod>2020-02-23T04:58:13.643Z</lastmod>
+    
+  </url>
+  
+  <url>
     <loc>http://yohua.ml/qz/index.html</loc>
     
     <lastmod>2020-02-21T11:17:42.767Z</lastmod>
@@ -299,13 +306,6 @@
     <loc>http://yohua.ml/others/%E5%9C%A8%E7%BA%BFMarkdown.html</loc>
     
     <lastmod>2019-03-21T04:00:47.345Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>http://yohua.ml/tj/index.html</loc>
-    
-    <lastmod>2019-03-20T14:05:21.417Z</lastmod>
     
   </url>
   
