@@ -1,2 +1,3 @@
 # colflip.github.io
-个人博客
+a blog for my life,study and others.
+
