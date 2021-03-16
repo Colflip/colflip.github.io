@@ -1,3 +1,3 @@
 # colflip.github.io
-a blog for my life,study and others.
+a blog of my life,study and others.
 
